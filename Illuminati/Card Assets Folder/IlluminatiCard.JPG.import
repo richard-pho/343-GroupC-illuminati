@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TheNetwork.JPG-812c7ae763bf9ea18d892a615f1acfbc.stex"
+path="res://.import/IlluminatiCard.JPG-923fe6ff85c3bddce8fc74bd88addaa6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TheNetwork.JPG"
-dest_files=[ "res://.import/TheNetwork.JPG-812c7ae763bf9ea18d892a615f1acfbc.stex" ]
+source_file="res://Card Assets Folder/IlluminatiCard.JPG"
+dest_files=[ "res://.import/IlluminatiCard.JPG-923fe6ff85c3bddce8fc74bd88addaa6.stex" ]
 
 [params]
 

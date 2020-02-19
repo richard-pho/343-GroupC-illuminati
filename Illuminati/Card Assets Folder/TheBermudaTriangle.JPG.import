@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TheSocietyOfAssassins.JPG-5d753e704d7ea2d853fc1db337f4dbbc.stex"
+path="res://.import/TheBermudaTriangle.JPG-2e9a710685e2596078d46e0f1860176b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TheSocietyOfAssassins.JPG"
-dest_files=[ "res://.import/TheSocietyOfAssassins.JPG-5d753e704d7ea2d853fc1db337f4dbbc.stex" ]
+source_file="res://Card Assets Folder/TheBermudaTriangle.JPG"
+dest_files=[ "res://.import/TheBermudaTriangle.JPG-2e9a710685e2596078d46e0f1860176b.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/IlluminatiCard.JPG-e7636bbac6f43416b43f6459efdf0d1c.stex"
+path="res://.import/TheServantsOfCthulhu.JPG-9f4630f6b45e4789a3ec79bdbeb9f5a3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://IlluminatiCard.JPG"
-dest_files=[ "res://.import/IlluminatiCard.JPG-e7636bbac6f43416b43f6459efdf0d1c.stex" ]
+source_file="res://Card Assets Folder/TheServantsOfCthulhu.JPG"
+dest_files=[ "res://.import/TheServantsOfCthulhu.JPG-9f4630f6b45e4789a3ec79bdbeb9f5a3.stex" ]
 
 [params]
 

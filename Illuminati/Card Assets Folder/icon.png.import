@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TheUFO.JPG-247c818eb312167c594065b5a19bf05d.stex"
+path="res://.import/icon.png-4d9afb3f0f4609da47079f0ba9d8ff73.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TheUFO.JPG"
-dest_files=[ "res://.import/TheUFO.JPG-247c818eb312167c594065b5a19bf05d.stex" ]
+source_file="res://Card Assets Folder/icon.png"
+dest_files=[ "res://.import/icon.png-4d9afb3f0f4609da47079f0ba9d8ff73.stex" ]
 
 [params]
 

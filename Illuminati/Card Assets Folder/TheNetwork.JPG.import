@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TheServantsOfCthulhu.JPG-4c8a3fb9f60809d4f1a50a5f23133230.stex"
+path="res://.import/TheNetwork.JPG-cdaa23a8e1fdc404052742647dbd0dff.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TheServantsOfCthulhu.JPG"
-dest_files=[ "res://.import/TheServantsOfCthulhu.JPG-4c8a3fb9f60809d4f1a50a5f23133230.stex" ]
+source_file="res://Card Assets Folder/TheNetwork.JPG"
+dest_files=[ "res://.import/TheNetwork.JPG-cdaa23a8e1fdc404052742647dbd0dff.stex" ]
 
 [params]
 

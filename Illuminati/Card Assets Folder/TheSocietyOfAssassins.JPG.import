@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TheBavarianIlluminati.JPG-88c3c293cad7e9c0fa07e780551a040f.stex"
+path="res://.import/TheSocietyOfAssassins.JPG-7a3ae848aebbd424bc9c139c75997928.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TheBavarianIlluminati.JPG"
-dest_files=[ "res://.import/TheBavarianIlluminati.JPG-88c3c293cad7e9c0fa07e780551a040f.stex" ]
+source_file="res://Card Assets Folder/TheSocietyOfAssassins.JPG"
+dest_files=[ "res://.import/TheSocietyOfAssassins.JPG-7a3ae848aebbd424bc9c139c75997928.stex" ]
 
 [params]
 

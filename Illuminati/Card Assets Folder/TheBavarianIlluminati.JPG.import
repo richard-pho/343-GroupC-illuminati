@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TheBermudaTriangle.JPG-25d3dae60d43e57711b806a39889fb9a.stex"
+path="res://.import/TheBavarianIlluminati.JPG-bbaccf7c1c94f83ed553c38df04a7625.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TheBermudaTriangle.JPG"
-dest_files=[ "res://.import/TheBermudaTriangle.JPG-25d3dae60d43e57711b806a39889fb9a.stex" ]
+source_file="res://Card Assets Folder/TheBavarianIlluminati.JPG"
+dest_files=[ "res://.import/TheBavarianIlluminati.JPG-bbaccf7c1c94f83ed553c38df04a7625.stex" ]
 
 [params]
 
