@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Boy Sprouts.JPG-5f81f477921d9ea2c868d03d04386b4a.stex"
+path="res://.import/Comic Books.JPG-bf4402c940f5c6dfa9d5b285ba47fc70.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/Boy Sprouts.JPG"
-dest_files=[ "res://.import/Boy Sprouts.JPG-5f81f477921d9ea2c868d03d04386b4a.stex" ]
+source_file="res://Card Assets Folder/Comic Books.JPG"
+dest_files=[ "res://.import/Comic Books.JPG-bf4402c940f5c6dfa9d5b285ba47fc70.stex" ]
 
 [params]
 

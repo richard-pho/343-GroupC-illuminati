@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Big Media.JPG-0fd83f783d0daa3e7c79ba9e7dceed49.stex"
+path="res://.import/Big Media.JPG-30c62201541a2d261433d052a57bf0fd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Big Media.JPG"
-dest_files=[ "res://.import/Big Media.JPG-0fd83f783d0daa3e7c79ba9e7dceed49.stex" ]
+source_file="res://Card Assets Folder/Big Media.JPG"
+dest_files=[ "res://.import/Big Media.JPG-30c62201541a2d261433d052a57bf0fd.stex" ]
 
 [params]
 

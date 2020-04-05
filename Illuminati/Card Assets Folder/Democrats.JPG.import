@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Boy Sprouts.JPG-5f81f477921d9ea2c868d03d04386b4a.stex"
+path="res://.import/Democrats.JPG-8bcb78e50d33546b8ef2f8d972356270.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/Boy Sprouts.JPG"
-dest_files=[ "res://.import/Boy Sprouts.JPG-5f81f477921d9ea2c868d03d04386b4a.stex" ]
+source_file="res://Card Assets Folder/Democrats.JPG"
+dest_files=[ "res://.import/Democrats.JPG-8bcb78e50d33546b8ef2f8d972356270.stex" ]
 
 [params]
 
