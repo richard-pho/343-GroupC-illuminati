@@ -4,12 +4,12 @@ extends Sprite
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var power = 1;
+var power = 2;
 var assistPower = 0;
 var resistance = 5;
 var income = 1;
-var up = "none";
-var right = "out";
+var up = "out";
+var right = "none";
 var down = "none";
 var left = "in";
 

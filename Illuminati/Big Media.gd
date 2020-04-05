@@ -4,14 +4,14 @@ extends Sprite
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var power = 1;
-var assistPower = 0;
-var resistance = 5;
-var income = 1;
-var up = "none";
-var right = "out";
-var down = "none";
-var left = "in";
+var power = 4;
+var assistPower = 3;
+var resistance = 6;
+var income = 3;
+var up = "out";
+var right = "in";
+var down = "out";
+var left = "out";
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
