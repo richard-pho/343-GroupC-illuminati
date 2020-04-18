@@ -19,9 +19,9 @@ __meta__ = {
 
 [node name="Menu" type="VBoxContainer" parent="."]
 margin_left = 120.0
-margin_top = 80.0
+margin_top = 82.5175
 margin_right = 1160.0
-margin_bottom = 640.0
+margin_bottom = 642.518
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -34,21 +34,22 @@ stretch_mode = 4
 
 [node name="Center" type="HBoxContainer" parent="Menu"]
 margin_top = 174.0
-margin_right = 1040.0
-margin_bottom = 560.0
-size_flags_vertical = 3
+margin_right = 100.0
+margin_bottom = 278.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
 
 [node name="Options" type="VBoxContainer" parent="Menu/Center"]
-margin_right = 1040.0
-margin_bottom = 386.0
+margin_right = 100.0
+margin_bottom = 104.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="StartGame" parent="Menu/Center/Options" instance=ExtResource( 2 )]
-margin_right = 1040.0
-margin_bottom = 90.0
+margin_right = 100.0
+margin_bottom = 50.0
 
 [node name="RankButton" parent="Menu/Center/Options" instance=ExtResource( 3 )]
-margin_top = 94.0
-margin_right = 1040.0
-margin_bottom = 184.0
+margin_top = 54.0
+margin_right = 100.0
+margin_bottom = 104.0
