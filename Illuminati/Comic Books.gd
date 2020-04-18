@@ -1,4 +1,4 @@
-extends Sprite
+extends Node
 
 
 # Declare member variables here. Examples:
@@ -6,10 +6,10 @@ extends Sprite
 # var b = "text"
 var power = 1;
 var transPower = 0;
-var resistance = 5;
-var income = 1;
-var up = "none";
-var right = "out";
+var resistance = 1;
+var income = 2;
+var up = "out";
+var right = "none";
 var down = "none";
 var left = "in";
 var alignments = ["violent", "weird"];

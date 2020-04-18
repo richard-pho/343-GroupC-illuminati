@@ -1,15 +1,15 @@
-extends Sprite
+extends Node
 
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var power = 1;
+var power = 0;
 var transPower = 0;
-var resistance = 5;
-var income = 1;
+var resistance = 4;
+var income = 0;
 var up = "none";
-var right = "out";
+var right = "none";
 var down = "none";
 var left = "in";
 var alignments = ["violent", "weird"];
@@ -20,6 +20,9 @@ func _ready():
 func attackToControl():
 	pass
 func attackToDestroy():
+	# +2 on any attempt to destroy any group
+	power += 2;
+	power -= 2;
 	pass
 func attackToNeutralize():
 	pass

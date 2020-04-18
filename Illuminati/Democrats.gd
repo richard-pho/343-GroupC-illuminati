@@ -1,18 +1,18 @@
-extends Sprite
+extends Node
 
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var power = 1;
+var power = 5;
 var transPower = 0;
-var resistance = 5;
-var income = 1;
+var resistance = 4;
+var income = 3;
 var up = "none";
-var right = "out";
-var down = "none";
-var left = "in";
-var alignments = ["violent", "weird"];
+var right = "in";
+var down = "out";
+var left = "out";
+var alignments = ["liberal"];
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
