@@ -53,3 +53,50 @@ margin_bottom = 50.0
 margin_top = 54.0
 margin_right = 100.0
 margin_bottom = 104.0
+
+[node name="LoginInfo" type="HBoxContainer" parent="Menu"]
+margin_top = 282.0
+margin_right = 304.0
+margin_bottom = 306.0
+rect_min_size = Vector2( 300, 24 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/LoginInfo"]
+margin_right = 200.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 200, 24 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="LineEdit" type="LineEdit" parent="Menu/LoginInfo/VBoxContainer"]
+margin_right = 200.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 200, 24 )
+
+[node name="Login" type="Button" parent="Menu/LoginInfo"]
+margin_left = 204.0
+margin_right = 304.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 100, 20 )
+
+[node name="Label" type="Label" parent="Menu/LoginInfo/Login"]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Login"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="notification" type="HBoxContainer" parent="Menu"]
+margin_top = 310.0
+margin_right = 100.0
+margin_bottom = 334.0
+rect_min_size = Vector2( 100, 24 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="Menu/notification"]
+margin_top = 5.0
+margin_bottom = 19.0
+[connection signal="pressed" from="Menu/LoginInfo/Login" to="." method="_on_Login_pressed"]
