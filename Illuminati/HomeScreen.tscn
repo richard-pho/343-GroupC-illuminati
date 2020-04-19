@@ -8,10 +8,10 @@
 [node name="HomeScreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 5.03506
-margin_top = 7.55261
-margin_right = 5.03503
-margin_bottom = 7.55261
+margin_left = 297.437
+margin_top = 71.6407
+margin_right = 297.437
+margin_bottom = 71.6407
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -84,6 +84,19 @@ rect_min_size = Vector2( 100, 20 )
 margin_right = 40.0
 margin_bottom = 14.0
 text = "Login"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LobbyList" type="ItemList" parent="Menu/LoginInfo/Login"]
+anchor_left = 1.357
+anchor_top = -4.527
+anchor_right = 1.357
+anchor_bottom = -4.527
+margin_left = 0.299988
+margin_top = -0.35199
+margin_right = 360.3
+margin_bottom = 166.648
 __meta__ = {
 "_edit_use_anchors_": false
 }
