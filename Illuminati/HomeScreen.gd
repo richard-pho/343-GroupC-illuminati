@@ -13,12 +13,9 @@ var usernamearray = []
 const MAX_LOBBY = 8
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for i in $Menu/Center/Options.get_children():
-		i.connect("pressed",self,"buttonpressed",[i.scene])
+	pass
 	
-		
-func buttonpressed(scene):
-	get_tree().change_scene(scene)
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -36,3 +33,15 @@ func _on_Login_pressed():
 		usernamearray.append(username.text)
 		LobbyList.add_item(username.text)
 	
+
+
+
+
+
+func _on_StartGame_pressed():
+	get_tree().change_scene("res://Game/Game.tscn")
+
+
+
+func _on_Rank_pressed():
+	get_tree().change_scene("res://Game/Rank.tscn")

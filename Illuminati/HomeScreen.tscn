@@ -1,27 +1,25 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Logo/logo.JPG" type="Texture" id=1]
-[ext_resource path="res://buttons/StartGame.tscn" type="PackedScene" id=2]
-[ext_resource path="res://buttons/RankButton.tscn" type="PackedScene" id=3]
 [ext_resource path="res://HomeScreen.gd" type="Script" id=5]
 
 [node name="HomeScreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 297.437
-margin_top = 71.6407
-margin_right = 297.437
-margin_bottom = 71.6407
+margin_left = 2.8855
+margin_top = 6.18483
+margin_right = 2.8855
+margin_bottom = 6.18481
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Menu" type="VBoxContainer" parent="."]
-margin_left = 120.0
-margin_top = 82.5175
-margin_right = 1160.0
-margin_bottom = 642.518
+margin_left = 122.517
+margin_top = 69.9299
+margin_right = 1162.52
+margin_bottom = 629.93
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -45,14 +43,36 @@ margin_bottom = 104.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="StartGame" parent="Menu/Center/Options" instance=ExtResource( 2 )]
+[node name="StartGame" type="Button" parent="Menu/Center/Options"]
 margin_right = 100.0
 margin_bottom = 50.0
+rect_min_size = Vector2( 100, 50 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
 
-[node name="RankButton" parent="Menu/Center/Options" instance=ExtResource( 3 )]
+[node name="Label" type="Label" parent="Menu/Center/Options/StartGame"]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Start Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rank" type="Button" parent="Menu/Center/Options"]
 margin_top = 54.0
 margin_right = 100.0
 margin_bottom = 104.0
+rect_min_size = Vector2( 100, 50 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="Menu/Center/Options/Rank"]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Rank"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="LoginInfo" type="HBoxContainer" parent="Menu"]
 margin_top = 282.0
@@ -93,10 +113,10 @@ anchor_left = 1.357
 anchor_top = -4.527
 anchor_right = 1.357
 anchor_bottom = -4.527
-margin_left = 0.299988
-margin_top = -0.35199
-margin_right = 360.3
-margin_bottom = 166.648
+margin_left = 241.984
+margin_top = 29.8585
+margin_right = 601.984
+margin_bottom = 196.858
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -112,4 +132,6 @@ size_flags_vertical = 0
 [node name="Label" type="Label" parent="Menu/notification"]
 margin_top = 5.0
 margin_bottom = 19.0
+[connection signal="pressed" from="Menu/Center/Options/StartGame" to="." method="_on_StartGame_pressed"]
+[connection signal="pressed" from="Menu/Center/Options/Rank" to="." method="_on_Rank_pressed"]
 [connection signal="pressed" from="Menu/LoginInfo/Login" to="." method="_on_Login_pressed"]

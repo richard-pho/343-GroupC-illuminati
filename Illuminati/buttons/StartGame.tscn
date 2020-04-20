@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://buttons/buttons.tscn" type="PackedScene" id=1]
-
-[node name="StartGame" instance=ExtResource( 1 )]
-scene = "res://Game/Game.tscn"
-
-[node name="Label" parent="." index="0"]
-text = "Start Game"
