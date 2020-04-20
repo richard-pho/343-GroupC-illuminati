@@ -164,8 +164,8 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Yuppies="*res://Yuppies.gd"
 Deck="*res://Deck.gd"
+Yuppies="*res://Yuppies.gd"
 player="*res://player.gd"
 
 [display]
