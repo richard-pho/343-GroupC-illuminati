@@ -4,6 +4,9 @@
 script/source = "extends Control
 var deck
 var yuppies
+var rollA
+var rollB
+
 func _ready():
 	deck = Deck.Deck.new()
 	yuppies = Yuppies.Yuppies.new()
@@ -16,6 +19,13 @@ func _on_Button_pressed():
 func _on_Button2_pressed():
 	deck.addCard(yuppies)
 	deck.printDeck()
+
+
+func _on_Dice_pressed():
+	rollA = randi()%7+1
+	rollB = randi()%7+1
+	
+	get_node(\"Output\").text=str(rollA+rollB)
 "
 
 [node name="Game" type="Control"]
@@ -54,5 +64,19 @@ text = "Back"
 margin_top = 42.0
 margin_right = 42.0
 margin_bottom = 62.0
+
+[node name="Output" type="Label" parent="."]
+margin_left = 768.718
+margin_top = 332.594
+margin_right = 808.718
+margin_bottom = 346.594
+
+[node name="Dice" type="Button" parent="Output"]
+margin_left = -10.1766
+margin_top = 20.2941
+margin_right = 50.8234
+margin_bottom = 40.2941
+text = "Dice"
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
