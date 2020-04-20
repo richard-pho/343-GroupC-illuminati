@@ -11,6 +11,7 @@ class player:
 	var money = 0;
 	func setName(var n):
 		set(userName, n);
+		print("setName!");
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

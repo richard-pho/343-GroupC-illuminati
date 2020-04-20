@@ -10,6 +10,7 @@ onready var LobbyList : ItemList = $Menu/LoginInfo/Login/LobbyList
 onready var Startnotallowed : Label = $Menu/Startnotallowed
 var usernamearray = [] 
 var players = []
+var p
 
 const MAX_LOBBY = 8
 # Called when the node enters the scene tree for the first time.
@@ -26,9 +27,9 @@ func _on_Login_pressed():
 	else:
 		usernamearray.append(username.text)
 		LobbyList.add_item(username.text)
-		player = player.player.new()
-		player.setName(username.text)
-		players.append(player)
+		p = player.player.new()
+		p.setName(username.text)
+		players.append(p)
 
 func _on_StartGame_pressed():
 	Startnotallowed.text = ""

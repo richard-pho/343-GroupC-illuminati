@@ -128,21 +128,6 @@ _global_script_classes=[ {
 "class": "Fiendish_Fluoridators",
 "language": "GDScript",
 "path": "res://Fiendish Fluoridators.gd"
-}, {
-"base": "Node",
-"class": "TVPreachers",
-"language": "GDScript",
-"path": "res://TVPreachers.gd"
-}, {
-"base": "Node",
-"class": "UndergroundNewspaper",
-"language": "GDScript",
-"path": "res://UndergroundNewspaper.gd"
-}, {
-"base": "Node",
-"class": "VideoGames",
-"language": "GDScript",
-"path": "res://VideoGames.gd"
 } ]
 _global_script_class_icons={
 "American_Autoduel_Association": "",
@@ -168,10 +153,7 @@ _global_script_class_icons={
 "Fast_Food_Chains": "",
 "Federal_Reserve": "",
 "Feminists": "",
-"Fiendish_Fluoridators": "",
-"TVPreachers": "",
-"UndergroundNewspaper": "",
-"VideoGames": ""
+"Fiendish_Fluoridators": ""
 }
 
 [application]
@@ -179,6 +161,12 @@ _global_script_class_icons={
 config/name="Illuminati"
 run/main_scene="res://HomeScreen.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Yuppies="*res://Yuppies.gd"
+Deck="*res://Deck.gd"
+player="*res://player.gd"
 
 [display]
 
