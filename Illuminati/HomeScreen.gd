@@ -1,6 +1,5 @@
 extends Control
 
-
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -10,6 +9,7 @@ onready var Lobby : Label = $Menu/Lobby/Popup/Label
 onready var LobbyList : ItemList = $Menu/LoginInfo/Login/LobbyList
 onready var Startnotallowed : Label = $Menu/Startnotallowed
 var usernamearray = [] 
+var players = []
 
 const MAX_LOBBY = 8
 # Called when the node enters the scene tree for the first time.
@@ -26,7 +26,9 @@ func _on_Login_pressed():
 	else:
 		usernamearray.append(username.text)
 		LobbyList.add_item(username.text)
-	
+		var player = load("res://player.gd")
+		player.setName(username.text)
+		players.append(player)
 
 
 
