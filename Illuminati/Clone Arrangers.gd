@@ -1,6 +1,6 @@
 extends Node
 
-
+class_name Clone_Arrangers
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -8,6 +8,7 @@ var power = 6;
 var transPower = 2;
 var resistance = 6;
 var income = 1;
+var money = 0;
 var up = "none";
 var right = "out";
 var down = "out";
@@ -26,7 +27,8 @@ func attackToDestroy():
 	pass
 func attackToNeutralize():
 	pass
-
+func transferMoney():
+	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

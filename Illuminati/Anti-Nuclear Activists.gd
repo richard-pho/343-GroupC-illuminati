@@ -1,13 +1,14 @@
 extends Sprite
 
-
+class_name Anti_Nuclear_Activists
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 var power = 2;
 var transPower = 0;
 var resistance = 5;
-var income = 1;
+var income = 1
+var money = 0;
 var up = "out";
 var right = "none";
 var down = "none";
@@ -25,7 +26,8 @@ func attackToDestroy():
 	power -= 2
 func attackToNeutralize():
 	pass
-
+func transferMoney():
+	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

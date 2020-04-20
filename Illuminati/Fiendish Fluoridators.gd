@@ -1,6 +1,6 @@
 extends Node
 
-
+class_name Fiendish_Fluoridators
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"

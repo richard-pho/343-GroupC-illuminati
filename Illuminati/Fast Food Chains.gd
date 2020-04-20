@@ -1,6 +1,6 @@
 extends Node
 
-
+class_name Fast_Food_Chains
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -24,7 +24,8 @@ func attackToDestroy():
 	pass
 func attackToNeutralize():
 	pass
-
+func transferMoney():
+	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

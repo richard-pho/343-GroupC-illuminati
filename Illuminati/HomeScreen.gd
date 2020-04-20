@@ -26,13 +26,9 @@ func _on_Login_pressed():
 	else:
 		usernamearray.append(username.text)
 		LobbyList.add_item(username.text)
-		var player = load("res://player.gd")
+		player = player.player.new()
 		player.setName(username.text)
 		players.append(player)
-
-
-
-
 
 func _on_StartGame_pressed():
 	Startnotallowed.text = ""

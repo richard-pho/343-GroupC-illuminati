@@ -1,6 +1,6 @@
 extends Node
 
-
+class_name Convenience_Stores
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -8,6 +8,7 @@ var power = 1;
 var transPower = 0;
 var resistance = 4;
 var income = 3;
+var money = 0;
 var up = "none";
 var right = "none";
 var down = "out";
@@ -23,7 +24,8 @@ func attackToDestroy():
 	pass
 func attackToNeutralize():
 	pass
-
+func transferMoney():
+	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
