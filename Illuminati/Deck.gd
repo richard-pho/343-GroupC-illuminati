@@ -1,19 +1,18 @@
 extends Node
 
 
-class_name Deck
-
-var deck = []
-func addCard(card):
-	deck.append(card)
+class Deck:
+	var deck = []
+	func addCard(var card):
+		deck.append(card)
+		
+	func removeCard(var card):
+		var position = deck.find(card)
+		deck.remove(position)
 	
-func removeCard(card):
-	var position = deck.find(card)
-	deck.remove(position)
-
-func shuffleDeck():
-	deck.shuffle()
-
-func printDeck():
-	for i in deck:
-		print(deck[i])
+	func shuffleDeck():
+		deck.shuffle()
+	
+	func printDeck():
+		for i in range(0,deck.size()):
+			print(deck[i].printname())

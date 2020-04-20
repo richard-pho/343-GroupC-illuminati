@@ -41,7 +41,5 @@ func _on_StartGame_pressed():
 	else:
 		Startnotallowed.text = "You need at least two players to play"
 
-
-
 func _on_Rank_pressed():
 	get_tree().change_scene("res://Game/Rank.tscn")

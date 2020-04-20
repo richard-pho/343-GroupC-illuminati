@@ -1,4 +1,5 @@
 extends Node
+class_name UndergroundNewspaper
 var power = 1;
 var transPower = 1;
 var resistance = 5;

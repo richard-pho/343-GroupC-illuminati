@@ -1,5 +1,5 @@
 extends Node
-
+class_name TVPreachers
 var power = 3;
 var transPower = 0;
 var resistance = 6;

@@ -2,13 +2,20 @@
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
-
+var deck
+var yuppies
+func _ready():
+	deck = Deck.Deck.new()
+	yuppies = Yuppies.Yuppies.new()
 
 func _on_Button_pressed():
 	get_tree().change_scene(\"res://HomeScreen.tscn\")
 
 
 
+func _on_Button2_pressed():
+	deck.addCard(yuppies)
+	deck.printDeck()
 "
 
 [node name="Game" type="Control"]
@@ -28,9 +35,9 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 margin_left = 619.0
-margin_top = 341.0
+margin_top = 329.0
 margin_right = 661.0
-margin_bottom = 379.0
+margin_bottom = 391.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
 margin_right = 42.0
@@ -42,4 +49,10 @@ margin_top = 18.0
 margin_right = 42.0
 margin_bottom = 38.0
 text = "Back"
+
+[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 42.0
+margin_right = 42.0
+margin_bottom = 62.0
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button2" to="." method="_on_Button2_pressed"]

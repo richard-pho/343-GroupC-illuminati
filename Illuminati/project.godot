@@ -10,9 +10,19 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node",
-"class": "Deck",
+"class": "TVPreachers",
 "language": "GDScript",
-"path": "res://Deck.gd"
+"path": "res://TVPreachers.gd"
+}, {
+"base": "Node",
+"class": "UndergroundNewspaper",
+"language": "GDScript",
+"path": "res://UndergroundNewspaper.gd"
+}, {
+"base": "Node",
+"class": "VideoGames",
+"language": "GDScript",
+"path": "res://VideoGames.gd"
 }, {
 "base": "Node",
 "class": "player",
@@ -20,7 +30,9 @@ _global_script_classes=[ {
 "path": "res://player.gd"
 } ]
 _global_script_class_icons={
-"Deck": "",
+"TVPreachers": "",
+"UndergroundNewspaper": "",
+"VideoGames": "",
 "player": ""
 }
 
@@ -29,6 +41,11 @@ _global_script_class_icons={
 config/name="Illuminati"
 run/main_scene="res://HomeScreen.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Deck="*res://Deck.gd"
+Yuppies="*res://Yuppies.gd"
 
 [display]
 

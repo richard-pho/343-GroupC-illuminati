@@ -1,4 +1,5 @@
 extends Node
+class_name VideoGames
 var power = 1;
 var transPower = 1;
 var resistance = 4;
