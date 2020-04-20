@@ -10,8 +10,7 @@ class player:
 	var specialCards = [];
 	var money = 0;
 	func setName(var n):
-		set(userName, n);
-		print("setName!");
+		userName = n;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
