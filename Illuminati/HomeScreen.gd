@@ -8,6 +8,7 @@ onready var username : LineEdit = $Menu/LoginInfo/VBoxContainer/LineEdit
 onready var notification : Label = $Menu/notification/Label
 onready var Lobby : Label = $Menu/Lobby/Popup/Label
 onready var LobbyList : ItemList = $Menu/LoginInfo/Login/LobbyList
+onready var Startnotallowed : Label = $Menu/Startnotallowed
 var usernamearray = [] 
 
 const MAX_LOBBY = 8
@@ -39,7 +40,11 @@ func _on_Login_pressed():
 
 
 func _on_StartGame_pressed():
-	get_tree().change_scene("res://Game/Game.tscn")
+	Startnotallowed.text = ""
+	if(LobbyList.get_item_count()>=2):
+		get_tree().change_scene("res://Game/Game.tscn")
+	else:
+		Startnotallowed.text = "You need at least two players to play"
 
 
 
