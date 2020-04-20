@@ -6,6 +6,21 @@ script/source = "extends Control
 
 func _on_Button_pressed():
 	get_tree().change_scene(\"res://HomeScreen.tscn\")
+	
+class deck:
+	var deck = []
+	func addCard(card):
+		deck.append(card)
+	func removeCard(card):
+		var position = deck.find(card)
+		deck.remove(position)
+	func shuffleDeck():
+		deck.shuffle()
+	func printDeck():
+		for i in deck:
+			print(deck[i])
+
+
 "
 
 [node name="Game" type="Control"]
@@ -24,23 +39,19 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-anchor_left = 0.454
-anchor_top = -0.456
-anchor_right = 0.475
-anchor_bottom = -0.456
 margin_left = 619.0
 margin_top = 341.0
 margin_right = 661.0
 margin_bottom = 379.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
-margin_right = 68.0
+margin_right = 42.0
 margin_bottom = 14.0
 text = "Game"
 
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
 margin_top = 18.0
-margin_right = 68.0
+margin_right = 42.0
 margin_bottom = 38.0
 text = "Back"
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
