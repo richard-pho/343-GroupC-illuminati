@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Game/POL-foggy-forest-short.wav" type="AudioStream" id=1]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
@@ -77,6 +79,10 @@ margin_top = 20.2941
 margin_right = 50.8234
 margin_bottom = 40.2941
 text = "Dice"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Button2" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
