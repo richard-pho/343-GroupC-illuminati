@@ -60,11 +60,6 @@ _global_script_classes=[ {
 "path": "res://Clone Arrangers.gd"
 }, {
 "base": "Node",
-"class": "Comic_Books",
-"language": "GDScript",
-"path": "res://Comic Books.gd"
-}, {
-"base": "Node",
 "class": "Congressional_Wives",
 "language": "GDScript",
 "path": "res://Congressional Wives.gd"
@@ -140,7 +135,6 @@ _global_script_class_icons={
 "California": "",
 "Chinese_Campaign_Donors": "",
 "Clone_Arrangers": "",
-"Comic_Books": "",
 "Congressional_Wives": "",
 "Convenience_Stores": "",
 "Copy_Shops": "",
