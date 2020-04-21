@@ -24,6 +24,7 @@ config/icon="res://icon.png"
 Deck="*res://Deck.gd"
 Yuppies="*res://Yuppies.gd"
 player="*res://player.gd"
+AmerianAutoduelAssociation="*res://AmerianAutoduelAssociation.gd"
 
 [display]
 

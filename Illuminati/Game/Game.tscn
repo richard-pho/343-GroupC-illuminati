@@ -5,6 +5,87 @@
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
 var deck
+var AmericanAutoDuelAssociation
+var AntiNuclearActivists
+var BigMedia
+var BoySprouts
+var CIA
+var California
+var CFL_AIO
+var ChineseCampaignDonors
+var CloneArrangers
+var ComicBooks
+var CongressionalWives
+var ConvenieceStores
+var CopyShops
+var CycleGangs
+var Democrats
+var EcoGuerrillas
+var EmptyVee
+var EvilGeniusesForABetterTomorrow
+var FBI
+var FastFoodChain
+var FederalReserve
+var Feminists
+var FiendishFluoridators
+var FlatEarthers
+var FnordMotorCompany
+var FraternalOrders
+var GirlieMag
+var GoldfishFanciers
+var GunLobby
+var Hackers
+var HealthFoodStores
+var Hollywood
+var Intellectuals
+var InternationalCocaineSmugglers
+var InternationalCommunistConspiracy
+var IRS
+var junkmail
+var kgb
+var kkk
+var l4Society
+var libertarians
+var loansharks
+var localPoliceDepartment
+var madisonAvenue
+var militia
+var moonies
+var moralminority
+var morticians
+var multinationaloilcompanies
+var nephewsofgod
+var newyork
+var nuclearpowercompanies
+var orbitalmindcontrollasers
+var parentteachersagglomeration
+var pentagon
+var phonephreaks
+var postoffice
+var professionalsports
+var psychatrists
+var punkrockers
+var recyclers
+var republicans
+var robotseamonsters
+var sciencefictionfans
+var semiconsciousliberationarmy
+var smof
+var societyforcreativeanarchism
+var southamericannazis
+var survivalists
+var tabloids
+var texas
+var themafia
+var themeninblack
+var thephonecompany
+var theunitednations
+var tobaccoliquorcompanies
+var trekkies
+var triliberalcommission
+var TVPreachers
+var undergroundnewspaper
+var videogames
 var yuppies
 var rollA
 var rollB
@@ -12,6 +93,8 @@ var rollB
 func _ready():
 	deck = Deck.Deck.new()
 	yuppies = Yuppies.Yuppies.new()
+	AmericanAutoDuelAssociation = AmericanAutoDuelAssociation.AmericanAutoDuelAssociation.new()
+	
 
 func _on_Button_pressed():
 	get_tree().change_scene(\"res://HomeScreen.tscn\")
@@ -19,14 +102,13 @@ func _on_Button_pressed():
 
 
 func _on_Button2_pressed():
-	deck.addCard(yuppies)
+	deck.addCard(AmericanAutoDuelAssociation)
 	deck.printDeck()
 
 
 func _on_Dice_pressed():
 	rollA = randi()%7+1
 	rollB = randi()%7+1
-	
 	get_node(\"Output\").text=str(rollA+rollB)
 "
 
