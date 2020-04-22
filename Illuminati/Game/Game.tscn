@@ -269,8 +269,8 @@ func _on_Button2_pressed():
 
 
 func _on_Dice_pressed():
-	rollA = randi()%7+1
-	rollB = randi()%7+1
+	rollA = randi()%6+1
+	rollB = randi()%6+1
 	get_node(\"Output\").text=str(rollA+rollB)
 
 
