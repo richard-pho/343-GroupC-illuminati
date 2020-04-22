@@ -106,7 +106,6 @@ TVPreachers="*res://TVPreachers.gd"
 UndergroundNewspaper="*res://UndergroundNewspaper.gd"
 VideoGames="*res://VideoGames.gd"
 California="*res://California.gd"
-global="*res://HomeScreen.gd"
 
 [display]
 
