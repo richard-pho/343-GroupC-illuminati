@@ -89,7 +89,7 @@ var videogames
 var yuppies
 var rollA
 var rollB
-onready var player_0 : Button = $VBoxContainer2/player_0
+
 func _ready():
 	deck = Deck.Deck.new()
 	yuppies = Yuppies.Yuppies.new()
@@ -258,8 +258,6 @@ func _ready():
 	deck.addCard(videogames)
 	deck.addCard(yuppies)
 	deck.shuffleDeck()
-	for i in range(0,get_node(\"/root/HomeScreen\").usernamearray.size()):
-		
 
 func _on_Button_pressed():
 	get_tree().change_scene(\"res://HomeScreen.tscn\")
@@ -359,7 +357,6 @@ __meta__ = {
 }
 
 [node name="player_0" type="Button" parent="VBoxContainer2"]
-visible = false
 margin_right = 241.0
 margin_bottom = 20.0
 text = "Player0"
@@ -368,9 +365,9 @@ __meta__ = {
 }
 
 [node name="player_1" type="Button" parent="VBoxContainer2"]
-visible = false
+margin_top = 24.0
 margin_right = 241.0
-margin_bottom = 20.0
+margin_bottom = 44.0
 text = "Player1"
 __meta__ = {
 "_edit_use_anchors_": false
