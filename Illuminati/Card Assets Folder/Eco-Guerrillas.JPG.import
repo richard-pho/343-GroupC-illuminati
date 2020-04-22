@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Eco-Guerrillas.JPG-00245216f6a5a5a9d250541efaf5a32a.stex"
+path="res://.import/eco-Guerrillas.JPG-1139e0c87b50da47af896ca94d209a01.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/Eco-Guerrillas.JPG"
-dest_files=[ "res://.import/Eco-Guerrillas.JPG-00245216f6a5a5a9d250541efaf5a32a.stex" ]
+source_file="res://Card Assets Folder/eco-Guerrillas.JPG"
+dest_files=[ "res://.import/eco-Guerrillas.JPG-1139e0c87b50da47af896ca94d209a01.stex" ]
 
 [params]
 

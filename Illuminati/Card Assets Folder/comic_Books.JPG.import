@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Congressional Wives.JPG-2560da831b67f6ea2e814a67b73c182f.stex"
+path="res://.import/comic_Books.JPG-0b13e0fb5d87c5d65199322d07993be7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/Congressional Wives.JPG"
-dest_files=[ "res://.import/Congressional Wives.JPG-2560da831b67f6ea2e814a67b73c182f.stex" ]
+source_file="res://Card Assets Folder/comic_Books.JPG"
+dest_files=[ "res://.import/comic_Books.JPG-0b13e0fb5d87c5d65199322d07993be7.stex" ]
 
 [params]
 

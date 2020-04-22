@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Democrats.JPG-8bcb78e50d33546b8ef2f8d972356270.stex"
+path="res://.import/democrats.JPG-32dac9be43eaae638e3571a2baa95721.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/Democrats.JPG"
-dest_files=[ "res://.import/Democrats.JPG-8bcb78e50d33546b8ef2f8d972356270.stex" ]
+source_file="res://Card Assets Folder/democrats.JPG"
+dest_files=[ "res://.import/democrats.JPG-32dac9be43eaae638e3571a2baa95721.stex" ]
 
 [params]
 

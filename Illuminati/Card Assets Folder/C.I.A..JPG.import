@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/C.I.A..JPG-dab377376704676913ee6f5e139dca5a.stex"
+path="res://.import/c.I.A..JPG-da93969f5685c3029f58849b239098a9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/C.I.A..JPG"
-dest_files=[ "res://.import/C.I.A..JPG-dab377376704676913ee6f5e139dca5a.stex" ]
+source_file="res://Card Assets Folder/c.I.A..JPG"
+dest_files=[ "res://.import/c.I.A..JPG-da93969f5685c3029f58849b239098a9.stex" ]
 
 [params]
 

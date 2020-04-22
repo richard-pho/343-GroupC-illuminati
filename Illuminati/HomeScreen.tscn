@@ -27,6 +27,7 @@ __meta__ = {
 [node name="TextureRect" type="TextureRect" parent="Menu"]
 margin_right = 1040.0
 margin_bottom = 170.0
+rect_pivot_offset = Vector2( 538.008, -21.8044 )
 texture = ExtResource( 1 )
 stretch_mode = 4
 

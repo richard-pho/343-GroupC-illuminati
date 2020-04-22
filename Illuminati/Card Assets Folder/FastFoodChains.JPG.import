@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FastFoodChains.JPG-815294226cc56ab4ca18ddb651ddeaf8.stex"
+path="res://.import/fastFoodChains.JPG-2b96858c7c69e097c99c57d2989aee2f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/FastFoodChains.JPG"
-dest_files=[ "res://.import/FastFoodChains.JPG-815294226cc56ab4ca18ddb651ddeaf8.stex" ]
+source_file="res://Card Assets Folder/fastFoodChains.JPG"
+dest_files=[ "res://.import/fastFoodChains.JPG-2b96858c7c69e097c99c57d2989aee2f.stex" ]
 
 [params]
 

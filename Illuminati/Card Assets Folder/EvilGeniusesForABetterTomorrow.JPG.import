@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/EvilGeniusesForABetterTomorrow.JPG-f59b59fb6a7ad881a7342d6e05093dd6.stex"
+path="res://.import/evilGeniusesForABetterTomorrow.JPG-70fc5c4e572c979582b1b85d2892e811.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/EvilGeniusesForABetterTomorrow.JPG"
-dest_files=[ "res://.import/EvilGeniusesForABetterTomorrow.JPG-f59b59fb6a7ad881a7342d6e05093dd6.stex" ]
+source_file="res://Card Assets Folder/evilGeniusesForABetterTomorrow.JPG"
+dest_files=[ "res://.import/evilGeniusesForABetterTomorrow.JPG-70fc5c4e572c979582b1b85d2892e811.stex" ]
 
 [params]
 
