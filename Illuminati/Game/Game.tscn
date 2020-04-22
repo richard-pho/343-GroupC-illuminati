@@ -5,42 +5,42 @@
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
 var deck
-var AmericanAutoDuelAssociation
-var AntiNuclearActivists
-var BigMedia
-var BoySprouts
-var CIA
-var California
-var CFL_AIO
-var ChineseCampaignDonors
-var CloneArrangers
-var ComicBooks
-var CongressionalWives
+var americanAutoDuelAssociation
+var antiNuclearActivists
+var bigMedia
+var boySprouts
+var cIA
+var california
+var cFL_AIO
+var chineseCampaignDonors
+var cloneArrangers
+var comicBooks
+var congressionalWives
 var ConvenieceStores
-var CopyShops
-var CycleGangs
-var Democrats
-var EcoGuerrillas
-var EmptyVee
-var EvilGeniusesForABetterTomorrow
-var FBI
-var FastFoodChain
-var FederalReserve
-var Feminists
-var FiendishFluoridators
-var FlatEarthers
-var FnordMotorCompany
-var FraternalOrders
-var GirlieMag
-var GoldfishFanciers
-var GunLobby
-var Hackers
-var HealthFoodStores
-var Hollywood
-var Intellectuals
-var InternationalCocaineSmugglers
-var InternationalCommunistConspiracy
-var IRS
+var copyShops
+var cycleGangs
+var democrats
+var ecoGuerrillas
+var emptyVee
+var evilGeniusesForABetterTomorrow
+var fBI
+var fastFoodChain
+var federalReserve
+var feminists
+var fiendishFluoridators
+var flatEarthers
+var fnordMotorCompany
+var fraternalOrders
+var girlieMag
+var goldfishFanciers
+var gunLobby
+var hackers
+var healthFoodStores
+var hollywood
+var intellectuals
+var internationalCocaineSmugglers
+var internationalCommunistConspiracy
+var iRS
 var junkmail
 var kgb
 var kkk
@@ -66,7 +66,7 @@ var professionalsports
 var psychatrists
 var punkrockers
 var recyclers
-var republicans
+var Republicans
 var robotseamonsters
 var sciencefictionfans
 var semiconsciousliberationarmy
@@ -83,7 +83,7 @@ var theunitednations
 var tobaccoliquorcompanies
 var trekkies
 var triliberalcommission
-var TVPreachers
+var tVPreachers
 var undergroundnewspaper
 var videogames
 var yuppies
@@ -93,7 +93,171 @@ var rollB
 func _ready():
 	deck = Deck.Deck.new()
 	yuppies = Yuppies.Yuppies.new()
-	AmericanAutoDuelAssociation = AmericanAutoDuelAssociation.AmericanAutoDuelAssociation.new()
+	americanAutoDuelAssociation = AmerianAutoduelAssociation.AmericanAutoduelAssociation.new()
+	antiNuclearActivists = AntiNuclearActivists.AntiNuclearActivists.new()
+	bigMedia = BigMedia.BigMedia.new()
+	boySprouts = BoySprouts.BoySprouts.new()
+	cIA = CIA.CIA.new()
+	california = California.California.new()
+	cFL_AIO = CFLAIO.CFL_AIO.new()
+	chineseCampaignDonors = ChineseCampaignDonors.ChineseCampaignDonors.new()
+	cloneArrangers = CloneArrangers.CloneArrangers.new()
+	comicBooks = ComicBooks.ComicBooks.new()
+	congressionalWives = CongressionalWives.CongressionalWives.new()
+	ConvenieceStores = ConvenienceStores.ConvenienceStores.new()
+	copyShops = CopyShops.CopyShops.new()
+	cycleGangs = CycleGangs.CycleGangs.new()
+	democrats = Democrats.Democrats.new()
+	ecoGuerrillas = EcoGuerrillas.EcoGuerrillas.new()
+	emptyVee = EmptyVee.EmptyVee.new()
+	evilGeniusesForABetterTomorrow = EvilGeniusesForABetterTomorrow.EvilGeniusesForABetterTomorrow.new()
+	fBI = FBI.fbi.new()
+	fastFoodChain = FastFoodChains.FastFoodChains.new()
+	federalReserve = FederalReserve.FederalReserve.new()
+	feminists = Feminists.feminists.new()
+	fiendishFluoridators = FiendishFluoridators.FiendishFluoridators.new()
+	flatEarthers = FlatEarthers.FlatEarthers.new()
+	fnordMotorCompany = FnordMotorCompany.FnordMotorCompany.new()
+	fraternalOrders = FraternalOrders.FraternalOrders.new()
+	girlieMag = GirlieMagazines.GirlieMagazines.new()
+	goldfishFanciers = GoldfishFanciers.GoldfishFanciers.new()
+	gunLobby = GunLobby.GunLobby.new()
+	hackers = Hackers.Hackers.new()
+	healthFoodStores = HealthFoodStores.HealthFoodStores.new()
+	hollywood = Hollywood.Hollywood.new()
+	intellectuals = Intellectuals.Intellectuals.new()
+	internationalCocaineSmugglers = InternationalCocaineSmugglers.InternationalCocaineSmugglers.new()
+	internationalCommunistConspiracy = InternationalCommunistConspiracy.InternationalCommunistConspiracy.new()
+	iRS = IRS.IRS.new()
+	junkmail = JunkMail.JunkMail.new()
+	kgb = KGB.KGB.new()
+	kkk = KKK.KKK.new()
+	l4Society = L4Society.L4Society.new()
+	libertarians = Libertarians.Libertarians.new()
+	loansharks = LoanSharks.LoanSharks.new()
+	localPoliceDepartment = LocalPoliceDepartment.LocalPoliceDepartment.new()
+	madisonAvenue = MadisonAvenue.MadisonAvenue.new()
+	militia = Militia.Militia.new()
+	moonies = Moonies.Moonies.new()
+	moralminority = MoralMinority.MoralMinority.new()
+	morticians = Morticians.Morticians.new()
+	multinationaloilcompanies = MultinationalOilCompanies.MultinationalOilCompanies.new()
+	nephewsofgod = NephewsOfGod.NephewsOfGod.new()
+	newyork = NewYork.NewYork.new()
+	nuclearpowercompanies = NuclearPowerCompanies.NuclearPowerCompanies.new()
+	orbitalmindcontrollasers = OrbitalMindControlLasers.OrbitalMindControlLasers.new()
+	parentteachersagglomeration = ParentTeachersAgglomeration.ParentTeachersAgglomeration.new()
+	pentagon = Pentagon.Pentagon.new()
+	phonephreaks = PhonePhreaks.PhonePhreaks.new()
+	postoffice = PostOffice.PostOffice.new()
+	professionalsports = ProfessionalSports.ProfessionalSports.new()
+	psychatrists = Psychiatrists.Psychiatrists.new()
+	punkrockers = PunkRockers.PunkRockers.new()
+	recyclers = Recyclers.Recyclers.new()
+	Republicans = republicans.republicans.new()
+	robotseamonsters = RobotSeaMonsters.RobotSeaMonsters.new()
+	sciencefictionfans = ScienceFictionFans.ScienceFictionFans.new()
+	semiconsciousliberationarmy = SemiconsciousLiberationArmy.SemiconsciousLiberationArmy.new()
+	smof = SMOF.SMOF.new()
+	societyforcreativeanarchism = SocietyForCreativeAnarchism.SocietyForCreativeAnarchism.new()
+	southamericannazis = SouthAmericanNazis.SouthAmericanNazis.new()
+	survivalists = Survivalists.Survivalists.new()
+	tabloids = Tabloids.Tabloids.new()
+	texas = Texas.Texas.new()
+	themafia = TheMafia.Mafia.new()
+	themeninblack = TheMenInBlack.TheMenInBlack.new()
+	thephonecompany = ThePhoneCompany.ThePhoneCompany.new()
+	theunitednations = TheUnitedNations.TheUnitedNations.new()
+	tobaccoliquorcompanies = TobaccoLiquorCompanies.TobaccoLiquorCompanies.new()
+	trekkies = Trekkies.Trekkies.new()
+	triliberalcommission = TriliberalCommission.TriliberalCommission.new()
+	tVPreachers = TVPreachers.TVPreachers.new()
+	undergroundnewspaper = UndergroundNewspaper.UndergroundNewspaper.new()
+	videogames = VideoGames.VideoGames.new()
+	#adding the cards to the deck
+	deck.addCard(americanAutoDuelAssociation)
+	deck.addCard(antiNuclearActivists)
+	deck.addCard(bigMedia)
+	deck.addCard(boySprouts)
+	deck.addCard(cIA)
+	deck.addCard(california)
+	deck.addCard(cFL_AIO)
+	deck.addCard(chineseCampaignDonors)
+	deck.addCard(cloneArrangers)
+	deck.addCard(comicBooks)
+	deck.addCard(congressionalWives)
+	deck.addCard(ConvenieceStores)
+	deck.addCard(copyShops)
+	deck.addCard(cycleGangs)
+	deck.addCard(democrats)
+	deck.addCard(ecoGuerrillas)
+	deck.addCard(emptyVee)
+	deck.addCard(evilGeniusesForABetterTomorrow)
+	deck.addCard(fBI)
+	deck.addCard(fastFoodChain)
+	deck.addCard(federalReserve)
+	deck.addCard(feminists)
+	deck.addCard(fiendishFluoridators)
+	deck.addCard(flatEarthers)
+	deck.addCard(fnordMotorCompany)
+	deck.addCard(fraternalOrders)
+	deck.addCard(girlieMag)
+	deck.addCard(goldfishFanciers)
+	deck.addCard(gunLobby)
+	deck.addCard(hackers)
+	deck.addCard(healthFoodStores)
+	deck.addCard(hollywood)
+	deck.addCard(intellectuals)
+	deck.addCard(internationalCocaineSmugglers)
+	deck.addCard(internationalCommunistConspiracy)
+	deck.addCard(iRS)
+	deck.addCard(junkmail)
+	deck.addCard(kgb)
+	deck.addCard(kkk)
+	deck.addCard(l4Society)
+	deck.addCard(libertarians)
+	deck.addCard(loansharks)
+	deck.addCard(localPoliceDepartment)
+	deck.addCard(madisonAvenue)
+	deck.addCard(militia)
+	deck.addCard(moonies)
+	deck.addCard(moralminority)
+	deck.addCard(morticians)
+	deck.addCard(multinationaloilcompanies)
+	deck.addCard(nephewsofgod)
+	deck.addCard(newyork)
+	deck.addCard(nuclearpowercompanies)
+	deck.addCard(orbitalmindcontrollasers)
+	deck.addCard(parentteachersagglomeration)
+	deck.addCard(pentagon)
+	deck.addCard(phonephreaks)
+	deck.addCard(postoffice)
+	deck.addCard(professionalsports)
+	deck.addCard(psychatrists)
+	deck.addCard(punkrockers)
+	deck.addCard(recyclers)
+	deck.addCard(Republicans)
+	deck.addCard(robotseamonsters)
+	deck.addCard(sciencefictionfans)
+	deck.addCard(semiconsciousliberationarmy)
+	deck.addCard(smof)
+	deck.addCard(societyforcreativeanarchism)
+	deck.addCard(southamericannazis)
+	deck.addCard(survivalists)
+	deck.addCard(tabloids)
+	deck.addCard(texas)
+	deck.addCard(themafia)
+	deck.addCard(themeninblack)
+	deck.addCard(thephonecompany)
+	deck.addCard(theunitednations)
+	deck.addCard(tobaccoliquorcompanies)
+	deck.addCard(trekkies)
+	deck.addCard(triliberalcommission)
+	deck.addCard(tVPreachers)
+	deck.addCard(undergroundnewspaper)
+	deck.addCard(videogames)
+	deck.addCard(yuppies)
+	deck.shuffleDeck()
 	
 
 func _on_Button_pressed():
@@ -102,7 +266,6 @@ func _on_Button_pressed():
 
 
 func _on_Button2_pressed():
-	deck.addCard(AmericanAutoDuelAssociation)
 	deck.printDeck()
 
 
