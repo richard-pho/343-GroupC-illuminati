@@ -258,7 +258,9 @@ func _ready():
 	deck.addCard(videogames)
 	deck.addCard(yuppies)
 	deck.shuffleDeck()
-	
+	print(\"hello\")
+	for i in range(0,(global.players).size()):
+		print(i)
 
 func _on_Button_pressed():
 	get_tree().change_scene(\"res://HomeScreen.tscn\")
@@ -273,61 +275,108 @@ func _on_Dice_pressed():
 	rollA = randi()%7+1
 	rollB = randi()%7+1
 	get_node(\"Output\").text=str(rollA+rollB)
+
+
+func _on_player_0_pressed():
+	get_tree().change_scene(\"res://Game/Player 0.tscn\")
+
+
+func _on_player_1_pressed():
+	pass # Replace with function body.
 "
 
 [node name="Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = -1.50732
+margin_bottom = -1.50732
 script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_top = -0.4
+anchor_bottom = -0.4
+margin_left = 617.493
+margin_top = 332.015
+margin_right = 659.493
+margin_bottom = 394.015
+size_flags_horizontal = 0
+size_flags_vertical = 0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-margin_left = 619.0
-margin_top = 329.0
-margin_right = 661.0
-margin_bottom = 391.0
-
-[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer"]
 margin_right = 42.0
 margin_bottom = 14.0
 text = "Game"
 
-[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Button" type="Button" parent="VBoxContainer"]
 margin_top = 18.0
 margin_right = 42.0
 margin_bottom = 38.0
 text = "Back"
 
-[node name="Button2" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Button2" type="Button" parent="VBoxContainer"]
 margin_top = 42.0
 margin_right = 42.0
 margin_bottom = 62.0
 
 [node name="Output" type="Label" parent="."]
-margin_left = 768.718
-margin_top = 332.594
-margin_right = 808.718
-margin_bottom = 346.594
+margin_left = 1108.69
+margin_top = 57.76
+margin_right = 1148.69
+margin_bottom = 74.76
 
 [node name="Dice" type="Button" parent="Output"]
-margin_left = -10.1766
-margin_top = 20.2941
-margin_right = 50.8234
-margin_bottom = 40.2941
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -9.99988
+margin_top = 13.76
+margin_right = 51.0001
+margin_bottom = 38.76
+size_flags_horizontal = 0
+size_flags_vertical = 0
 text = "Dice"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
 autoplay = true
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Button2" to="." method="_on_Button2_pressed"]
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+anchor_left = 0.404
+anchor_top = 0.272
+anchor_right = 0.545
+anchor_bottom = 0.424
+margin_right = 61.0
+margin_bottom = 44.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player_0" type="Button" parent="VBoxContainer2"]
+margin_right = 241.0
+margin_bottom = 20.0
+text = "Player0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player_1" type="Button" parent="VBoxContainer2"]
+margin_top = 24.0
+margin_right = 241.0
+margin_bottom = 44.0
+text = "Player1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
+[connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]
+[connection signal="pressed" from="VBoxContainer2/player_1" to="." method="_on_player_1_pressed"]
