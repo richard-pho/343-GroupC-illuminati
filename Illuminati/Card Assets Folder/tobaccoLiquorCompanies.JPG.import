@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/eco-Guerrillas.JPG-1139e0c87b50da47af896ca94d209a01.stex"
+path="res://.import/tobaccoLiquorCompanies.JPG-629761efc4901a4934dd21a3208b95f6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/eco-Guerrillas.JPG"
-dest_files=[ "res://.import/eco-Guerrillas.JPG-1139e0c87b50da47af896ca94d209a01.stex" ]
+source_file="res://Card Assets Folder/tobaccoLiquorCompanies.JPG"
+dest_files=[ "res://.import/tobaccoLiquorCompanies.JPG-629761efc4901a4934dd21a3208b95f6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chinese Campaign Donors.JPG-a30222af4cb6c05748e9727ea1493249.stex"
+path="res://.import/chineseCampaignDonors.JPG-82f7c7112d8abceee12c20b7feca70b6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/chinese Campaign Donors.JPG"
-dest_files=[ "res://.import/chinese Campaign Donors.JPG-a30222af4cb6c05748e9727ea1493249.stex" ]
+source_file="res://Card Assets Folder/chineseCampaignDonors.JPG"
+dest_files=[ "res://.import/chineseCampaignDonors.JPG-82f7c7112d8abceee12c20b7feca70b6.stex" ]
 
 [params]
 

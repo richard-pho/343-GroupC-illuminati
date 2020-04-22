@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/parent-TeachersAgglomeration.JPG-c218a85b3d4bb727732451169f372520.stex"
+path="res://.import/l4Society.JPG-d0b165e58b97eb1d5a0a980aa73a52f2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/parent-TeachersAgglomeration.JPG"
-dest_files=[ "res://.import/parent-TeachersAgglomeration.JPG-c218a85b3d4bb727732451169f372520.stex" ]
+source_file="res://Card Assets Folder/l4Society.JPG"
+dest_files=[ "res://.import/l4Society.JPG-d0b165e58b97eb1d5a0a980aa73a52f2.stex" ]
 
 [params]
 
