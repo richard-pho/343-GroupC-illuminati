@@ -4,6 +4,7 @@ class Trekkies:
 	var transPower = 0;
 	var resistance = 4;
 	var income = 3;
+	var money = 0;
 	var up = "none";
 	var right = "in";
 	var down = "none";

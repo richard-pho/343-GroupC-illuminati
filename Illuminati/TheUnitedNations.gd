@@ -4,6 +4,7 @@ class TheUnitedNations:
 	var transPower = 0;
 	var resistance = 3;
 	var income = 3;
+	var money = 0;
 	var up = "none";
 	var right = "none";
 	var down = "out";

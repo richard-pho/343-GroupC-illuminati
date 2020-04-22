@@ -4,6 +4,7 @@ class VideoGames:
 	var transPower = 1;
 	var resistance = 4;
 	var income = 5;
+	var money = 0;
 	var up = "none";
 	var right = "in";
 	var down = "out";
@@ -18,6 +19,8 @@ class VideoGames:
 	func attackToDestroy():
 		pass
 	func attackToNeutralize():
+		pass
+	func transferMoney():
 		pass
 	func printname():
 		print("VideoGames")

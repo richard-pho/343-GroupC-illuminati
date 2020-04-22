@@ -4,6 +4,7 @@ class republicans:
 	var transPower = 0;
 	var resistance = 4;
 	var income = 4;
+	var money = 0;
 	var up = "out";
 	var right = "in";
 	var down = "out";

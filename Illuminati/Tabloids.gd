@@ -4,6 +4,7 @@ class Tabloids:
 	var transPower = 0;
 	var resistance = 3;
 	var income = 3;
+	var money = 0;
 	var up = "out";
 	var right = "in";
 	var down = "none";

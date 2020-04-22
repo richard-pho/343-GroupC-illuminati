@@ -3,7 +3,8 @@ class SocietyForCreativeAnarchism:
 	var power = 0;
 	var transPower = 0;
 	var resistance = 4;
-	var income = 1;
+	var income = 1
+	var money = 0;
 	var up = "none";
 	var right = "in";
 	var down = "none";

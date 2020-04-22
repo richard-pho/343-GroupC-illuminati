@@ -4,6 +4,7 @@ class TheMenInBlack:
 	var transPower = 2;
 	var resistance = 6;
 	var income = 1;
+	var money = 0;
 	var up = "none";
 	var right = "none";
 	var down = "none";

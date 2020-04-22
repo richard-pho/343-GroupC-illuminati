@@ -4,6 +4,7 @@ class TriliberalCommission:
 	var transPower = 0;
 	var resistance = 6;
 	var income = 3;
+	var money = 0;
 	var up = "out";
 	var right = "in";
 	var down = "out";
@@ -18,6 +19,8 @@ class TriliberalCommission:
 	func attackToDestroy():
 		pass
 	func attackToNeutralize():
+		pass
+	func transferMoney():
 		pass
 	func printname():
 		print("TriliberalCommission")

@@ -4,6 +4,7 @@ class Mafia:
 	var transPower = 0;
 	var resistance = 7;
 	var income = 6;
+	var money = 0;
 	var up = "out";
 	var right = "in";
 	var down = "out";

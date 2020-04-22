@@ -4,6 +4,7 @@ class Texas:
 	var transPower = 0;
 	var resistance = 6;
 	var income = 4;
+	var money = 0;
 	var up = "out";
 	var right = "out";
 	var down = "none";

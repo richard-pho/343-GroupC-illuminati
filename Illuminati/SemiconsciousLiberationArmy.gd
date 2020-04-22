@@ -4,6 +4,7 @@ class SemiconsciousLiberationArmy:
 	var transPower = 0;
 	var resistance = 8;
 	var income = 0;
+	var money = 0;
 	var up = "none";
 	var right = "none";
 	var down = "none";

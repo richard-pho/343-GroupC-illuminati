@@ -4,6 +4,7 @@ class SMOF:
 	var transPower = 0;
 	var resistance = 1;
 	var income = 0;
+	var money = 0;
 	var up = "out";
 	var right = "in";
 	var down = "out";

@@ -4,6 +4,7 @@ class Recyclers:
 	var transPower = 0;
 	var resistance = 2;
 	var income = 3;
+	var money = 0;
 	var up = "none";
 	var right = "in";
 	var down = "none";

@@ -4,6 +4,7 @@ class PunkRockers:
 	var transPower = 0;
 	var resistance = 4;
 	var income = 1;
+	var money = 0;
 	var up = "none";
 	var right = "none";
 	var down = "none";

@@ -4,6 +4,7 @@ class UndergroundNewspaper:
 	var transPower = 1;
 	var resistance = 5;
 	var income = 0;
+	var money = 0;
 	var up = "out";
 	var right = "in";
 	var down = "none";
@@ -18,6 +19,8 @@ class UndergroundNewspaper:
 	func attackToDestroy():
 		pass
 	func attackToNeutralize():
+		pass
+	func transferMoney():
 		pass
 	func printname():
 		print("UndergroundNewspaper")

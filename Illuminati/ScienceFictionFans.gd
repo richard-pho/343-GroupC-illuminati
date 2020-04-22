@@ -4,6 +4,7 @@ class ScienceFictionFans:
 	var transPower = 0;
 	var resistance = 5;
 	var income = 1;
+	var money = 0;
 	var up = "none";
 	var right = "none";
 	var down = "none";

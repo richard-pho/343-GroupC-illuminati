@@ -21,6 +21,8 @@ class Yuppies:
 		pass
 	func attackToNeutralize():
 		pass
+	func transferMoney():
+		pass
 	func printname():
 		print("Yuppies")
 

@@ -4,6 +4,7 @@ class ThePhoneCompany:
 	var transPower = 2;
 	var resistance = 6;
 	var income = 3;
+	var money = 0;
 	var up = "none";
 	var right = "out";
 	var down = "out";
