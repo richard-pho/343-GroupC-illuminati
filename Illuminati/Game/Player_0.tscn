@@ -2,7 +2,7 @@
 
 [ext_resource path="res://playerName.gd" type="Script" id=1]
 
-[node name="Player 0" type="Control"]
+[node name="Player_0" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 __meta__ = {
