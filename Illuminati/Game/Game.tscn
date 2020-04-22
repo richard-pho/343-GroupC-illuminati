@@ -275,7 +275,7 @@ func _on_Dice_pressed():
 
 
 func _on_player_0_pressed():
-	get_tree().change_scene(\"res://Game/Player 0.tscn\")
+	get_tree().change_scene(\"res://Game/Player_0.tscn\")
 
 
 func _on_player_1_pressed():
@@ -357,7 +357,6 @@ __meta__ = {
 }
 
 [node name="player_0" type="Button" parent="VBoxContainer2"]
-visible = false
 margin_right = 241.0
 margin_bottom = 20.0
 text = "Player0"
@@ -366,9 +365,9 @@ __meta__ = {
 }
 
 [node name="player_1" type="Button" parent="VBoxContainer2"]
-visible = false
+margin_top = 24.0
 margin_right = 241.0
-margin_bottom = 20.0
+margin_bottom = 44.0
 text = "Player1"
 __meta__ = {
 "_edit_use_anchors_": false
