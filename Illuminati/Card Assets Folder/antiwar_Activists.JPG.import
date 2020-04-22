@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Antiwar Activists.JPG-d1e96664e18355a5b9b69e69064b5915.stex"
+path="res://.import/antiwar_Activists.JPG-d540189f178536c0400df1b6ae804e2b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/Antiwar Activists.JPG"
-dest_files=[ "res://.import/Antiwar Activists.JPG-d1e96664e18355a5b9b69e69064b5915.stex" ]
+source_file="res://Card Assets Folder/antiwar_Activists.JPG"
+dest_files=[ "res://.import/antiwar_Activists.JPG-d540189f178536c0400df1b6ae804e2b.stex" ]
 
 [params]
 

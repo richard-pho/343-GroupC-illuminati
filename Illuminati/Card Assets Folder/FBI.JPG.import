@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FBI.JPG-a30ffb7e5d8b4656283a65b24f29439a.stex"
+path="res://.import/fBI.JPG-ada064add1ddc18ba7e4e772c0cef1da.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/FBI.JPG"
-dest_files=[ "res://.import/FBI.JPG-a30ffb7e5d8b4656283a65b24f29439a.stex" ]
+source_file="res://Card Assets Folder/fBI.JPG"
+dest_files=[ "res://.import/fBI.JPG-ada064add1ddc18ba7e4e772c0cef1da.stex" ]
 
 [params]
 

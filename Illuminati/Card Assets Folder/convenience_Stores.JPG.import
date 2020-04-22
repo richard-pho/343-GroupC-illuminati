@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Cycle Gangs.JPG-0c4f43afe22f04c264bcec9b25670ba6.stex"
+path="res://.import/convenience_Stores.JPG-1c0b161d348fbc6c51004d4bd6aae7b5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/Cycle Gangs.JPG"
-dest_files=[ "res://.import/Cycle Gangs.JPG-0c4f43afe22f04c264bcec9b25670ba6.stex" ]
+source_file="res://Card Assets Folder/convenience_Stores.JPG"
+dest_files=[ "res://.import/convenience_Stores.JPG-1c0b161d348fbc6c51004d4bd6aae7b5.stex" ]
 
 [params]
 

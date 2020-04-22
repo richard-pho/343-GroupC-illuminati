@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FederalReserve.JPG-28e496ead880f3c2c48154d71935e882.stex"
+path="res://.import/federalReserve.JPG-a6221e5d4b97792716d8419fceeb1eaf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/FederalReserve.JPG"
-dest_files=[ "res://.import/FederalReserve.JPG-28e496ead880f3c2c48154d71935e882.stex" ]
+source_file="res://Card Assets Folder/federalReserve.JPG"
+dest_files=[ "res://.import/federalReserve.JPG-a6221e5d4b97792716d8419fceeb1eaf.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CFL-AIO.JPG-33944348bb58e50328fcb02ebe05d72f.stex"
+path="res://.import/cFL-AIO.JPG-77c070426a0d653ae560b6ef22e3a571.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/CFL-AIO.JPG"
-dest_files=[ "res://.import/CFL-AIO.JPG-33944348bb58e50328fcb02ebe05d72f.stex" ]
+source_file="res://Card Assets Folder/cFL-AIO.JPG"
+dest_files=[ "res://.import/cFL-AIO.JPG-77c070426a0d653ae560b6ef22e3a571.stex" ]
 
 [params]
 

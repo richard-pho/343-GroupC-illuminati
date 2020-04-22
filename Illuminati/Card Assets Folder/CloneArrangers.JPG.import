@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CloneArrangers.JPG-f18827a052778cda1ed4844bb7a5c7ae.stex"
+path="res://.import/cloneArrangers.JPG-93615a0abecab301d1a30134975e2ff0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/CloneArrangers.JPG"
-dest_files=[ "res://.import/CloneArrangers.JPG-f18827a052778cda1ed4844bb7a5c7ae.stex" ]
+source_file="res://Card Assets Folder/cloneArrangers.JPG"
+dest_files=[ "res://.import/cloneArrangers.JPG-93615a0abecab301d1a30134975e2ff0.stex" ]
 
 [params]
 
