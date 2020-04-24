@@ -4,12 +4,6 @@
 [ext_resource path="res://HomeScreen.gd" type="Script" id=5]
 
 [node name="HomeScreen" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 2.8855
-margin_top = 6.18483
-margin_right = 2.8855
-margin_bottom = 6.18481
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -94,6 +88,8 @@ size_flags_vertical = 0
 margin_right = 200.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 200, 24 )
+caret_blink = true
+caret_blink_speed = 0.5
 
 [node name="Login" type="Button" parent="Menu/LoginInfo"]
 margin_left = 204.0
