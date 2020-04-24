@@ -7,6 +7,7 @@ class TheGnomesOfZurich:
 	var right = "out";
 	var down = "out";
 	var left = "out";
+	var name = "TheGnomesofZurich"
 	#ability:
 	#May move money freely at end of turn
 	
@@ -21,3 +22,5 @@ class TheGnomesOfZurich:
 		pass
 	func printname():
 		print("TheGnomesOfZurich")
+	func getname():
+		return name

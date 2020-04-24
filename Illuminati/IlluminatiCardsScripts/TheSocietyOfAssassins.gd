@@ -7,7 +7,7 @@ class TheSocietyOfAssassins:
 	var right = "out";
 	var down = "out";
 	var left = "out";
-	
+	var name = "TheSocietyOfAssassins"
 	# Called when the node enters the scene tree for the first time.
 	func _ready():
 		pass # Replace with function body.
@@ -21,4 +21,5 @@ class TheSocietyOfAssassins:
 		power+=4
 	func printname():
 		print("TheSocietyOfAssassins")
-
+	func getname():
+		return name

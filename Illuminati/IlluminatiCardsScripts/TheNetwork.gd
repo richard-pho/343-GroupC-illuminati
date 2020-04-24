@@ -7,6 +7,7 @@ class TheNetwork:
 	var right = "out";
 	var down = "out";
 	var left = "out";
+	var name = "TheNetwork"
 	#ability:
 	#Turns over two cards at beginning of turn
 	# Called when the node enters the scene tree for the first time.
@@ -20,4 +21,6 @@ class TheNetwork:
 		pass
 	func printname():
 		print("TheNetwork")
+	func getname():
+		return name
 

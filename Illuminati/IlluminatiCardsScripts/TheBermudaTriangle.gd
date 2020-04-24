@@ -7,6 +7,7 @@ class TheBermundaTriangle:
 	var right = "out";
 	var down = "out";
 	var left = "out";
+	var name = "TheBermundaTriangle"
 	#ability:
 	#May reorganize groups freely at end of turn
 	
@@ -21,3 +22,5 @@ class TheBermundaTriangle:
 		pass
 	func printname():
 		print("TheBermundaTriangle")
+	func getname():
+		return name

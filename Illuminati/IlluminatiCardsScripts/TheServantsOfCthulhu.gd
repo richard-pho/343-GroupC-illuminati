@@ -7,6 +7,7 @@ class TheServantsOfCthulhu:
 	var right = "out";
 	var down = "out";
 	var left = "out";
+	var name = "TheServantsOfChthulhu"
 	
 	# Called when the node enters the scene tree for the first time.
 	func _ready():
@@ -21,3 +22,5 @@ class TheServantsOfCthulhu:
 		pass
 	func printname():
 		print("TheServantsOfCthulhu")
+	func getname():
+		return name

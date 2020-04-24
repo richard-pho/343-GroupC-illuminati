@@ -7,6 +7,7 @@ class TheDiscordianSociety:
 	var right = "out";
 	var down = "out";
 	var left = "out";
+	var name = "TheDiscordianSociety"
 	#ability:
 	#+4 on nay attempt to control weird groups
 	#immune to any attacks from government or straight groups
@@ -21,3 +22,5 @@ class TheDiscordianSociety:
 		pass
 	func printname():
 		print("TheDiscordianSociety")
+	func getname():
+		return name

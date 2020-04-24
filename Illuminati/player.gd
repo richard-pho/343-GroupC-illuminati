@@ -13,7 +13,7 @@ class player:
 		userName = n;
 
 #setting the illuminati card
-	func getIlluminati(var card):
+	func setIlluminati(var card):
 		IlluminatiCard = card
 	
 

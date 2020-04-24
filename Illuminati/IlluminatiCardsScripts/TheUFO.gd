@@ -7,6 +7,7 @@ class TheUFO:
 	var right = "out";
 	var down = "out";
 	var left = "out";
+	var name = "TheUFO"
 	#ability:
 	#can participate in two attacks per turn
 	
@@ -21,6 +22,8 @@ class TheUFO:
 		pass
 	func printname():
 		print("TheUFO")
+	func getname():
+		return name
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

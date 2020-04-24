@@ -7,6 +7,7 @@ class TheBavarianIlluminati:
 	var right = "out";
 	var down = "out";
 	var left = "out";
+	var name = "TheBarvarianIlluminati"
 	#ability:
 	#may make one privileged attack each turn at a cost of 5MB
 	
@@ -21,3 +22,5 @@ class TheBavarianIlluminati:
 		pass
 	func printname():
 		print("TheBavarianIlluminati")
+	func getname():
+		return name
