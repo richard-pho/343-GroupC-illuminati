@@ -12,9 +12,10 @@ class player:
 	func setName(var n):
 		userName = n;
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
+#setting the illuminati card
+	func getIlluminati(var card):
+		IlluminatiCard = card
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
