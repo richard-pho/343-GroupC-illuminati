@@ -109,6 +109,14 @@ California="*res://California.gd"
 globals="*res://globals.gd"
 HomeScreen="*res://HomeScreen.gd"
 Global="*res://Global.gd"
+TheBavarianIlluminati="*res://IlluminatiCardsScripts/TheBavarianIlluminati.gd"
+TheBermudaTriangle="*res://IlluminatiCardsScripts/TheBermudaTriangle.gd"
+TheDiscordianSociety="*res://IlluminatiCardsScripts/TheDiscordianSociety.gd"
+TheGnomesofZurich="*res://IlluminatiCardsScripts/TheGnomesofZurich.gd"
+TheNetwork="*res://IlluminatiCardsScripts/TheNetwork.gd"
+TheServantsOfCthulhu="*res://IlluminatiCardsScripts/TheServantsOfCthulhu.gd"
+TheSocietyOfAssassins="*res://IlluminatiCardsScripts/TheSocietyOfAssassins.gd"
+TheUFO="*res://IlluminatiCardsScripts/TheUFO.gd"
 
 [display]
 

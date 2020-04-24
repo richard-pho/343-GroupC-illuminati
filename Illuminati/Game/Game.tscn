@@ -89,6 +89,16 @@ var videogames
 var yuppies
 var rollA
 var rollB
+#illuminati card deck
+var illuminatiDeck
+var theBavarianIlluminati
+var theBermudaTriangle
+var theDiscordianSociety
+var theGnomesofZurich
+var theNetwork
+var theServantofCthulhu
+var theSocietyofAssassins
+var theufo
 onready var player_0 : Button = $VBoxContainer2/player_0
 onready var player_1 : Button = $VBoxContainer2/player_1
 onready var player_2 : Button = $VBoxContainer2/player_2
@@ -100,6 +110,7 @@ onready var player_7 : Button = $VBoxContainer2/player_7
 onready var global = get_node(\"/root/globals\")
 var buttonarray = [player_0,player_1,player_2,player_3,player_4,player_5,player_6,player_7]
 func _ready():
+	#regular deck
 	deck = Deck.Deck.new()
 	yuppies = Yuppies.Yuppies.new()
 	americanAutoDuelAssociation = AmerianAutoduelAssociation.AmericanAutoduelAssociation.new()
@@ -267,6 +278,25 @@ func _ready():
 	deck.addCard(videogames)
 	deck.addCard(yuppies)
 	deck.shuffleDeck()
+	#adding the illuminati cards into illuminatiDeck
+	illuminatiDeck = Deck.Deck.new()
+	theBavarianIlluminati = TheBavarianIlluminati.TheBavarianIlluminati.new()
+	theBermudaTriangle = TheBermudaTriangle.TheBermundaTriangle.new()
+	theDiscordianSociety = TheDiscordianSociety.TheDiscordianSociety.new()
+	theGnomesofZurich = TheGnomesofZurich.TheGnomesOfZurich.new()
+	theNetwork = TheNetwork.TheNetwork.new()
+	theServantofCthulhu = TheServantsOfCthulhu.TheServantsOfCthulhu.new()
+	theSocietyofAssassins = TheSocietyOfAssassins.TheSocietyOfAssassins.new()
+	theufo = TheUFO.TheUFO.new()
+	illuminatiDeck.addCard(theBavarianIlluminati)
+	illuminatiDeck.addCard(theBermudaTriangle)
+	illuminatiDeck.addCard(theDiscordianSociety)
+	illuminatiDeck.addCard(theGnomesofZurich)
+	illuminatiDeck.addCard(theNetwork)
+	illuminatiDeck.addCard(theServantofCthulhu)
+	illuminatiDeck.addCard(theSocietyofAssassins)
+	illuminatiDeck.addCard(theufo)
+	illuminatiDeck.shuffleDeck()
 	var size = global.global.size()
 	for i in range(0,size):
 		if(i==0):
@@ -398,7 +428,6 @@ __meta__ = {
 }
 
 [node name="player_0" type="Button" parent="VBoxContainer2"]
-visible = false
 margin_right = 241.0
 margin_bottom = 20.0
 text = "Player0"
@@ -407,49 +436,64 @@ __meta__ = {
 }
 
 [node name="player_1" type="Button" parent="VBoxContainer2"]
-visible = false
+margin_top = 24.0
 margin_right = 241.0
-margin_bottom = 20.0
+margin_bottom = 44.0
 text = "Player1"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="player_2" type="Button" parent="VBoxContainer2"]
-visible = false
+margin_top = 48.0
 margin_right = 241.0
-margin_bottom = 20.0
+margin_bottom = 68.0
 text = "Player2"
 
 [node name="player_3" type="Button" parent="VBoxContainer2"]
-visible = false
+margin_top = 72.0
 margin_right = 241.0
-margin_bottom = 20.0
+margin_bottom = 92.0
 text = "Player3"
 
 [node name="player_4" type="Button" parent="VBoxContainer2"]
-visible = false
+margin_top = 96.0
 margin_right = 241.0
-margin_bottom = 20.0
+margin_bottom = 116.0
 text = "Player4"
 
 [node name="player_5" type="Button" parent="VBoxContainer2"]
-visible = false
+margin_top = 120.0
 margin_right = 241.0
-margin_bottom = 20.0
+margin_bottom = 140.0
 text = "Player5"
 
 [node name="player_6" type="Button" parent="VBoxContainer2"]
-visible = false
+margin_top = 144.0
 margin_right = 241.0
-margin_bottom = 20.0
+margin_bottom = 164.0
 text = "Player6"
 
 [node name="player_7" type="Button" parent="VBoxContainer2"]
-visible = false
+margin_top = 168.0
 margin_right = 241.0
-margin_bottom = 20.0
+margin_bottom = 188.0
 text = "Player7"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 0.101
+anchor_top = 0.424
+anchor_right = 0.858
+anchor_bottom = 0.616
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icard0" type="Button" parent="HBoxContainer"]
+margin_right = 12.0
+margin_bottom = 178.0
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]
