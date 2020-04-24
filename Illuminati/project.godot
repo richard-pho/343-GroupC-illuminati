@@ -108,6 +108,7 @@ VideoGames="*res://VideoGames.gd"
 California="*res://California.gd"
 globals="*res://globals.gd"
 HomeScreen="*res://HomeScreen.gd"
+Global="*res://Global.gd"
 
 [display]
 

@@ -8,8 +8,8 @@ extends RichTextLabel
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var value = get_node("/root/HomeScreen")
-	print(value.usernamearray)
+	var global = get_node("/root/globals")
+	print(global.global[0])
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

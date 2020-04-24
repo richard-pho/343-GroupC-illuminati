@@ -364,7 +364,6 @@ __meta__ = {
 }
 
 [node name="player_0" type="Button" parent="VBoxContainer2"]
-visible = false
 margin_right = 241.0
 margin_bottom = 20.0
 text = "Player0"
