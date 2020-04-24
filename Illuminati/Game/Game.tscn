@@ -97,6 +97,7 @@ onready var player_4 : Button = $VBoxContainer2/player_4
 onready var player_5 : Button = $VBoxContainer2/player_5
 onready var player_6 : Button = $VBoxContainer2/player_6
 onready var player_7 : Button = $VBoxContainer2/player_7
+onready var global = get_node(\"/root/globals\")
 var buttonarray = [player_0,player_1,player_2,player_3,player_4,player_5,player_6,player_7]
 func _ready():
 	deck = Deck.Deck.new()
@@ -266,7 +267,25 @@ func _ready():
 	deck.addCard(videogames)
 	deck.addCard(yuppies)
 	deck.shuffleDeck()
-	var value = get_parent_control()
+	var size = global.global.size()
+	for i in range(0,size):
+		if(i==0):
+			player_0.show()
+		elif(i==1):
+			player_1.show()
+		elif(i==2):
+			player_2.show()
+		elif(i==3):
+			player_3.show()
+		elif(i==4):
+			player_4.show()
+		elif(i==5):
+			player_5.show()
+		elif(i==6):
+			player_6.show()
+		else:
+			player_7.show()
+	
 
 func _on_Button_pressed():
 	get_tree().change_scene(\"res://HomeScreen.tscn\")
@@ -286,7 +305,31 @@ func _on_player_0_pressed():
 
 
 func _on_player_1_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene(\"res://Game/Player_1.tscn\")
+
+
+func _on_player_2_pressed():
+	get_tree().change_scene(\"res://Game/Player_2.tscn\")
+
+
+func _on_player_3_pressed():
+	get_tree().change_scene(\"res://Game/Player_3.tscn\")
+
+
+func _on_player_4_pressed():
+	get_tree().change_scene(\"res://Game/Player_4.tscn\")
+
+
+func _on_player_5_pressed():
+	get_tree().change_scene(\"res://Game/Player_5.tscn\")
+
+
+func _on_player_6_pressed():
+	get_tree().change_scene(\"res://Game/Player_6.tscn\")
+
+
+func _on_player_7_pressed():
+	get_tree().change_scene(\"res://Game/Player_7.tscn\")
 "
 
 [node name="Game" type="Control"]
@@ -364,6 +407,7 @@ __meta__ = {
 }
 
 [node name="player_0" type="Button" parent="VBoxContainer2"]
+visible = false
 margin_right = 241.0
 margin_bottom = 20.0
 text = "Player0"
@@ -384,33 +428,45 @@ __meta__ = {
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
+text = "player_2"
 
 [node name="player_3" type="Button" parent="VBoxContainer2"]
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
+text = "player_3"
 
 [node name="player_4" type="Button" parent="VBoxContainer2"]
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
+text = "player_4"
 
 [node name="player_5" type="Button" parent="VBoxContainer2"]
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
+text = "player_5"
 
 [node name="player_6" type="Button" parent="VBoxContainer2"]
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
+text = "player_6"
 
 [node name="player_7" type="Button" parent="VBoxContainer2"]
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
+text = "player_7"
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_1" to="." method="_on_player_1_pressed"]
+[connection signal="pressed" from="VBoxContainer2/player_2" to="." method="_on_player_2_pressed"]
+[connection signal="pressed" from="VBoxContainer2/player_3" to="." method="_on_player_3_pressed"]
+[connection signal="pressed" from="VBoxContainer2/player_4" to="." method="_on_player_4_pressed"]
+[connection signal="pressed" from="VBoxContainer2/player_5" to="." method="_on_player_5_pressed"]
+[connection signal="pressed" from="VBoxContainer2/player_6" to="." method="_on_player_6_pressed"]
+[connection signal="pressed" from="VBoxContainer2/player_7" to="." method="_on_player_7_pressed"]
