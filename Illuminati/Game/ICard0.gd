@@ -1,4 +1,4 @@
-extends Container
+extends TextureRect
 
 
 # Declare member variables here. Examples:
@@ -10,8 +10,10 @@ func _ready():
 	var global = get_node("/root/globals")
 	var players = global.players
 	var player0 = players[0]
+	player0.IlluminatiCard = "theBavarianIlluminati"
 	var path = "res://Card Assets Folder/" + player0.IlluminatiCard + ".JPG"
-	Texture.set_texture(path)
+	var image = load(path)
+	set_texture(image)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
