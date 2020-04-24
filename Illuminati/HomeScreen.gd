@@ -29,6 +29,7 @@ func _on_Login_pressed():
 		p.setName(username.text)
 		players.append(p)
 		global.set_global(usernamearray)
+		global.players = players
 		print(global.global)
 
 func _on_StartGame_pressed():
