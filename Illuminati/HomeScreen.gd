@@ -11,12 +11,10 @@ onready var Startnotallowed : Label = $Menu/Startnotallowed
 var usernamearray = [] 
 var players = []
 var p
+onready var global = get_node("/root/globals")
 
 const MAX_LOBBY = 8
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
-	
 
 func _on_Login_pressed():
 	notification.text = ""
@@ -30,6 +28,8 @@ func _on_Login_pressed():
 		p = player.player.new()
 		p.setName(username.text)
 		players.append(p)
+		global.set_global(usernamearray)
+		print(global.global)
 
 func _on_StartGame_pressed():
 	Startnotallowed.text = ""
@@ -40,3 +40,7 @@ func _on_StartGame_pressed():
 
 func _on_Rank_pressed():
 	get_tree().change_scene("res://Game/Rank.tscn")
+
+func _ready():
+	pass
+	
