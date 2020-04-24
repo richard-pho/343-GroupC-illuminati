@@ -18,7 +18,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="IlluminatiCard" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 margin_left = 472.347
 margin_top = 268.701
 margin_right = 512.347
