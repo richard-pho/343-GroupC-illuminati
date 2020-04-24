@@ -290,10 +290,6 @@ func _ready():
 func _on_Button_pressed():
 	get_tree().change_scene(\"res://HomeScreen.tscn\")
 
-func _on_Button2_pressed():
-	deck.printDeck()
-
-
 func _on_Dice_pressed():
 	rollA = randi()%6+1
 	rollB = randi()%6+1
@@ -366,11 +362,6 @@ margin_right = 42.0
 margin_bottom = 38.0
 text = "Back"
 
-[node name="Button2" type="Button" parent="VBoxContainer"]
-margin_top = 42.0
-margin_right = 42.0
-margin_bottom = 62.0
-
 [node name="Output" type="Label" parent="."]
 margin_left = 1108.69
 margin_top = 57.76
@@ -397,9 +388,9 @@ autoplay = true
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 anchor_left = 0.404
-anchor_top = 0.272
+anchor_top = 0.131
 anchor_right = 0.545
-anchor_bottom = 0.424
+anchor_bottom = 0.333
 margin_right = 61.0
 margin_bottom = 44.0
 __meta__ = {
@@ -428,39 +419,38 @@ __meta__ = {
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
-text = "player_2"
+text = "Player2"
 
 [node name="player_3" type="Button" parent="VBoxContainer2"]
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
-text = "player_3"
+text = "Player3"
 
 [node name="player_4" type="Button" parent="VBoxContainer2"]
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
-text = "player_4"
+text = "Player4"
 
 [node name="player_5" type="Button" parent="VBoxContainer2"]
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
-text = "player_5"
+text = "Player5"
 
 [node name="player_6" type="Button" parent="VBoxContainer2"]
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
-text = "player_6"
+text = "Player6"
 
 [node name="player_7" type="Button" parent="VBoxContainer2"]
 visible = false
 margin_right = 241.0
 margin_bottom = 20.0
-text = "player_7"
+text = "Player7"
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_1" to="." method="_on_player_1_pressed"]
