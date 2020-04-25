@@ -108,6 +108,7 @@ onready var player_5 : Button = $VBoxContainer2/player_5
 onready var player_6 : Button = $VBoxContainer2/player_6
 onready var player_7 : Button = $VBoxContainer2/player_7
 onready var icard0 : Button = $HBoxContainer/icard0
+onready var iLabel0 : Label = $HBoxContainer/icard0/iLabel0
 onready var global = get_node(\"/root/globals\")
 func _ready():
 	#regular deck
@@ -296,9 +297,9 @@ func _ready():
 	illuminatiDeck.addCard(theServantofCthulhu)
 	illuminatiDeck.addCard(theSocietyofAssassins)
 	illuminatiDeck.addCard(theufo)
-	#illuminatiDeck.shuffleDeck()
-	icard0.text = illuminatiDeck.deck[0].getname()
-	var size = global.global.size()
+	illuminatiDeck.shuffleDeck()
+	iLabel0.text = illuminatiDeck.deck[0].getname()
+	var size = global.players.size()
 	for i in range(0,size):
 		if(i==0):
 			player_0.show()
@@ -359,11 +360,37 @@ func _on_player_7_pressed():
 	get_tree().change_scene(\"res://Game/Player_7.tscn\")
 
 
+
 func _on_icard0_pressed():
 	icard0.hide()
 	var playersarray = globals.players
-	if(icard0.text==\"TheBavarianIlluminati\"):
-		playersarray[0].setIlluminati(illuminatiDeck.deck.find(theBavarianIlluminati))
+	print(playersarray)
+	var index
+	if(iLabel0.text==\"TheBavarianIlluminati\"):
+		index = illuminatiDeck.deck.find(theBavarianIlluminati)
+		playersarray[0].setIlluminati(illuminatiDeck[index])
+	if(iLabel0.text==\"TheBermudaTriangle\"):
+		index = illuminatiDeck.deck.find(theBermudaTriangle)
+		playersarray[0].setIlluminati(illuminatiDeck[index])
+	if(iLabel0.text==\"TheDiscordianSociety\"):
+		index = illuminatiDeck.deck.find(theDiscordianSociety)
+		playersarray[0].setIlluminati(illuminatiDeck[index])
+	if(iLabel0.text==\"TheGnomesofZurich\"):
+		index = illuminatiDeck.deck.find(theGnomesofZurich)
+		playersarray[0].setIlluminati(illuminatiDeck[index])
+	if(iLabel0.text==\"TheNetwork\"):
+		index = illuminatiDeck.deck.find(theNetwork)
+		playersarray[0].setIlluminati(illuminatiDeck[index])
+	if(iLabel0.text==\"TheServantofCthulhu\"):
+		index = illuminatiDeck.deck.find(theServantofCthulhu)
+		playersarray[0].setIlluminati(illuminatiDeck[index])
+	if(iLabel0.text==\"TheSocietyofAssassins\"):
+		index = illuminatiDeck.deck.find(theSocietyofAssassins)
+		playersarray[0].setIlluminati(illuminatiDeck[index])
+	if(iLabel0.text==\"TheUFO\"):
+		index = illuminatiDeck.deck.find(theufo)
+		playersarray[0].setIlluminati(illuminatiDeck[index])
+	print(playersarray[0].IlluminatiCard.getname())
 		
 "
 
@@ -423,7 +450,6 @@ __meta__ = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )
-autoplay = true
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 anchor_left = 0.404
@@ -503,16 +529,17 @@ __meta__ = {
 }
 
 [node name="icard0" type="Button" parent="HBoxContainer"]
-margin_right = 100.0
+margin_right = 118.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 100, 50 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
+text = "Illuminati Card 1"
 
-[node name="Label" type="Label" parent="HBoxContainer/icard0"]
+[node name="iLabel0" type="Label" parent="HBoxContainer/icard0"]
+visible = false
 margin_right = 40.0
 margin_bottom = 14.0
-text = "Illuminati Card"
 __meta__ = {
 "_edit_use_anchors_": false
 }
