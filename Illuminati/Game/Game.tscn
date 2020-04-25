@@ -110,20 +110,6 @@ onready var player_6 : Button = $VBoxContainer2/player_6
 onready var player_7 : Button = $VBoxContainer2/player_7
 onready var icard0 : Button = $HBoxContainer/icard0
 onready var iLabel0 : Label = $HBoxContainer/icard0/iLabel0
-onready var icard1 : Button = $HBoxContainer/icard1
-onready var iLabel1 : Label = $HBoxContainer/icard1/iLabel1
-onready var icard2 : Button = $HBoxContainer/icard2
-onready var iLabel2 : Label = $HBoxContainer/icard2/iLabel2
-onready var icard3 : Button = $HBoxContainer/icard3
-onready var iLabel3 : Label = $HBoxContainer/icard3/iLabel3
-onready var icard4 : Button = $HBoxContainer/icard4
-onready var iLabel4 : Label = $HBoxContainer/icard4/iLabel4
-onready var icard5 : Button = $HBoxContainer/icard5
-onready var iLabel5 : Label = $HBoxContainer/icard5/iLabel5
-onready var icard6 : Button = $HBoxContainer/icard6
-onready var iLabel6 : Label = $HBoxContainer/icard6/iLabel6
-onready var icard7 : Button = $HBoxContainer/icard7
-onready var iLabel7 : Label = $HBoxContainer/icard7/iLabel7
 onready var global = get_node(\"/root/globals\")
 func _ready():
 	#regular deck
@@ -387,7 +373,7 @@ func _on_icard0_pressed():
 	if(iLabel0.text==\"TheBarvarianIlluminati\"):
 		index = illuminatiDeck.deck.find(theBavarianIlluminati)
 		illuminaticard0 = illuminatiDeck.deck[index]
-	if(iLabel0.text==\"TheBermundaTriangle\"):
+	if(iLabel0.text==\"TheBermudaTriangle\"):
 		index = illuminatiDeck.deck.find(theBermudaTriangle)
 		illuminaticard0 = illuminatiDeck.deck[index]
 	if(iLabel0.text==\"TheDiscordianSociety\"):
@@ -416,9 +402,7 @@ func _on_icard0_pressed():
 [node name="Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -2.3916
 margin_top = -1.50732
-margin_right = -2.3916
 margin_bottom = -1.50732
 script = SubResource( 1 )
 __meta__ = {
@@ -493,6 +477,7 @@ __meta__ = {
 }
 
 [node name="player_1" type="Button" parent="VBoxContainer2"]
+visible = false
 margin_right = 241.0
 margin_bottom = 20.0
 text = "Player1"
@@ -501,58 +486,59 @@ __meta__ = {
 }
 
 [node name="player_2" type="Button" parent="VBoxContainer2"]
-margin_top = 24.0
+visible = false
 margin_right = 241.0
-margin_bottom = 44.0
+margin_bottom = 20.0
 text = "Player2"
 
 [node name="player_3" type="Button" parent="VBoxContainer2"]
-margin_top = 48.0
+visible = false
 margin_right = 241.0
-margin_bottom = 68.0
+margin_bottom = 20.0
 text = "Player3"
 
 [node name="player_4" type="Button" parent="VBoxContainer2"]
-margin_top = 72.0
+visible = false
 margin_right = 241.0
-margin_bottom = 92.0
+margin_bottom = 20.0
 text = "Player4"
 
 [node name="player_5" type="Button" parent="VBoxContainer2"]
-margin_top = 96.0
+visible = false
 margin_right = 241.0
-margin_bottom = 116.0
+margin_bottom = 20.0
 text = "Player5"
 
 [node name="player_6" type="Button" parent="VBoxContainer2"]
-margin_top = 120.0
+visible = false
 margin_right = 241.0
-margin_bottom = 140.0
+margin_bottom = 20.0
 text = "Player6"
 
 [node name="player_7" type="Button" parent="VBoxContainer2"]
-margin_top = 144.0
+visible = false
 margin_right = 241.0
-margin_bottom = 164.0
+margin_bottom = 20.0
 text = "Player7"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-anchor_left = 0.123
-anchor_top = 0.492
-anchor_right = 0.88
-anchor_bottom = 0.492
-margin_left = -0.279999
-margin_top = -1.28
-margin_right = 8.76001
-margin_bottom = 70.72
+anchor_left = 0.101
+anchor_top = 0.374
+anchor_right = 0.858
+anchor_bottom = 0.374
+margin_top = -1.50732
+margin_right = 40.0
+margin_bottom = 70.2527
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="icard0" type="Button" parent="HBoxContainer"]
 margin_right = 118.0
-margin_bottom = 72.0
+margin_bottom = 50.0
 rect_min_size = Vector2( 100, 50 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
 text = "Illuminati Card 1"
 
 [node name="iLabel0" type="Label" parent="HBoxContainer/icard0"]
@@ -565,9 +551,8 @@ __meta__ = {
 
 [node name="icard1" type="Button" parent="HBoxContainer"]
 margin_left = 122.0
-margin_right = 240.0
-margin_bottom = 72.0
-text = "Illuminati Card 2"
+margin_right = 134.0
+margin_bottom = 71.0
 
 [node name="iLabel1" type="Label" parent="HBoxContainer/icard1"]
 visible = false
@@ -578,10 +563,9 @@ __meta__ = {
 }
 
 [node name="icard2" type="Button" parent="HBoxContainer"]
-margin_left = 244.0
-margin_right = 362.0
-margin_bottom = 72.0
-text = "Illuminati Card 3"
+margin_left = 138.0
+margin_right = 150.0
+margin_bottom = 71.0
 
 [node name="iLabel2" type="Label" parent="HBoxContainer/icard2"]
 visible = false
@@ -592,10 +576,9 @@ __meta__ = {
 }
 
 [node name="icard3" type="Button" parent="HBoxContainer"]
-margin_left = 366.0
-margin_right = 484.0
-margin_bottom = 72.0
-text = "Illuminati Card 4"
+margin_left = 154.0
+margin_right = 166.0
+margin_bottom = 71.0
 
 [node name="iLabel3" type="Label" parent="HBoxContainer/icard3"]
 visible = false
@@ -606,10 +589,9 @@ __meta__ = {
 }
 
 [node name="icard4" type="Button" parent="HBoxContainer"]
-margin_left = 488.0
-margin_right = 606.0
-margin_bottom = 72.0
-text = "Illuminati Card 5"
+margin_left = 170.0
+margin_right = 182.0
+margin_bottom = 71.0
 
 [node name="iLabel4" type="Label" parent="HBoxContainer/icard4"]
 visible = false
@@ -620,10 +602,9 @@ __meta__ = {
 }
 
 [node name="icard5" type="Button" parent="HBoxContainer"]
-margin_left = 610.0
-margin_right = 728.0
-margin_bottom = 72.0
-text = "Illuminati Card 6"
+margin_left = 186.0
+margin_right = 198.0
+margin_bottom = 71.0
 
 [node name="iLabel5" type="Label" parent="HBoxContainer/icard5"]
 visible = false
@@ -634,10 +615,9 @@ __meta__ = {
 }
 
 [node name="icard6" type="Button" parent="HBoxContainer"]
-margin_left = 732.0
-margin_right = 850.0
-margin_bottom = 72.0
-text = "Illuminati Card 7"
+margin_left = 202.0
+margin_right = 214.0
+margin_bottom = 71.0
 
 [node name="iLabel6" type="Label" parent="HBoxContainer/icard6"]
 visible = false
@@ -648,10 +628,9 @@ __meta__ = {
 }
 
 [node name="icard7" type="Button" parent="HBoxContainer"]
-margin_left = 854.0
-margin_right = 972.0
-margin_bottom = 72.0
-text = "Illuminati Card 8"
+margin_left = 218.0
+margin_right = 230.0
+margin_bottom = 71.0
 
 [node name="iLabel7" type="Label" parent="HBoxContainer/icard7"]
 visible = false
