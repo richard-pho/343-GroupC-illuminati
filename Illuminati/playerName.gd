@@ -10,7 +10,8 @@ extends RichTextLabel
 func _ready():
 	var global = get_node("/root/globals")
 	var players = global.players
-	add_text(players[0].username)
+	var player = players[0]
+	add_text(player.userName)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
