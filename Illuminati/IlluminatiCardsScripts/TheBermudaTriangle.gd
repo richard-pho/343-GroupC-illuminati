@@ -7,7 +7,7 @@ class TheBermundaTriangle:
 	var right = "out";
 	var down = "out";
 	var left = "out";
-	var name = "TheBermundaTriangle"
+	var name = "TheBermudaTriangle"
 	#ability:
 	#May reorganize groups freely at end of turn
 	

@@ -110,6 +110,20 @@ onready var player_6 : Button = $VBoxContainer2/player_6
 onready var player_7 : Button = $VBoxContainer2/player_7
 onready var icard0 : Button = $HBoxContainer/icard0
 onready var iLabel0 : Label = $HBoxContainer/icard0/iLabel0
+onready var icard1 : Button = $HBoxContainer/icard1
+onready var iLabel1 : Label = $HBoxContainer/icard1/iLabel1
+onready var icard2 : Button = $HBoxContainer/icard2
+onready var iLabel2 : Label = $HBoxContainer/icard2/iLabel2
+onready var icard3 : Button = $HBoxContainer/icard3
+onready var iLabel3 : Label = $HBoxContainer/icard3/iLabel3
+onready var icard4 : Button = $HBoxContainer/icard4
+onready var iLabel4 : Label = $HBoxContainer/icard4/iLabel4
+onready var icard5 : Button = $HBoxContainer/icard5
+onready var iLabel5 : Label = $HBoxContainer/icard5/iLabel5
+onready var icard6 : Button = $HBoxContainer/icard6
+onready var iLabel6 : Label = $HBoxContainer/icard6/iLabel6
+onready var icard7 : Button = $HBoxContainer/icard7
+onready var iLabel7 : Label = $HBoxContainer/icard7/iLabel7
 onready var global = get_node(\"/root/globals\")
 func _ready():
 	#regular deck
@@ -302,6 +316,13 @@ func _ready():
 	randomize()
 	illuminatiDeck.deck.shuffle()
 	iLabel0.text = illuminatiDeck.deck[0].getname()
+	iLabel1.text = illuminatiDeck.deck[1].getname()
+	iLabel2.text = illuminatiDeck.deck[2].getname()
+	iLabel3.text = illuminatiDeck.deck[3].getname()
+	iLabel4.text = illuminatiDeck.deck[4].getname()
+	iLabel5.text = illuminatiDeck.deck[5].getname()
+	iLabel6.text = illuminatiDeck.deck[6].getname()
+	iLabel7.text = illuminatiDeck.deck[7].getname()
 	var size = global.players.size()
 	for i in range(0,size):
 		if(i==0):
@@ -370,7 +391,7 @@ func _on_icard0_pressed():
 	print(illuminatiDeck.deck)
 	var index
 	var illuminaticard0
-	if(iLabel0.text==\"TheBarvarianIlluminati\"):
+	if(iLabel0.text==\"TheBavarianIlluminati\"):
 		index = illuminatiDeck.deck.find(theBavarianIlluminati)
 		illuminaticard0 = illuminatiDeck.deck[index]
 	if(iLabel0.text==\"TheBermudaTriangle\"):
@@ -398,6 +419,251 @@ func _on_icard0_pressed():
 	global.players = playersarray
 	print(playersarray[0].IlluminatiCard.getname())
 		
+
+
+func _on_icard1_pressed():
+	icard1.hide()
+	playersarray = global.players
+	print(illuminatiDeck.deck)
+	var index
+	var illuminaticard1
+	if(iLabel1.text==\"TheBavarianIlluminati\"):
+		index = illuminatiDeck.deck.find(theBavarianIlluminati)
+		illuminaticard1 = illuminatiDeck.deck[index]
+	if(iLabel1.text==\"TheBermudaTriangle\"):
+		index = illuminatiDeck.deck.find(theBermudaTriangle)
+		illuminaticard1 = illuminatiDeck.deck[index]
+	if(iLabel1.text==\"TheDiscordianSociety\"):
+		index = illuminatiDeck.deck.find(theDiscordianSociety)
+		illuminaticard1 = illuminatiDeck.deck[index]
+	if(iLabel1.text==\"TheGnomesofZurich\"):
+		index = illuminatiDeck.deck.find(theGnomesofZurich)
+		illuminaticard1 = illuminatiDeck.deck[index]
+	if(iLabel1.text==\"TheNetwork\"):
+		index = illuminatiDeck.deck.find(theNetwork)
+		illuminaticard1 = illuminatiDeck.deck[index]
+	if(iLabel1.text==\"TheServantsOfChthulhu\"):
+		index = illuminatiDeck.deck.find(theServantofCthulhu)
+		illuminaticard1 = illuminatiDeck.deck[index]
+	if(iLabel1.text==\"TheSocietyOfAssassins\"):
+		index = illuminatiDeck.deck.find(theSocietyofAssassins)
+		illuminaticard1 = illuminatiDeck.deck[index]
+	if(iLabel1.text==\"TheUFO\"):
+		index = illuminatiDeck.deck.find(theufo)
+		illuminaticard1 = illuminatiDeck.deck[index]
+	playersarray[1].setIlluminati(illuminaticard1)
+	global.players = playersarray
+	print(playersarray[1].IlluminatiCard.getname())
+
+
+func _on_icard2_pressed():
+	icard2.hide()
+	playersarray = global.players
+	print(illuminatiDeck.deck)
+	var index
+	var illuminaticard2
+	if(iLabel2.text==\"TheBavarianIlluminati\"):
+		index = illuminatiDeck.deck.find(theBavarianIlluminati)
+		illuminaticard2 = illuminatiDeck.deck[index]
+	if(iLabel2.text==\"TheBermudaTriangle\"):
+		index = illuminatiDeck.deck.find(theBermudaTriangle)
+		illuminaticard2 = illuminatiDeck.deck[index]
+	if(iLabel2.text==\"TheDiscordianSociety\"):
+		index = illuminatiDeck.deck.find(theDiscordianSociety)
+		illuminaticard2 = illuminatiDeck.deck[index]
+	if(iLabel2.text==\"TheGnomesofZurich\"):
+		index = illuminatiDeck.deck.find(theGnomesofZurich)
+		illuminaticard2 = illuminatiDeck.deck[index]
+	if(iLabel2.text==\"TheNetwork\"):
+		index = illuminatiDeck.deck.find(theNetwork)
+		illuminaticard2 = illuminatiDeck.deck[index]
+	if(iLabel2.text==\"TheServantsOfChthulhu\"):
+		index = illuminatiDeck.deck.find(theServantofCthulhu)
+		illuminaticard2 = illuminatiDeck.deck[index]
+	if(iLabel2.text==\"TheSocietyOfAssassins\"):
+		index = illuminatiDeck.deck.find(theSocietyofAssassins)
+		illuminaticard2 = illuminatiDeck.deck[index]
+	if(iLabel2.text==\"TheUFO\"):
+		index = illuminatiDeck.deck.find(theufo)
+		illuminaticard2 = illuminatiDeck.deck[index]
+	playersarray[2].setIlluminati(illuminaticard2)
+	global.players = playersarray
+	print(playersarray[2].IlluminatiCard.getname())
+
+
+func _on_icard3_pressed():
+	icard3.hide()
+	playersarray = global.players
+	print(illuminatiDeck.deck)
+	var index
+	var illuminaticard3
+	if(iLabel3.text==\"TheBavarianIlluminati\"):
+		index = illuminatiDeck.deck.find(theBavarianIlluminati)
+		illuminaticard3 = illuminatiDeck.deck[index]
+	if(iLabel3.text==\"TheBermudaTriangle\"):
+		index = illuminatiDeck.deck.find(theBermudaTriangle)
+		illuminaticard3 = illuminatiDeck.deck[index]
+	if(iLabel3.text==\"TheDiscordianSociety\"):
+		index = illuminatiDeck.deck.find(theDiscordianSociety)
+		illuminaticard3 = illuminatiDeck.deck[index]
+	if(iLabel3.text==\"TheGnomesofZurich\"):
+		index = illuminatiDeck.deck.find(theGnomesofZurich)
+		illuminaticard3 = illuminatiDeck.deck[index]
+	if(iLabel3.text==\"TheNetwork\"):
+		index = illuminatiDeck.deck.find(theNetwork)
+		illuminaticard3 = illuminatiDeck.deck[index]
+	if(iLabel3.text==\"TheServantsOfChthulhu\"):
+		index = illuminatiDeck.deck.find(theServantofCthulhu)
+		illuminaticard3 = illuminatiDeck.deck[index]
+	if(iLabel3.text==\"TheSocietyOfAssassins\"):
+		index = illuminatiDeck.deck.find(theSocietyofAssassins)
+		illuminaticard3 = illuminatiDeck.deck[index]
+	if(iLabel0.text==\"TheUFO\"):
+		index = illuminatiDeck.deck.find(theufo)
+		illuminaticard3 = illuminatiDeck.deck[index]
+	playersarray[3].setIlluminati(illuminaticard3)
+	global.players = playersarray
+	print(playersarray[3].IlluminatiCard.getname())
+
+
+func _on_icard4_pressed():
+	icard4.hide()
+	playersarray = global.players
+	print(illuminatiDeck.deck)
+	var index
+	var illuminaticard4
+	if(iLabel0.text==\"TheBavarianIlluminati\"):
+		index = illuminatiDeck.deck.find(theBavarianIlluminati)
+		illuminaticard4 = illuminatiDeck.deck[index]
+	if(iLabel4.text==\"TheBermudaTriangle\"):
+		index = illuminatiDeck.deck.find(theBermudaTriangle)
+		illuminaticard4 = illuminatiDeck.deck[index]
+	if(iLabel4.text==\"TheDiscordianSociety\"):
+		index = illuminatiDeck.deck.find(theDiscordianSociety)
+		illuminaticard4 = illuminatiDeck.deck[index]
+	if(iLabel4.text==\"TheGnomesofZurich\"):
+		index = illuminatiDeck.deck.find(theGnomesofZurich)
+		illuminaticard4 = illuminatiDeck.deck[index]
+	if(iLabel4.text==\"TheNetwork\"):
+		index = illuminatiDeck.deck.find(theNetwork)
+		illuminaticard4 = illuminatiDeck.deck[index]
+	if(iLabel4.text==\"TheServantsOfChthulhu\"):
+		index = illuminatiDeck.deck.find(theServantofCthulhu)
+		illuminaticard4 = illuminatiDeck.deck[index]
+	if(iLabel4.text==\"TheSocietyOfAssassins\"):
+		index = illuminatiDeck.deck.find(theSocietyofAssassins)
+		illuminaticard4 = illuminatiDeck.deck[index]
+	if(iLabel4.text==\"TheUFO\"):
+		index = illuminatiDeck.deck.find(theufo)
+		illuminaticard4 = illuminatiDeck.deck[index]
+	playersarray[4].setIlluminati(illuminaticard4)
+	global.players = playersarray
+	print(playersarray[4].IlluminatiCard.getname())
+
+
+func _on_icard5_pressed():
+	icard5.hide()
+	playersarray = global.players
+	print(illuminatiDeck.deck)
+	var index
+	var illuminaticard5
+	if(iLabel5.text==\"TheBavarianIlluminati\"):
+		index = illuminatiDeck.deck.find(theBavarianIlluminati)
+		illuminaticard5 = illuminatiDeck.deck[index]
+	if(iLabel5.text==\"TheBermudaTriangle\"):
+		index = illuminatiDeck.deck.find(theBermudaTriangle)
+		illuminaticard5 = illuminatiDeck.deck[index]
+	if(iLabel5.text==\"TheDiscordianSociety\"):
+		index = illuminatiDeck.deck.find(theDiscordianSociety)
+		illuminaticard5 = illuminatiDeck.deck[index]
+	if(iLabel5.text==\"TheGnomesofZurich\"):
+		index = illuminatiDeck.deck.find(theGnomesofZurich)
+		illuminaticard5 = illuminatiDeck.deck[index]
+	if(iLabel5.text==\"TheNetwork\"):
+		index = illuminatiDeck.deck.find(theNetwork)
+		illuminaticard5 = illuminatiDeck.deck[index]
+	if(iLabel5.text==\"TheServantsOfChthulhu\"):
+		index = illuminatiDeck.deck.find(theServantofCthulhu)
+		illuminaticard5 = illuminatiDeck.deck[index]
+	if(iLabel5.text==\"TheSocietyOfAssassins\"):
+		index = illuminatiDeck.deck.find(theSocietyofAssassins)
+		illuminaticard5 = illuminatiDeck.deck[index]
+	if(iLabel5.text==\"TheUFO\"):
+		index = illuminatiDeck.deck.find(theufo)
+		illuminaticard5 = illuminatiDeck.deck[index]
+	playersarray[5].setIlluminati(illuminaticard5)
+	global.players = playersarray
+	print(playersarray[5].IlluminatiCard.getname())
+
+
+func _on_icard6_pressed():
+	icard6.hide()
+	playersarray = global.players
+	print(illuminatiDeck.deck)
+	var index
+	var illuminaticard6
+	if(iLabel6.text==\"TheBavarianIlluminati\"):
+		index = illuminatiDeck.deck.find(theBavarianIlluminati)
+		illuminaticard6 = illuminatiDeck.deck[index]
+	if(iLabel6.text==\"TheBermudaTriangle\"):
+		index = illuminatiDeck.deck.find(theBermudaTriangle)
+		illuminaticard6 = illuminatiDeck.deck[index]
+	if(iLabel6.text==\"TheDiscordianSociety\"):
+		index = illuminatiDeck.deck.find(theDiscordianSociety)
+		illuminaticard6 = illuminatiDeck.deck[index]
+	if(iLabel6.text==\"TheGnomesofZurich\"):
+		index = illuminatiDeck.deck.find(theGnomesofZurich)
+		illuminaticard6 = illuminatiDeck.deck[index]
+	if(iLabel6.text==\"TheNetwork\"):
+		index = illuminatiDeck.deck.find(theNetwork)
+		illuminaticard6 = illuminatiDeck.deck[index]
+	if(iLabel6.text==\"TheServantsOfChthulhu\"):
+		index = illuminatiDeck.deck.find(theServantofCthulhu)
+		illuminaticard6 = illuminatiDeck.deck[index]
+	if(iLabel6.text==\"TheSocietyOfAssassins\"):
+		index = illuminatiDeck.deck.find(theSocietyofAssassins)
+		illuminaticard6 = illuminatiDeck.deck[index]
+	if(iLabel6.text==\"TheUFO\"):
+		index = illuminatiDeck.deck.find(theufo)
+		illuminaticard6 = illuminatiDeck.deck[index]
+	playersarray[6].setIlluminati(illuminaticard6)
+	global.players = playersarray
+	print(playersarray[6].IlluminatiCard.getname())
+
+
+func _on_icard7_pressed():
+	icard7.hide()
+	playersarray = global.players
+	print(illuminatiDeck.deck)
+	var index
+	var illuminaticard7
+	if(iLabel7.text==\"TheBavarianIlluminati\"):
+		index = illuminatiDeck.deck.find(theBavarianIlluminati)
+		illuminaticard7 = illuminatiDeck.deck[index]
+	if(iLabel7.text==\"TheBermudaTriangle\"):
+		index = illuminatiDeck.deck.find(theBermudaTriangle)
+		illuminaticard7 = illuminatiDeck.deck[index]
+	if(iLabel7.text==\"TheDiscordianSociety\"):
+		index = illuminatiDeck.deck.find(theDiscordianSociety)
+		illuminaticard7 = illuminatiDeck.deck[index]
+	if(iLabel7.text==\"TheGnomesofZurich\"):
+		index = illuminatiDeck.deck.find(theGnomesofZurich)
+		illuminaticard7 = illuminatiDeck.deck[index]
+	if(iLabel7.text==\"TheNetwork\"):
+		index = illuminatiDeck.deck.find(theNetwork)
+		illuminaticard7 = illuminatiDeck.deck[index]
+	if(iLabel7.text==\"TheServantsOfChthulhu\"):
+		index = illuminatiDeck.deck.find(theServantofCthulhu)
+		illuminaticard7 = illuminatiDeck.deck[index]
+	if(iLabel7.text==\"TheSocietyOfAssassins\"):
+		index = illuminatiDeck.deck.find(theSocietyofAssassins)
+		illuminaticard7 = illuminatiDeck.deck[index]
+	if(iLabel7.text==\"TheUFO\"):
+		index = illuminatiDeck.deck.find(theufo)
+		illuminaticard7= illuminatiDeck.deck[index]
+	playersarray[7].setIlluminati(illuminaticard7)
+	global.players = playersarray
+	print(playersarray[7].IlluminatiCard.getname())
 "
 
 [node name="Game" type="Control"]
@@ -523,10 +789,10 @@ margin_bottom = 20.0
 text = "Player7"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-anchor_left = 0.101
-anchor_top = 0.374
-anchor_right = 0.858
-anchor_bottom = 0.374
+anchor_left = 0.122
+anchor_top = 0.621
+anchor_right = 0.847
+anchor_bottom = 0.621
 margin_top = -1.50732
 margin_right = 40.0
 margin_bottom = 70.2527
@@ -536,10 +802,8 @@ __meta__ = {
 
 [node name="icard0" type="Button" parent="HBoxContainer"]
 margin_right = 118.0
-margin_bottom = 50.0
+margin_bottom = 71.0
 rect_min_size = Vector2( 100, 50 )
-size_flags_horizontal = 0
-size_flags_vertical = 0
 text = "Illuminati Card 1"
 
 [node name="iLabel0" type="Label" parent="HBoxContainer/icard0"]
@@ -552,8 +816,9 @@ __meta__ = {
 
 [node name="icard1" type="Button" parent="HBoxContainer"]
 margin_left = 122.0
-margin_right = 134.0
+margin_right = 240.0
 margin_bottom = 71.0
+text = "Illuminati Card 2"
 
 [node name="iLabel1" type="Label" parent="HBoxContainer/icard1"]
 visible = false
@@ -564,9 +829,10 @@ __meta__ = {
 }
 
 [node name="icard2" type="Button" parent="HBoxContainer"]
-margin_left = 138.0
-margin_right = 150.0
+margin_left = 244.0
+margin_right = 362.0
 margin_bottom = 71.0
+text = "Illuminati Card 3"
 
 [node name="iLabel2" type="Label" parent="HBoxContainer/icard2"]
 visible = false
@@ -577,9 +843,10 @@ __meta__ = {
 }
 
 [node name="icard3" type="Button" parent="HBoxContainer"]
-margin_left = 154.0
-margin_right = 166.0
+margin_left = 366.0
+margin_right = 484.0
 margin_bottom = 71.0
+text = "Illuminati Card 4"
 
 [node name="iLabel3" type="Label" parent="HBoxContainer/icard3"]
 visible = false
@@ -590,9 +857,10 @@ __meta__ = {
 }
 
 [node name="icard4" type="Button" parent="HBoxContainer"]
-margin_left = 170.0
-margin_right = 182.0
+margin_left = 488.0
+margin_right = 606.0
 margin_bottom = 71.0
+text = "Illuminati Card 5"
 
 [node name="iLabel4" type="Label" parent="HBoxContainer/icard4"]
 visible = false
@@ -603,9 +871,10 @@ __meta__ = {
 }
 
 [node name="icard5" type="Button" parent="HBoxContainer"]
-margin_left = 186.0
-margin_right = 198.0
+margin_left = 610.0
+margin_right = 728.0
 margin_bottom = 71.0
+text = "Illuminati Card 6"
 
 [node name="iLabel5" type="Label" parent="HBoxContainer/icard5"]
 visible = false
@@ -616,9 +885,10 @@ __meta__ = {
 }
 
 [node name="icard6" type="Button" parent="HBoxContainer"]
-margin_left = 202.0
-margin_right = 214.0
+margin_left = 732.0
+margin_right = 850.0
 margin_bottom = 71.0
+text = "Illuminati Card 7"
 
 [node name="iLabel6" type="Label" parent="HBoxContainer/icard6"]
 visible = false
@@ -629,9 +899,10 @@ __meta__ = {
 }
 
 [node name="icard7" type="Button" parent="HBoxContainer"]
-margin_left = 218.0
-margin_right = 230.0
+margin_left = 854.0
+margin_right = 972.0
 margin_bottom = 71.0
+text = "Illuminati Card 8"
 
 [node name="iLabel7" type="Label" parent="HBoxContainer/icard7"]
 visible = false
@@ -651,3 +922,10 @@ __meta__ = {
 [connection signal="pressed" from="VBoxContainer2/player_6" to="." method="_on_player_6_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_7" to="." method="_on_player_7_pressed"]
 [connection signal="pressed" from="HBoxContainer/icard0" to="." method="_on_icard0_pressed"]
+[connection signal="pressed" from="HBoxContainer/icard1" to="." method="_on_icard1_pressed"]
+[connection signal="pressed" from="HBoxContainer/icard2" to="." method="_on_icard2_pressed"]
+[connection signal="pressed" from="HBoxContainer/icard3" to="." method="_on_icard3_pressed"]
+[connection signal="pressed" from="HBoxContainer/icard4" to="." method="_on_icard4_pressed"]
+[connection signal="pressed" from="HBoxContainer/icard5" to="." method="_on_icard5_pressed"]
+[connection signal="pressed" from="HBoxContainer/icard6" to="." method="_on_icard6_pressed"]
+[connection signal="pressed" from="HBoxContainer/icard7" to="." method="_on_icard7_pressed"]

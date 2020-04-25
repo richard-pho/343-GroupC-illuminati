@@ -7,7 +7,7 @@ class TheBavarianIlluminati:
 	var right = "out";
 	var down = "out";
 	var left = "out";
-	var name = "TheBarvarianIlluminati"
+	var name = "TheBavarianIlluminati"
 	#ability:
 	#may make one privileged attack each turn at a cost of 5MB
 	
