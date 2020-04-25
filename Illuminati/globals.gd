@@ -1,13 +1,9 @@
 extends Node
 
-var global = []   # This is the 
-var players = []
+var players = []  # This array holds the player objects
 
 
-
-func set_global(new_global):
-	global = new_global
 func set_players(new_players):
 	players = new_players
-func get_global():
-	return global
+func get_players():
+	return players
