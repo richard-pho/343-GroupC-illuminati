@@ -370,10 +370,10 @@ func _on_icard0_pressed():
 	print(illuminatiDeck.deck)
 	var index
 	var illuminaticard0
-	if(iLabel0.text==\"TheBavarianIlluminati\"):
+	if(iLabel0.text==\"TheBarvarianIlluminati\"):
 		index = illuminatiDeck.deck.find(theBavarianIlluminati)
 		illuminaticard0 = illuminatiDeck.deck[index]
-	if(iLabel0.text==\"TheBermudaTriangle\"):
+	if(iLabel0.text==\"TheBermundaTriangle\"):
 		index = illuminatiDeck.deck.find(theBermudaTriangle)
 		illuminaticard0 = illuminatiDeck.deck[index]
 	if(iLabel0.text==\"TheDiscordianSociety\"):
@@ -385,10 +385,10 @@ func _on_icard0_pressed():
 	if(iLabel0.text==\"TheNetwork\"):
 		index = illuminatiDeck.deck.find(theNetwork)
 		illuminaticard0 = illuminatiDeck.deck[index]
-	if(iLabel0.text==\"TheServantofCthulhu\"):
+	if(iLabel0.text==\"TheServantsOfChthulhu\"):
 		index = illuminatiDeck.deck.find(theServantofCthulhu)
 		illuminaticard0 = illuminatiDeck.deck[index]
-	if(iLabel0.text==\"TheSocietyofAssassins\"):
+	if(iLabel0.text==\"TheSocietyOfAssassins\"):
 		index = illuminatiDeck.deck.find(theSocietyofAssassins)
 		illuminaticard0 = illuminatiDeck.deck[index]
 	if(iLabel0.text==\"TheUFO\"):
@@ -549,35 +549,96 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Button2" type="Button" parent="HBoxContainer"]
+[node name="icard1" type="Button" parent="HBoxContainer"]
 margin_left = 122.0
 margin_right = 134.0
 margin_bottom = 71.0
 
-[node name="Button3" type="Button" parent="HBoxContainer"]
+[node name="iLabel1" type="Label" parent="HBoxContainer/icard1"]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icard2" type="Button" parent="HBoxContainer"]
 margin_left = 138.0
 margin_right = 150.0
 margin_bottom = 71.0
 
-[node name="Button4" type="Button" parent="HBoxContainer"]
+[node name="iLabel2" type="Label" parent="HBoxContainer/icard2"]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icard3" type="Button" parent="HBoxContainer"]
 margin_left = 154.0
 margin_right = 166.0
 margin_bottom = 71.0
 
-[node name="Button5" type="Button" parent="HBoxContainer"]
+[node name="iLabel3" type="Label" parent="HBoxContainer/icard3"]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icard4" type="Button" parent="HBoxContainer"]
 margin_left = 170.0
 margin_right = 182.0
 margin_bottom = 71.0
 
-[node name="Button6" type="Button" parent="HBoxContainer"]
+[node name="iLabel4" type="Label" parent="HBoxContainer/icard4"]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icard5" type="Button" parent="HBoxContainer"]
 margin_left = 186.0
 margin_right = 198.0
 margin_bottom = 71.0
 
-[node name="Button7" type="Button" parent="HBoxContainer"]
+[node name="iLabel5" type="Label" parent="HBoxContainer/icard5"]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icard6" type="Button" parent="HBoxContainer"]
 margin_left = 202.0
 margin_right = 214.0
 margin_bottom = 71.0
+
+[node name="iLabel6" type="Label" parent="HBoxContainer/icard6"]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="icard7" type="Button" parent="HBoxContainer"]
+margin_left = 218.0
+margin_right = 230.0
+margin_bottom = 71.0
+
+[node name="iLabel7" type="Label" parent="HBoxContainer/icard7"]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]
