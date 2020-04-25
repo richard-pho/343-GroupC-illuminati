@@ -418,11 +418,11 @@ func _on_icard0_pressed():
 	playersarray[0].setIlluminati(illuminaticard0)
 	global.players = playersarray
 	print(playersarray[0].IlluminatiCard.getname())
-	var player0 = playersarray[0] # gets the first player
-	player0.IlluminatiCard = playersarray[0].IlluminatiCard.getname()
-	var path = \"res://Card Assets Folder/\" + player0.IlluminatiCard + \".JPG\" # path of their Illuminati Card
-	var image = load(path) 
-	icard0.display(image)
+	#var player0 = playersarray[0] # gets the first player
+	#player0.IlluminatiCard = playersarray[0].IlluminatiCard.getname()
+	#var path = \"res://Card Assets Folder/\" + player0.IlluminatiCard + \".JPG\" # path of their Illuminati Card
+	#var image = load(path) 
+	#icard0.display(image)
 
 
 func _on_icard1_pressed():
@@ -446,7 +446,7 @@ func _on_icard1_pressed():
 	if(iLabel1.text==\"TheNetwork\"):
 		index = illuminatiDeck.deck.find(theNetwork)
 		illuminaticard1 = illuminatiDeck.deck[index]
-	if(iLabel1.text==\"TheServantsOfChthulhu\"):
+	if(iLabel1.text==\"TheServantsOfCthulhu\"):
 		index = illuminatiDeck.deck.find(theServantofCthulhu)
 		illuminaticard1 = illuminatiDeck.deck[index]
 	if(iLabel1.text==\"TheSocietyOfAssassins\"):
@@ -481,7 +481,7 @@ func _on_icard2_pressed():
 	if(iLabel2.text==\"TheNetwork\"):
 		index = illuminatiDeck.deck.find(theNetwork)
 		illuminaticard2 = illuminatiDeck.deck[index]
-	if(iLabel2.text==\"TheServantsOfChthulhu\"):
+	if(iLabel2.text==\"TheServantsOfCthulhu\"):
 		index = illuminatiDeck.deck.find(theServantofCthulhu)
 		illuminaticard2 = illuminatiDeck.deck[index]
 	if(iLabel2.text==\"TheSocietyOfAssassins\"):
@@ -516,7 +516,7 @@ func _on_icard3_pressed():
 	if(iLabel3.text==\"TheNetwork\"):
 		index = illuminatiDeck.deck.find(theNetwork)
 		illuminaticard3 = illuminatiDeck.deck[index]
-	if(iLabel3.text==\"TheServantsOfChthulhu\"):
+	if(iLabel3.text==\"TheServantsOfCthulhu\"):
 		index = illuminatiDeck.deck.find(theServantofCthulhu)
 		illuminaticard3 = illuminatiDeck.deck[index]
 	if(iLabel3.text==\"TheSocietyOfAssassins\"):
@@ -551,7 +551,7 @@ func _on_icard4_pressed():
 	if(iLabel4.text==\"TheNetwork\"):
 		index = illuminatiDeck.deck.find(theNetwork)
 		illuminaticard4 = illuminatiDeck.deck[index]
-	if(iLabel4.text==\"TheServantsOfChthulhu\"):
+	if(iLabel4.text==\"TheServantsOfCthulhu\"):
 		index = illuminatiDeck.deck.find(theServantofCthulhu)
 		illuminaticard4 = illuminatiDeck.deck[index]
 	if(iLabel4.text==\"TheSocietyOfAssassins\"):
@@ -586,7 +586,7 @@ func _on_icard5_pressed():
 	if(iLabel5.text==\"TheNetwork\"):
 		index = illuminatiDeck.deck.find(theNetwork)
 		illuminaticard5 = illuminatiDeck.deck[index]
-	if(iLabel5.text==\"TheServantsOfChthulhu\"):
+	if(iLabel5.text==\"TheServantsOfCthulhu\"):
 		index = illuminatiDeck.deck.find(theServantofCthulhu)
 		illuminaticard5 = illuminatiDeck.deck[index]
 	if(iLabel5.text==\"TheSocietyOfAssassins\"):
@@ -621,7 +621,7 @@ func _on_icard6_pressed():
 	if(iLabel6.text==\"TheNetwork\"):
 		index = illuminatiDeck.deck.find(theNetwork)
 		illuminaticard6 = illuminatiDeck.deck[index]
-	if(iLabel6.text==\"TheServantsOfChthulhu\"):
+	if(iLabel6.text==\"TheServantsOfCthulhu\"):
 		index = illuminatiDeck.deck.find(theServantofCthulhu)
 		illuminaticard6 = illuminatiDeck.deck[index]
 	if(iLabel6.text==\"TheSocietyOfAssassins\"):
@@ -656,7 +656,7 @@ func _on_icard7_pressed():
 	if(iLabel7.text==\"TheNetwork\"):
 		index = illuminatiDeck.deck.find(theNetwork)
 		illuminaticard7 = illuminatiDeck.deck[index]
-	if(iLabel7.text==\"TheServantsOfChthulhu\"):
+	if(iLabel7.text==\"TheServantsOfCthulhu\"):
 		index = illuminatiDeck.deck.find(theServantofCthulhu)
 		illuminaticard7 = illuminatiDeck.deck[index]
 	if(iLabel7.text==\"TheSocietyOfAssassins\"):
