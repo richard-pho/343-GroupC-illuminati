@@ -550,39 +550,33 @@ __meta__ = {
 }
 
 [node name="Button2" type="Button" parent="HBoxContainer"]
-visible = false
 margin_left = 122.0
 margin_right = 134.0
 margin_bottom = 71.0
 
 [node name="Button3" type="Button" parent="HBoxContainer"]
-visible = false
-margin_left = 122.0
-margin_right = 134.0
+margin_left = 138.0
+margin_right = 150.0
 margin_bottom = 71.0
 
 [node name="Button4" type="Button" parent="HBoxContainer"]
-visible = false
-margin_left = 122.0
-margin_right = 134.0
+margin_left = 154.0
+margin_right = 166.0
 margin_bottom = 71.0
 
 [node name="Button5" type="Button" parent="HBoxContainer"]
-visible = false
-margin_left = 122.0
-margin_right = 134.0
+margin_left = 170.0
+margin_right = 182.0
 margin_bottom = 71.0
 
 [node name="Button6" type="Button" parent="HBoxContainer"]
-visible = false
-margin_left = 122.0
-margin_right = 134.0
+margin_left = 186.0
+margin_right = 198.0
 margin_bottom = 71.0
 
 [node name="Button7" type="Button" parent="HBoxContainer"]
-visible = false
-margin_left = 122.0
-margin_right = 134.0
+margin_left = 202.0
+margin_right = 214.0
 margin_bottom = 71.0
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
