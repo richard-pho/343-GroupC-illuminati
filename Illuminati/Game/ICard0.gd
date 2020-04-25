@@ -1,4 +1,4 @@
-extends TextureRect
+extends Button
 
 
 # Declare member variables here. Examples:
@@ -7,14 +7,9 @@ extends TextureRect
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	# Calls global variables
-	var global = get_node("/root/globals")
-	var players = global.players # gets the array of players from global
-	var player0 = players[0] # gets the first player
-	player0.IlluminatiCard = players[0].IlluminatiCard.getname() # Changes the piture depending on which card player gets
-	var path = "res://Card Assets Folder/" + player0.IlluminatiCard + ".JPG" # path of their Illuminati Card
-	var image = load(path) 
-	set_texture(image) # displays the Illuminati Card
+	pass
+func display(var image):
+	set_button_icon(image)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
