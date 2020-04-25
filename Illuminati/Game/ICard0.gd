@@ -10,7 +10,6 @@ func _ready():
 	var global = get_node("/root/globals")
 	var players = global.players # gets the array of players from global
 	var player0 = players[0] # gets the first player
-	print(players.size())
 	player0.IlluminatiCard = players[0].IlluminatiCard.getname()
 	var path = "res://Card Assets Folder/" + player0.IlluminatiCard + ".JPG" # path of their Illuminati Card
 	var image = load(path) 

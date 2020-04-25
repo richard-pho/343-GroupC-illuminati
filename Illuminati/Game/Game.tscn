@@ -395,6 +395,7 @@ func _on_icard0_pressed():
 		index = illuminatiDeck.deck.find(theufo)
 		illuminaticard0 = illuminatiDeck.deck[index]
 	playersarray[0].setIlluminati(illuminaticard0)
+	global.players = playersarray
 	print(playersarray[0].IlluminatiCard.getname())
 		
 "
