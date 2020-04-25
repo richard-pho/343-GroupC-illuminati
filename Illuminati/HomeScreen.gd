@@ -30,14 +30,14 @@ func _on_Login_pressed():
 		players.append(p)
 		global.set_players(players)						 # Puts player object array into the global scope
 
-func _on_StartGame_pressed():
-	Startnotallowed.text = ""
-	if(LobbyList.get_item_count()>=2):
+func _on_StartGame_pressed():#when the start button is pressed
+	Startnotallowed.text = ""#setting the label to blank
+	if(LobbyList.get_item_count()>=2):#if the lobby has 2 players or greater then the game can start
 		get_tree().change_scene("res://Game/Game.tscn")
-	else:
+	else:#else don't start the game and display this message on the screen
 		Startnotallowed.text = "You need at least two players to play"
 
-func _on_Rank_pressed():
+func _on_Rank_pressed():#goes to the rankings page
 	get_tree().change_scene("res://Game/Rank.tscn")
 
 func _ready():
