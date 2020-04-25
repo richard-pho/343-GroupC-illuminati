@@ -279,7 +279,8 @@ func _ready():
 	deck.addCard(undergroundnewspaper)
 	deck.addCard(videogames)
 	deck.addCard(yuppies)
-	deck.shuffleDeck()
+	randomize()
+	deck.deck.shuffle()
 	#adding the illuminati cards into illuminatiDeck
 	illuminatiDeck = Deck.Deck.new()
 	theBavarianIlluminati = TheBavarianIlluminati.TheBavarianIlluminati.new()
@@ -298,7 +299,8 @@ func _ready():
 	illuminatiDeck.addCard(theServantofCthulhu)
 	illuminatiDeck.addCard(theSocietyofAssassins)
 	illuminatiDeck.addCard(theufo)
-	illuminatiDeck.shuffleDeck()
+	randomize()
+	illuminatiDeck.deck.shuffle()
 	iLabel0.text = illuminatiDeck.deck[0].getname()
 	var size = global.players.size()
 	for i in range(0,size):
@@ -546,6 +548,42 @@ margin_bottom = 14.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Button2" type="Button" parent="HBoxContainer"]
+visible = false
+margin_left = 122.0
+margin_right = 134.0
+margin_bottom = 71.0
+
+[node name="Button3" type="Button" parent="HBoxContainer"]
+visible = false
+margin_left = 122.0
+margin_right = 134.0
+margin_bottom = 71.0
+
+[node name="Button4" type="Button" parent="HBoxContainer"]
+visible = false
+margin_left = 122.0
+margin_right = 134.0
+margin_bottom = 71.0
+
+[node name="Button5" type="Button" parent="HBoxContainer"]
+visible = false
+margin_left = 122.0
+margin_right = 134.0
+margin_bottom = 71.0
+
+[node name="Button6" type="Button" parent="HBoxContainer"]
+visible = false
+margin_left = 122.0
+margin_right = 134.0
+margin_bottom = 71.0
+
+[node name="Button7" type="Button" parent="HBoxContainer"]
+visible = false
+margin_left = 122.0
+margin_right = 134.0
+margin_bottom = 71.0
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]
