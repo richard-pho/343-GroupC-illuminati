@@ -29,8 +29,8 @@ class NuclearPowerCompanies:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("NuclearPowerCompanies")
+	func getName():
+		return("NuclearPowerCompanies")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

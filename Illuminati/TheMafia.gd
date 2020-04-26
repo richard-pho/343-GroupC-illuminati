@@ -22,5 +22,7 @@ class Mafia:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("Mafia")
+	func transferMoney():
+		pass
+	func getName():
+		return("Mafia")

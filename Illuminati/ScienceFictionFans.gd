@@ -22,5 +22,5 @@ class ScienceFictionFans:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("ScienceFictionFans")
+	func getName():
+		return("ScienceFictionFans")

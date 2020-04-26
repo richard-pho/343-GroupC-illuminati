@@ -21,5 +21,5 @@ class RobotSeaMonsters:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("RobotSeaMonsters")
+	func getName():
+		return("RobotSeaMonsters")

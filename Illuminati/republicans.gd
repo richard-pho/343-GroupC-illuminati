@@ -21,6 +21,8 @@ class republicans:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("republicans")
+	func transferMoney():
+		pass
+	func getName():
+		return("republicans")
 	

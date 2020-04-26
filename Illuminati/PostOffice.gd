@@ -28,8 +28,8 @@ class PostOffice:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("PostOffice")
+	func getName():
+		return("PostOffice")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

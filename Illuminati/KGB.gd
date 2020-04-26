@@ -30,8 +30,8 @@ class KGB:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("KGB")
+	func getName():
+		return("KGB")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

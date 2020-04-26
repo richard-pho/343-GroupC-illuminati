@@ -21,5 +21,7 @@ class Psychiatrists:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("Psychiatrists")
+	func transferMoney():
+		pass
+	func getName():
+		return("Psychiatrists")

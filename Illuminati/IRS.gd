@@ -31,8 +31,8 @@ class IRS:
 		# Owning player may tax each opponent 2MB on his own income phase. Tax may come from any group. 
 		# If a player has no money, he owes no tax.
 		pass
-	func printname():
-		print("IRS")
+	func getName():
+		return("IRS")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

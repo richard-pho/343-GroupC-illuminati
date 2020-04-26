@@ -27,8 +27,8 @@ class LocalPoliceDepartment:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("LocalPoliceDepartment")
+	func getName():
+		return("LocalPoliceDepartment")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

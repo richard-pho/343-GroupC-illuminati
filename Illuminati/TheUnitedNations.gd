@@ -21,6 +21,8 @@ class TheUnitedNations:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("TheUnitedNations")
+	func transferMoney():
+		pass
+	func getName():
+		return("TheUnitedNations")
 

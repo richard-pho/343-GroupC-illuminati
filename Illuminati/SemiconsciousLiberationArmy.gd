@@ -22,5 +22,7 @@ class SemiconsciousLiberationArmy:
 		power+=1
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("SemiconsciousLiberationArmy")
+	func transferMoney():
+		pass
+	func getName():
+		return("SemiconsciousLiberationArmy")

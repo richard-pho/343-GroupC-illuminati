@@ -23,5 +23,5 @@ class TriliberalCommission:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("TriliberalCommission")
+	func getName():
+		return("TriliberalCommission")

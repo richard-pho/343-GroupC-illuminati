@@ -22,5 +22,7 @@ class Tabloids:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("Tabloids")
+	func transferMoney():
+		pass
+	func getName():
+		return("Tabloids")

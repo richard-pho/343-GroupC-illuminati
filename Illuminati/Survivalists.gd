@@ -23,5 +23,7 @@ class Survivalists:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("Survivalists")
+	func transferMoney():
+		pass
+	func getName():
+		return("Survivalists")

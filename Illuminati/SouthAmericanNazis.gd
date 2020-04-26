@@ -20,5 +20,7 @@ class SouthAmericanNazis:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("SouthAmericanNazis")
+	func transferMoney():
+		pass
+	func getName():
+		return("SouthAmericanNazis")

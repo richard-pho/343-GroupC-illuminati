@@ -23,5 +23,7 @@ class Recyclers:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("Recyclers")
+	func transferMoney():
+		pass
+	func getName():
+		return("Recyclers")

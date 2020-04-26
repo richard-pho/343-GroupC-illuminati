@@ -21,5 +21,7 @@ class PunkRockers:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("PunkRockers")
+	func transferMoney():
+		pass
+	func getName():
+		return("PunkRockers")

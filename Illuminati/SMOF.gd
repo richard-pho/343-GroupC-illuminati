@@ -24,5 +24,7 @@ class SMOF:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("SMOF")
+	func transferMoney():
+		pass
+	func getName():
+		return("SMOF")

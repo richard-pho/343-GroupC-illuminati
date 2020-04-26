@@ -29,8 +29,8 @@ class HealthFoodStores:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("HealthFoodStores")
+	func getName():
+		return("HealthFoodStores")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

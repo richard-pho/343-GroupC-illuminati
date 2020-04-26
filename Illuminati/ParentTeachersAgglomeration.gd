@@ -28,8 +28,8 @@ class ParentTeachersAgglomeration:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("ParentTeachersAgglomeration")
+	func getName():
+		return("ParentTeachersAgglomeration")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

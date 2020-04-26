@@ -29,8 +29,8 @@ class Militia:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("Militia")
+	func getName():
+		return("Militia")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

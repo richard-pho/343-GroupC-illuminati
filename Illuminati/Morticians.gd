@@ -27,8 +27,8 @@ class Morticians:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("Morticians")
+	func getName():
+		return("Morticians")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

@@ -28,8 +28,8 @@ class ProfessionalSports:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("ProfessionalSports")
+	func getName():
+		return("ProfessionalSports")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

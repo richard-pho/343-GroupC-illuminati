@@ -20,8 +20,10 @@ class TobaccoLiquorCompanies:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("Tobacco&LiquorCompanies")
+	func transferMoney():
+		pass
+	func getName():
+		return("Tobacco&LiquorCompanies")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

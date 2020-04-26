@@ -27,8 +27,8 @@ class fbi:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("FBI")
+	func getName():
+		return("FBI")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

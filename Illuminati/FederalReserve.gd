@@ -28,8 +28,8 @@ class FederalReserve:
 	func transferMoney():
 		# when it transfers money, that money can go to any group in the same power structure
 		pass
-	func printname():
-		print("FederalReserve")
+	func getName():
+		return("FederalReserve")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

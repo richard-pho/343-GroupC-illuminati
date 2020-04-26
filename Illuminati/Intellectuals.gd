@@ -27,8 +27,8 @@ class Intellectuals:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("Intellectuals")
+	func getName():
+		return("Intellectuals")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

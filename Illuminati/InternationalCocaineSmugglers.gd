@@ -30,8 +30,8 @@ class InternationalCocaineSmugglers:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("InternationalCocaineSmugglers")
+	func getName():
+		return("InternationalCocaineSmugglers")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

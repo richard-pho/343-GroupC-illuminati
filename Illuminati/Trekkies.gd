@@ -21,6 +21,8 @@ class Trekkies:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("Trekkies")
+	func transferMoney():
+		pass
+	func getName():
+		return("Trekkies")
 

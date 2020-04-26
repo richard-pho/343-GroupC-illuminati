@@ -29,8 +29,8 @@ class OrbitalMindControlLasers:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("OrbitalMindControlLasers")
+	func getName():
+		return("OrbitalMindControlLasers")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

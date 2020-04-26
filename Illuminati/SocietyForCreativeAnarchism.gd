@@ -21,6 +21,8 @@ class SocietyForCreativeAnarchism:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("SocietyForCreativeAnarchism")
+	func transferMoney():
+		pass
+	func getName():
+		return("SocietyForCreativeAnarchism")
 

@@ -29,8 +29,8 @@ class Hackers:
 		power -= 3
 	func transferMoney():
 		pass
-	func printname():
-		print("Hackers")
+	func getName():
+		return("Hackers")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

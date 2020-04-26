@@ -23,5 +23,5 @@ class UndergroundNewspaper:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("UndergroundNewspaper")
+	func getName():
+		return("UndergroundNewspaper")

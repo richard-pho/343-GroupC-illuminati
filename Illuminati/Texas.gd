@@ -21,5 +21,7 @@ class Texas:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("Texas")
+	func transferMoney():
+		pass
+	func getName():
+		return("Texas")

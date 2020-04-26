@@ -24,8 +24,8 @@ class TVPreachers:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("TVPreachers")
+	func getName():
+		return("TVPreachers")
 
 
 

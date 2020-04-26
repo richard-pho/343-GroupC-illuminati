@@ -21,6 +21,8 @@ class ThePhoneCompany:
 		pass
 	func attackToNeutralize():
 		pass
-	func printname():
-		print("ThePhoneCompany")
+	func transferMoney():
+		pass
+	func getName():
+		return("ThePhoneCompany")
 

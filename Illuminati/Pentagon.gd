@@ -28,8 +28,8 @@ class Pentagon:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("Pentagon")
+	func getName():
+		return("Pentagon")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

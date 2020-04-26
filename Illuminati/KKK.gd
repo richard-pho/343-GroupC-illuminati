@@ -27,8 +27,8 @@ class KKK:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("KKK")
+	func getName():
+		return("KKK")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

@@ -32,8 +32,8 @@ class GunLobby:
 		resistance = 3;
 		#against any liberal, communist, or weird group, resistance 10
 		resistance = 10;
-	func printname():
-		print("GunLobby")
+	func getName():
+		return("GunLobby")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
