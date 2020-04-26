@@ -27,3 +27,5 @@ class TheDiscordianSociety:
 		return name
 	func updateMoney(var amount):
 		money = money + amount
+	func getincome():
+		return income
