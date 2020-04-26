@@ -15,7 +15,7 @@ class CFL_AIO:
 	var down = "out";
 	var left = "out";
 	var alignments = ["liberal"];
-	
+	var type = "group"
 	# Called when the node enters the scene tree for the first time.
 	func _ready():
 		pass # Replace with function body.

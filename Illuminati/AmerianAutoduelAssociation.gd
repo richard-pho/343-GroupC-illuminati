@@ -14,6 +14,7 @@ class AmericanAutoduelAssociation:
 	var down = "none";
 	var left = "in";
 	var alignments = ["violent", "weird"];
+	var type = "group"
 	
 	# Called when the node enters the scene tree for the first time.
 	func _ready():
