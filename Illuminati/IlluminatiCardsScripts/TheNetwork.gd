@@ -24,4 +24,5 @@ class TheNetwork:
 		print("TheNetwork")
 	func getname():
 		return name
-
+	func updateMoney(var amount):
+		money = money + amount

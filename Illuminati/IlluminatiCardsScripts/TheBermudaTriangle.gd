@@ -25,3 +25,5 @@ class TheBermundaTriangle:
 		print("TheBermundaTriangle")
 	func getname():
 		return name
+	func updateMoney(var amount):
+		money = money + amount

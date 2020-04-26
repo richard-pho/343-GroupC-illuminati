@@ -25,3 +25,5 @@ class TheDiscordianSociety:
 		print("TheDiscordianSociety")
 	func getname():
 		return name
+	func updateMoney(var amount):
+		money = money + amount
