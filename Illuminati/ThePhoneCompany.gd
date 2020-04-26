@@ -10,6 +10,7 @@ class ThePhoneCompany:
 	var down = "out";
 	var left = "in";
 	var alignments = [];
+	var type = "group"
 	
 	# Called when the node enters the scene tree for the first time.
 	func _ready():

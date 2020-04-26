@@ -10,6 +10,7 @@ class Recyclers:
 	var down = "none";
 	var left = "out";
 	var alignments = ["liberal"];
+	var type = "group"
 	#ability
 	#pay 5mb from this group to draw an extra card on your turn. this is not an action
 	

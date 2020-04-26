@@ -10,6 +10,7 @@ class republicans:
 	var down = "out";
 	var left = "out";
 	var alignments = ["conservative"];
+	var type = "group"
 	
 	# Called when the node enters the scene tree for the first time.
 	func _ready():

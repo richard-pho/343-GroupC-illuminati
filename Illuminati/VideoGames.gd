@@ -10,6 +10,7 @@ class VideoGames:
 	var down = "out";
 	var left = "none";
 	var alignments = ["conservative"];
+	var type = "group"
 	
 	# Called when the node enters the scene tree for the first time.
 	func _ready():

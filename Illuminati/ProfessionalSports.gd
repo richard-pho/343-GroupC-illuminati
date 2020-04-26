@@ -15,6 +15,7 @@ class ProfessionalSports:
 	var down = "out";
 	var left = "in";
 	var alignments = ["violent", "fanatic"];
+	var type = "group"
 	
 	# Called when the node enters the scene tree for the first time.
 	func _ready():

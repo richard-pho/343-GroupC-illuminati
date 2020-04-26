@@ -10,6 +10,7 @@ class Survivalists:
 	var down = "none";
 	var left = "none";
 	var alignments = ["conservative","violent","fanatic"];
+	var type = "group"
 	#ability
 	#+2 Resistance to all owner's other groups
 	

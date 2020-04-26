@@ -16,6 +16,7 @@ class OrbitalMindControlLasers:
 	var down = "none";
 	var left = "in";
 	var alignments = ["communist"];
+	var type = "group"
 	
 	# Called when the node enters the scene tree for the first time.
 	func _ready():

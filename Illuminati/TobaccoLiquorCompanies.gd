@@ -9,6 +9,7 @@ class TobaccoLiquorCompanies:
 	var down = "none";
 	var left = "out";
 	var alignments = ["straight"];
+	var type = "group"
 	
 	# Called when the node enters the scene tree for the first time.
 	func _ready():

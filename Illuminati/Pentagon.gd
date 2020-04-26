@@ -15,6 +15,7 @@ class Pentagon:
 	var down = "out";
 	var left = "out";
 	var alignments = ["government", "violent", "straight"];
+	var type = "group"
 	
 	# Called when the node enters the scene tree for the first time.
 	func _ready():
