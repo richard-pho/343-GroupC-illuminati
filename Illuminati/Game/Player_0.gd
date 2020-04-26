@@ -10,7 +10,11 @@ extends Control
 
 func _ready():
 	pass
-
+func addMB(var amount):
+	var global = get_node("/root/globals")
+	var players = global.players # gets the array of players from global
+	players[0].addMB(amount)
+	global.players = players
 	
 	
 
