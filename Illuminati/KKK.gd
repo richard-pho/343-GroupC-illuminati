@@ -15,7 +15,7 @@ class KKK:
 	var down = "out";
 	var left = "none";
 	var alignments = ["conservative", "violent"];
-	
+	var type = "group"
 	# Called when the node enters the scene tree for the first time.
 	func _ready():
 		pass # Replace with function body.
