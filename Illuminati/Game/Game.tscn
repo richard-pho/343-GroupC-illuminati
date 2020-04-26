@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Game/POL-foggy-forest-short.wav" type="AudioStream" id=1]
+[ext_resource path="res://Card Assets Folder/illuminati1.JPG" type="Texture" id=2]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
@@ -668,6 +669,27 @@ func _on_icard7_pressed():
 	playersarray[7].setIlluminati(illuminaticard7)
 	global.players = playersarray
 	print(playersarray[7].IlluminatiCard.getname())
+
+
+func _on_illuminaticardgiver_pressed():
+	var temp = global.players.size()
+	for i in range(0,temp):
+		if(i==0):
+			icard0.show()
+		elif(i==1):
+			icard1.show()
+		elif(i==2):
+			icard2.show()
+		elif(i==3):
+			icard3.show()
+		elif(i==4):
+			icard4.show()
+		elif(i==5):
+			icard5.show()
+		elif(i==6):
+			icard6.show()
+		else:
+			icard7.show()
 "
 
 [node name="Game" type="Control"]
@@ -805,6 +827,7 @@ __meta__ = {
 }
 
 [node name="icard0" type="Button" parent="HBoxContainer"]
+visible = false
 margin_right = 118.0
 margin_bottom = 71.0
 rect_min_size = Vector2( 100, 50 )
@@ -819,6 +842,7 @@ __meta__ = {
 }
 
 [node name="icard1" type="Button" parent="HBoxContainer"]
+visible = false
 margin_left = 122.0
 margin_right = 240.0
 margin_bottom = 71.0
@@ -833,6 +857,7 @@ __meta__ = {
 }
 
 [node name="icard2" type="Button" parent="HBoxContainer"]
+visible = false
 margin_left = 244.0
 margin_right = 362.0
 margin_bottom = 71.0
@@ -847,6 +872,7 @@ __meta__ = {
 }
 
 [node name="icard3" type="Button" parent="HBoxContainer"]
+visible = false
 margin_left = 366.0
 margin_right = 484.0
 margin_bottom = 71.0
@@ -861,6 +887,7 @@ __meta__ = {
 }
 
 [node name="icard4" type="Button" parent="HBoxContainer"]
+visible = false
 margin_left = 488.0
 margin_right = 606.0
 margin_bottom = 71.0
@@ -875,6 +902,7 @@ __meta__ = {
 }
 
 [node name="icard5" type="Button" parent="HBoxContainer"]
+visible = false
 margin_left = 610.0
 margin_right = 728.0
 margin_bottom = 71.0
@@ -889,6 +917,7 @@ __meta__ = {
 }
 
 [node name="icard6" type="Button" parent="HBoxContainer"]
+visible = false
 margin_left = 732.0
 margin_right = 850.0
 margin_bottom = 71.0
@@ -903,8 +932,8 @@ __meta__ = {
 }
 
 [node name="icard7" type="Button" parent="HBoxContainer"]
-margin_left = 854.0
-margin_right = 972.0
+visible = false
+margin_right = 118.0
 margin_bottom = 71.0
 text = "Illuminati Card 8"
 
@@ -912,6 +941,20 @@ text = "Illuminati Card 8"
 visible = false
 margin_right = 40.0
 margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="illuminaticardgiver" type="Button" parent="."]
+anchor_left = 0.479
+anchor_top = 0.828
+anchor_right = 0.531
+anchor_bottom = 0.86
+margin_left = -112.687
+margin_top = -41.1104
+margin_right = 129.753
+margin_bottom = 145.85
+icon = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -933,3 +976,4 @@ __meta__ = {
 [connection signal="pressed" from="HBoxContainer/icard5" to="." method="_on_icard5_pressed"]
 [connection signal="pressed" from="HBoxContainer/icard6" to="." method="_on_icard6_pressed"]
 [connection signal="pressed" from="HBoxContainer/icard7" to="." method="_on_icard7_pressed"]
+[connection signal="pressed" from="illuminaticardgiver" to="." method="_on_illuminaticardgiver_pressed"]
