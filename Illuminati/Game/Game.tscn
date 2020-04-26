@@ -704,10 +704,10 @@ func _on_DeckDraw_pressed():
 [node name="Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -837.93
-margin_top = -408.101
-margin_right = -837.93
-margin_bottom = -408.101
+margin_left = 6.32318
+margin_top = 3.26315
+margin_right = 6.32324
+margin_bottom = 3.26318
 script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
