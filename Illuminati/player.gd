@@ -8,7 +8,6 @@ class player:
 	var IlluminatiCard;
 	var groupCards = [];
 	var specialCards = [];
-	var money = 0;
 	func setName(var n):
 		userName = n;
 
@@ -19,8 +18,6 @@ class player:
 		groupCards.append(card)
 	func addspecialCard(var card):
 		specialCards.append(card)
-	func addMB(var amount):
-		money += amount
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
