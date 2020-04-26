@@ -5,12 +5,12 @@ extends Button
 # var a = 2
 # var b = "text"
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
-func display(var image):
-	set_button_icon(image)
-
+	pass # Replace with function body.
+func display(var path):
+	set_button_icon(path)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

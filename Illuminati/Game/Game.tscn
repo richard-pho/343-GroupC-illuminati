@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Game/POL-foggy-forest-short.wav" type="AudioStream" id=1]
+[ext_resource path="res://Game/iCard0Button.gd" type="Script" id=2]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
@@ -809,6 +810,7 @@ margin_right = 118.0
 margin_bottom = 71.0
 rect_min_size = Vector2( 100, 50 )
 text = "Illuminati Card 1"
+script = ExtResource( 2 )
 
 [node name="iLabel0" type="Label" parent="HBoxContainer/icard0"]
 visible = false
