@@ -3,6 +3,7 @@ class TheSocietyOfAssassins:
 	var power = 8;
 	var transPower = 8;
 	var income = 8;
+	var money = 0;
 	var up = "out";
 	var right = "out";
 	var down = "out";

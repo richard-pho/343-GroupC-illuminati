@@ -3,6 +3,7 @@ class TheGnomesOfZurich:
 	var power = 7;
 	var transPower = 7;
 	var income = 12;
+	var money = 0;
 	var up = "out";
 	var right = "out";
 	var down = "out";

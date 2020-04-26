@@ -3,6 +3,7 @@ class TheBavarianIlluminati:
 	var power = 10;
 	var transPower = 10;
 	var income = 9;
+	var money = 0;
 	var up = "out";
 	var right = "out";
 	var down = "out";

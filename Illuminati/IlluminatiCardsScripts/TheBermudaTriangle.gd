@@ -3,6 +3,7 @@ class TheBermundaTriangle:
 	var power = 8;
 	var transPower = 8;
 	var income = 9;
+	var money = 0;
 	var up = "out";
 	var right = "out";
 	var down = "out";

@@ -3,6 +3,7 @@ class TheUFO:
 	var power = 6;
 	var transPower = 6;
 	var income = 8;
+	var money = 0;
 	var up = "out";
 	var right = "out";
 	var down = "out";

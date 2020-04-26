@@ -3,6 +3,7 @@ class TheServantsOfCthulhu:
 	var power = 9;
 	var transPower = 9;
 	var income = 7;
+	var money = 0;
 	var up = "out";
 	var right = "out";
 	var down = "out";
