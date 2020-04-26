@@ -27,8 +27,8 @@ class EmptyVee:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("EmptyVee")
+	func getName():
+		return("EmptyVee")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

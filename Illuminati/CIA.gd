@@ -26,8 +26,8 @@ class CIA:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("CIA")
+	func getName():
+		return("CIA")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

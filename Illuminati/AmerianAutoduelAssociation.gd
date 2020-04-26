@@ -27,8 +27,8 @@ class AmericanAutoduelAssociation:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("AmericanAutoduelAssociation")
+	func getName():
+		return("AmericanAutoduelAssociation")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

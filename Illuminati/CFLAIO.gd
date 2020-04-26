@@ -27,8 +27,8 @@ class CFL_AIO:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("CFL_AIO")
+	func getName():
+		return("CFL_AIO")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

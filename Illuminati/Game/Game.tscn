@@ -691,13 +691,23 @@ func _on_illuminaticardgiver_pressed():
 			icard6.show()
 		else:
 			icard7.show()
+
+func _on_DeckDraw_pressed():
+	if(deck[0].type == \"group\"): # checking if the card drawn was a group card
+		var global = get_node(\"/root/globals\")
+		var path = \"res://\" + deck[0].getName() + \".gd\"
+		deck.erase(deck[0])
+	else: # then the card drawn was a special card
+		
 "
 
 [node name="Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -1.50732
-margin_bottom = -1.50732
+margin_left = -837.93
+margin_top = -408.101
+margin_right = -837.93
+margin_bottom = -408.101
 script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -954,6 +964,13 @@ icon = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="DeckDraw" type="Button" parent="."]
+margin_left = 1080.4
+margin_top = 630.922
+margin_right = 1092.4
+margin_bottom = 650.922
+text = "Deck Draw"
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]

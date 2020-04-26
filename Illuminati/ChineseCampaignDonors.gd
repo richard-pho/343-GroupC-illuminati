@@ -30,8 +30,8 @@ class ChineseCampaignDonors:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("ChineseCampaignDonors")
+	func getName():
+		return("ChineseCampaignDonors")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

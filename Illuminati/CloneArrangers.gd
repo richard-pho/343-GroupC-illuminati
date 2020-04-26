@@ -30,8 +30,8 @@ class CloneArrangers:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("CloneArrangers")
+	func getName():
+		return("CloneArrangers")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

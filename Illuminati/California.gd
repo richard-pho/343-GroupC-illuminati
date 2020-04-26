@@ -27,8 +27,8 @@ class California:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("California")
+	func getName():
+		return("California")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

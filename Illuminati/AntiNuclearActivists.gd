@@ -29,8 +29,8 @@ class AntiNuclearActivists:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("AntiNuclearActivists")
+	func getName():
+		return("AntiNuclearActivists")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

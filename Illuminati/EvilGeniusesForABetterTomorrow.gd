@@ -36,8 +36,8 @@ class EvilGeniusesForABetterTomorrow:
 		pass
 	func transferMoney():
 		pass
-	func printname():
-		print("EvilGeniusesForABetterTomorrow")
+	func getName():
+		return("EvilGeniusesForABetterTomorrow")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
