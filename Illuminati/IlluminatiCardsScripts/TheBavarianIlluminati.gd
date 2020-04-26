@@ -25,3 +25,5 @@ class TheBavarianIlluminati:
 		print("TheBavarianIlluminati")
 	func getname():
 		return name
+	func updateMoney(var amount):
+		money = money + amount

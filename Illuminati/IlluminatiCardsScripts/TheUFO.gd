@@ -25,7 +25,8 @@ class TheUFO:
 		print("TheUFO")
 	func getname():
 		return name
-
+	func updateMoney(var amount):
+		money = money + amount
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
