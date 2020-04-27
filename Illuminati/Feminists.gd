@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 
 # Declare member variables here. Examples:
 # var a = 2
