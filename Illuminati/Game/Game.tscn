@@ -694,17 +694,23 @@ func _on_illuminaticardgiver_pressed():
 			icard7.show()
 
 func _on_DeckDraw_pressed():
-	if(deck[0].type == \"group\"): # checking if the card drawn was a group card
-		global.uncontrolledGroups.append(deck[0])
+	var topCard = deck.deck[0]
+	if(topCard.type == \"group\"): # checking if the card drawn was a group card
+		global.uncontrolledGroups.append(topCard)
 		# check if all 4 uncontrolled groups in the beginning of game are there
 		if(global.uncontrolledGroups.size() == 4): 
 			beginning = false
-		var path = \"res://\" + deck[0].getName() + \".gd\"
-		deck.erase(deck[0])
+		var path = \"res://Card Assets Folder/\" + topCard.getName() + \".JPG\"
+		var image = load(path)
+		var texture = ImageTexture.new().create_from_image(image)
+		var tr = TextureRect.new()
+		tr.set_texture(image)
+		add_child(tr)
+		deck.deck.erase(topCard)
 	else: # then the card drawn was a special card
 		if beginning: # if we are still trying to get 4 uncontrolled groups, move special card to bottom
-			deck.append(deck[0])
-			deck.erase(deck[0])
+			deck.deck.erase(topCard)
+			deck.deck.append(topCard)
 		else: # player draws the special card
 			pass
 "
@@ -979,6 +985,9 @@ margin_top = 630.922
 margin_right = 1092.4
 margin_bottom = 650.922
 text = "Deck Draw"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]
@@ -998,3 +1007,4 @@ text = "Deck Draw"
 [connection signal="pressed" from="HBoxContainer/icard6" to="." method="_on_icard6_pressed"]
 [connection signal="pressed" from="HBoxContainer/icard7" to="." method="_on_icard7_pressed"]
 [connection signal="pressed" from="illuminaticardgiver" to="." method="_on_illuminaticardgiver_pressed"]
+[connection signal="pressed" from="DeckDraw" to="." method="_on_DeckDraw_pressed"]
