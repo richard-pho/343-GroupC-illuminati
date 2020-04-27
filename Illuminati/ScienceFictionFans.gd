@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class ScienceFictionFans:
 	var power = 0;
 	var transPower = 0;

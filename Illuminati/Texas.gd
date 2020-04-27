@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class Texas:
 	var power = 6;
 	var transPower = 0;

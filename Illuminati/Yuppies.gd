@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class Yuppies:
 	var power = 2;
 	var transPower = 0;

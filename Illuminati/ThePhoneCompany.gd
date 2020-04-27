@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class ThePhoneCompany:
 	var power = 5;
 	var transPower = 2;

@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class SouthAmericanNazis:
 	var power = 4;
 	var transPower = 0;

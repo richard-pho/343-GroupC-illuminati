@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class Trekkies:
 	var power = 0;
 	var transPower = 0;

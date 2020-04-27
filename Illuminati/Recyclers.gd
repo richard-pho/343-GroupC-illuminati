@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class Recyclers:
 	var power = 2;
 	var transPower = 0;

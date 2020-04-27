@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class TobaccoLiquorCompanies:
 	var power = 4;
 	var transPower = 0;

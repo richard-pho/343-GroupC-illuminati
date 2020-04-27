@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class TheUnitedNations:
 	var power = 1;
 	var transPower = 0;

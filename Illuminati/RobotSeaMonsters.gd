@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class RobotSeaMonsters:
 	var power = 0;
 	var transPower = 0;

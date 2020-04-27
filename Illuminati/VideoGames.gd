@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class VideoGames:
 	var power = 1;
 	var transPower = 1;

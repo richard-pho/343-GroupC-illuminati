@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class TVPreachers:
 	var power = 3;
 	var transPower = 0;

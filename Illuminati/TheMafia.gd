@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class Mafia:
 	var power = 7;
 	var transPower = 0;

@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class TriliberalCommission:
 	var power = 5;
 	var transPower = 0;

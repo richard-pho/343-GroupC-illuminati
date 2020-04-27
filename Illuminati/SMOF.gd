@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class SMOF:
 	var power = 1;
 	var transPower = 0;

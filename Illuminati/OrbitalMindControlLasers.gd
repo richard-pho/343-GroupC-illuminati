@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 
 # On his turn, owner can add, remove, or reverse an alignment of any one other group in play; 
 # change lasts for that turn only

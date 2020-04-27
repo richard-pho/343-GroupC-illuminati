@@ -1,4 +1,4 @@
-extends Node
+extends Sprite
 class UndergroundNewspaper:
 	var power = 1;
 	var transPower = 1;
