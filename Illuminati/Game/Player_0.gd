@@ -9,15 +9,18 @@ extends Control
 # Called when the node enters the scene tree for the first time.
 onready var global = get_node("/root/globals")
 var testarray
+var player0
 func _ready():
 	testarray = global.players
 	# should work but illuminati cards are stored as strings
 	print(testarray)
-	testarray[0].IlluminatiCard.updateMoney(testarray[0].IlluminatiCard.getincome())
+	player0 = testarray[0]
+	player0.getIlluminati().updateMoney(player0.getIlluminati().getincome())
+	#player0.IlluminatiCard.updateMoney(player0.IlluminatiCard.getincome())
 	
 	# This will iterate through group cards and add income
 	#if (testarray[0].groupCards.size() > 0):
 		#for i in testarray[0].groupCards:
 			#i.money += i.income
 			
-	print(testarray[0].IlluminatiCard.money)
+	print(player0.IlluminatiCard.money)

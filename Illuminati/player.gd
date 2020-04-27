@@ -18,7 +18,8 @@ class player:
 		groupCards.append(card)
 	func addspecialCard(var card):
 		specialCards.append(card)
-
+	func getIlluminati():
+		return IlluminatiCard
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
