@@ -702,7 +702,6 @@ func _on_DeckDraw_pressed():
 			beginning = false
 		var path = \"res://Card Assets Folder/\" + topCard.getName() + \".JPG\"
 		var image = load(path)
-		var texture = ImageTexture.new().create_from_image(image)
 		var tr = TextureRect.new()
 		tr.set_texture(image)
 		add_child(tr)

@@ -37,3 +37,4 @@ text = "End Turn"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="pressed" from="endturn" to="." method="_on_endturn_pressed"]

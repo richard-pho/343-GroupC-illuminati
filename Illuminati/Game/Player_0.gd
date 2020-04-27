@@ -25,3 +25,8 @@ func _ready():
 			#i.money += i.income
 			
 	#print(player0.IlluminatiCard.money)
+
+
+func _on_endturn_pressed():
+	get_tree().change_scene("res://Game/Game.tscn")
+
