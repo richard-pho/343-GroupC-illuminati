@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/convenience_Stores.JPG-1c0b161d348fbc6c51004d4bd6aae7b5.stex"
+path="res://.import/convenienceStores.JPG-f2476e218eab08fdb3c20ceec3e51c17.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/convenience_Stores.JPG"
-dest_files=[ "res://.import/convenience_Stores.JPG-1c0b161d348fbc6c51004d4bd6aae7b5.stex" ]
+source_file="res://Card Assets Folder/convenienceStores.JPG"
+dest_files=[ "res://.import/convenienceStores.JPG-f2476e218eab08fdb3c20ceec3e51c17.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/antiwar_Activists.JPG-d540189f178536c0400df1b6ae804e2b.stex"
+path="res://.import/congressionalWives.JPG-6d29e4a20770d85f023d5fcdd9fd1cf7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/antiwar_Activists.JPG"
-dest_files=[ "res://.import/antiwar_Activists.JPG-d540189f178536c0400df1b6ae804e2b.stex" ]
+source_file="res://Card Assets Folder/congressionalWives.JPG"
+dest_files=[ "res://.import/congressionalWives.JPG-6d29e4a20770d85f023d5fcdd9fd1cf7.stex" ]
 
 [params]
 

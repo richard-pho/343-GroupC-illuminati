@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/boy_Sprouts.JPG-ae45683543e1ee0a171d5bf8cc866732.stex"
+path="res://.import/boySprouts.JPG-c93dfee0d564744619628dcd8b51e646.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/boy_Sprouts.JPG"
-dest_files=[ "res://.import/boy_Sprouts.JPG-ae45683543e1ee0a171d5bf8cc866732.stex" ]
+source_file="res://Card Assets Folder/boySprouts.JPG"
+dest_files=[ "res://.import/boySprouts.JPG-c93dfee0d564744619628dcd8b51e646.stex" ]
 
 [params]
 

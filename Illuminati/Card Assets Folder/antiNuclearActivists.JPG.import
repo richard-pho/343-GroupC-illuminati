@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/comic_Books.JPG-0b13e0fb5d87c5d65199322d07993be7.stex"
+path="res://.import/antiNuclearActivists.JPG-6778eb9487cc666e6f2251eb96d49825.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/comic_Books.JPG"
-dest_files=[ "res://.import/comic_Books.JPG-0b13e0fb5d87c5d65199322d07993be7.stex" ]
+source_file="res://Card Assets Folder/antiNuclearActivists.JPG"
+dest_files=[ "res://.import/antiNuclearActivists.JPG-6778eb9487cc666e6f2251eb96d49825.stex" ]
 
 [params]
 

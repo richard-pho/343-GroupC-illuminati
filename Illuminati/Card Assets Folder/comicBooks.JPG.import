@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/copy_Shops.JPG-ba349338ce874bf8fe27b149c785b5b4.stex"
+path="res://.import/comicBooks.JPG-5d938184e480b1666d7e436216f7b560.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/copy_Shops.JPG"
-dest_files=[ "res://.import/copy_Shops.JPG-ba349338ce874bf8fe27b149c785b5b4.stex" ]
+source_file="res://Card Assets Folder/comicBooks.JPG"
+dest_files=[ "res://.import/comicBooks.JPG-5d938184e480b1666d7e436216f7b560.stex" ]
 
 [params]
 

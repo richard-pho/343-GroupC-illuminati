@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/empty_Vee.JPG-0074687259a743149b8d6c39ff734fdb.stex"
+path="res://.import/amerianAutoduelAssociation.JPG-e8ba536c70cb7e8010c24d856d9fe67b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/empty_Vee.JPG"
-dest_files=[ "res://.import/empty_Vee.JPG-0074687259a743149b8d6c39ff734fdb.stex" ]
+source_file="res://Card Assets Folder/amerianAutoduelAssociation.JPG"
+dest_files=[ "res://.import/amerianAutoduelAssociation.JPG-e8ba536c70cb7e8010c24d856d9fe67b.stex" ]
 
 [params]
 

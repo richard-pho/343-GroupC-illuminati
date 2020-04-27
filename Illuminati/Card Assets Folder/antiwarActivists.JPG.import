@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cycle_Gangs.JPG-1712e2f1e5a1a7f3dd0efe93ca929459.stex"
+path="res://.import/antiwarActivists.JPG-fff83fa0d4241b09af3e113f71731a63.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/cycle_Gangs.JPG"
-dest_files=[ "res://.import/cycle_Gangs.JPG-1712e2f1e5a1a7f3dd0efe93ca929459.stex" ]
+source_file="res://Card Assets Folder/antiwarActivists.JPG"
+dest_files=[ "res://.import/antiwarActivists.JPG-fff83fa0d4241b09af3e113f71731a63.stex" ]
 
 [params]
 
