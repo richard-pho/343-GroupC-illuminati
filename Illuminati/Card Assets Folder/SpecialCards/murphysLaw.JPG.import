@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/murphy'sLaw.JPG-a9197bf29c24aacd74a5928b4141ff8f.stex"
+path="res://.import/murphysLaw.JPG-fcd3be8ed8452f6fff912f3103431b3f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Card Assets Folder/SpecialCards/murphy'sLaw.JPG"
-dest_files=[ "res://.import/murphy'sLaw.JPG-a9197bf29c24aacd74a5928b4141ff8f.stex" ]
+source_file="res://Card Assets Folder/SpecialCards/murphysLaw.JPG"
+dest_files=[ "res://.import/murphysLaw.JPG-fcd3be8ed8452f6fff912f3103431b3f.stex" ]
 
 [params]
 
