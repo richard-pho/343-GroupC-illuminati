@@ -25,7 +25,7 @@ class TheServantsOfCthulhu:
 		print("TheServantsOfCthulhu")
 	func getname():
 		return name
-	func updateMoney(var amount):
-		money = money + amount
+	func updateMoney():
+		money = money + income
 	func getincome():
 		return income
