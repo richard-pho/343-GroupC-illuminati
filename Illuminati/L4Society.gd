@@ -37,7 +37,7 @@ class L4Society:
 	func transferMoney():
 		pass
 	func getName():
-		return("L-4Society")
+		return("L4Society")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

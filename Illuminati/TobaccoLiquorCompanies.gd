@@ -23,7 +23,7 @@ class TobaccoLiquorCompanies:
 	func transferMoney():
 		pass
 	func getName():
-		return("Tobacco&LiquorCompanies")
+		return("TobaccoLiquorCompanies")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
