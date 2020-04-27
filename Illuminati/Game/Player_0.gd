@@ -15,7 +15,7 @@ func _ready():
 	# should work but illuminati cards are stored as strings
 	print(testarray)
 	player0 = testarray[0]
-	player0.getIlluminati().updateMoney(player0.getIlluminati().getincome())
+	player0.getIlluminati().updateMoney()
 	
 	# This will iterate through group cards and add income
 	if (testarray[0].groupCards.size() > 0):
