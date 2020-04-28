@@ -90,6 +90,23 @@ var tVPreachers
 var undergroundnewspaper
 var videogames
 var yuppies
+#special cards
+var assasinationS
+var briberyS
+var computerEspionageS
+var deepAgentS
+var interference1S
+var interference2S
+var marketManipulationS
+var mediaCampaignS
+var murphysLawS
+var secretsManS
+var senateInvestigatingS
+var slushFundS
+var swissBankAccountS
+var whisperingCampaignS
+var whiteCollarCrimeS
+
 var rollA
 var rollB
 var h_val
@@ -216,7 +233,38 @@ func _ready():
 	tVPreachers = TVPreachers.TVPreachers.new()
 	undergroundnewspaper = UndergroundNewspaper.UndergroundNewspaper.new()
 	videogames = VideoGames.VideoGames.new()
-	#adding the cards to the deck
+	#special cards
+	assasinationS = assasination.assasination.new()
+	briberyS = bribery.bribery.new()
+	computerEspionageS = computerEspionage.computerEspionage.new()
+	deepAgentS = deepAgent.deepAgent.new()
+	interference1S = interference1.interference1.new()
+	interference2S = interference2.interference2.new()
+	marketManipulationS = marketManipulation.marketManipulation.new()
+	mediaCampaignS = mediaCampaign.mediaCampaign.new()
+	murphysLawS = murphysLaw.murphysLaw.new()
+	secretsManS = secretsManWasNotMeantToKnow.secretsManWasNotMeantToKnow.new()
+	senateInvestigatingS = senateInvestigatingCommittee.senateInvestigatingCommittee.new()
+	slushFundS = slushFund.slushFund.new()
+	swissBankAccountS = swissBankAccount.swissBankAccount.new()
+	whisperingCampaignS = whisperingCampaign.whisperingCampaign.new()
+	whiteCollarCrimeS = whiteCollarCrime.whiteCollarCrime.new()
+	#adding the group and special cards to the deck
+	deck.addCard(assasinationS)
+	deck.addCard(briberyS)
+	deck.addCard(computerEspionageS)
+	deck.addCard(deepAgentS)
+	deck.addCard(interference1S)
+	deck.addCard(interference2S)
+	deck.addCard(marketManipulationS)
+	deck.addCard(murphysLawS)
+	deck.addCard(secretsManS)
+	deck.addCard(senateInvestigatingS)
+	deck.addCard(slushFundS)
+	deck.addCard(swissBankAccountS)
+	deck.addCard(whisperingCampaignS)
+	deck.addCard(whiteCollarCrimeS)
+	
 	deck.addCard(americanAutoDuelAssociation)
 	deck.addCard(antiNuclearActivists)
 	deck.addCard(bigMedia)
