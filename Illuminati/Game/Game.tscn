@@ -107,10 +107,12 @@ var swissBankAccountS
 var whisperingCampaignS
 var whiteCollarCrimeS
 
-var rollA
-var rollB
-var h_val
-var order = []
+var rollA   # dice roll of first dice
+var rollB	# dice roll of second dice
+var h_val	# Highest sum of dice
+var order = []	# Hold the turn order
+var index
+
 #illuminati card deck
 var illuminatiDeck
 var theBavarianIlluminati
@@ -408,15 +410,27 @@ func max_arr(arr):
 
 	return max_val
 
+# determine turn order
 func _on_Dice_pressed():
+	# roll dices
 	rollA = randi()%6+1
 	rollB = randi()%6+1
-	var sum = rollA + rollB
+	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	get_node(\"Output\").text=str(sum)
-	order.append(sum)
-	if (order.size() == 2):
+	order.append(sum)			# append the totals to the order array
+	# Check if amount of rolls reached number of players
+	if (order.size() == global.players.size()):
+		# Highest value in the array
 		h_val = max_arr(order)
-
+		# Find index of highest value
+		index = order.find(h_val, 0)
+		var length = order.size()
+		var i = 0
+		# Run through the array until it prints all the names in the turn order
+		while i < order.size():
+			global.turn.append(global.players[(i+index)%length].userName)
+			print(global.players[(i+index)%length].userName)
+			i+=1
 
 
 func _on_player_0_pressed():
