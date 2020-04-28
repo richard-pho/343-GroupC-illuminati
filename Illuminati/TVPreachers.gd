@@ -16,7 +16,7 @@ class TVPreachers:
 	func _ready():
 		pass # Replace with function body.
 	func attackToControl():
-		#power + 3 when attact to control the Moral Minority
+		#power + 3 when attack to control the Moral Minority
 		power+=3
 	func attackToDestroy():
 		pass

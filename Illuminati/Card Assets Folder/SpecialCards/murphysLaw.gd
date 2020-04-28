@@ -6,7 +6,8 @@ extends Node
 # var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
+# Play this card immediately after the dice are rolled on any attempt (by any player) to destroy, control, or
+# neutralize. That roll is immediately changed, retroactively, to a 12.
 class murphysLaw:
 	var type = "special"
 	func ability():
