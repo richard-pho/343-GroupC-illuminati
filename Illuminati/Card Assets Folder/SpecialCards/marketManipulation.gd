@@ -6,7 +6,8 @@ extends Node
 # var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
+# Play this card during your income phase to double all of your groups' incomes, for that turn only.
+# This card does not allow the I.R.S. to collect twice, or require the Post Office to pay twice.
 class marketManipulation:
 	var type = "special"
 	func ability():

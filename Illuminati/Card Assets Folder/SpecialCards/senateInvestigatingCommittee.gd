@@ -6,7 +6,7 @@ extends Node
 # var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
+# Play this card at the beginning of any other player's turn. That player loses his turn completely.
 class senateInvestigatingCommittee:
 	var type = "special"
 	func ability():

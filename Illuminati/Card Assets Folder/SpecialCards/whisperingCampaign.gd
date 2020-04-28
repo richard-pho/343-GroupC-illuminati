@@ -6,7 +6,8 @@ extends Node
 # var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
+# You may attempt to destroy a single group with power 0. Roll attacking power vs defending resistance, but a 
+# successful attack destroys the target. Playing this card is not an action, but the attack itself is an action.
 class whisperingCampaign:
 	var type = "special"
 	func ability():

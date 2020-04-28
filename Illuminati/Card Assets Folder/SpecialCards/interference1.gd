@@ -6,7 +6,7 @@ extends Node
 # var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
+# You may interfere with one privileged attack. No other players may interfere.
 class interference1:
 	var type = "special"
 	func ability():

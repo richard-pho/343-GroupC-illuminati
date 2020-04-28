@@ -6,7 +6,8 @@ extends Node
 # var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
+# Play this card when any other Special card was played, for any purpose. That card is immediately neutralized, it
+# has no effect. Both cards are discarded.
 class secretsManWasNotMeantToKnow:
 	var type = "special"
 	func ability():

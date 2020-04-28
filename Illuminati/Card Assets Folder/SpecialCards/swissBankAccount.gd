@@ -6,7 +6,7 @@ extends Node
 # var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
+# Exchange this card, at any time, for 25 MB to be placed in your Illuminati treasury.
 class swissBankAccount:
 	var type = "special"
 	func ability():

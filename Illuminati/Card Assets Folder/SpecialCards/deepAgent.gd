@@ -6,7 +6,8 @@ extends Node
 # var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
+# Play this card after privilege has been invoked. The privilege is totally abolished. That attack 
+# cannot be privileged.
 class deepAgent:
 	var type = "special"
 	func ability():

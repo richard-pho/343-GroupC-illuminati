@@ -6,7 +6,8 @@ extends Node
 # var b = "text"
 
 
-# Called when the node enters the scene tree for the first time.
+# Play this card at any time to either count the money on any one group card or examine all of one player's 
+# special cards.
 class computerEspionage:
 	var type = "special"
 
