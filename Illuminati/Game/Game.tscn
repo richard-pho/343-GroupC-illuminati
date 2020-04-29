@@ -797,7 +797,7 @@ func _on_DeckDraw_pressed():
 "
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 91.8243, 74.9599 )
+extents = Vector2( 59.4916, 37.2747 )
 
 [node name="Game" type="Control"]
 anchor_right = 1.0
@@ -1079,7 +1079,7 @@ script = ExtResource( 4 )
 
 [node name="AmericanAutoduelAssociation" type="Sprite" parent="Area2D"]
 position = Vector2( -3.94952, -15.5685 )
-scale = Vector2( 0.522676, 0.621297 )
+scale = Vector2( 0.4, 0.5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 7.5526, 2.51756 )
