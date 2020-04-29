@@ -786,7 +786,6 @@ func _on_DeckDraw_pressed():
 		var scriptpath = \"res://Card Assets Folder/\" + topCard.getName() + \".gd\"
 		var script = load(scriptpath)
 		AAA.set_script(script)
-		AAA.set
 		deck.deck.erase(topCard)
 	else: # then the card drawn was a special card
 		if beginning: # if we are still trying to get 4 uncontrolled groups, move special card to bottom
