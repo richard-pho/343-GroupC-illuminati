@@ -782,10 +782,11 @@ func _on_DeckDraw_pressed():
 			beginning = false
 		var path = \"res://Card Assets Folder/\" + topCard.getName() + \".JPG\"
 		var image = load(path)
-		AAA.texture = image
+		AAA.set_texture(path)
 		var scriptpath = \"res://Card Assets Folder/\" + topCard.getName() + \".gd\"
 		var script = load(scriptpath)
 		AAA.set_script(script)
+		AAA.set
 		deck.deck.erase(topCard)
 	else: # then the card drawn was a special card
 		if beginning: # if we are still trying to get 4 uncontrolled groups, move special card to bottom
@@ -1070,9 +1071,12 @@ __meta__ = {
 }
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 143.197, 95.9421 )
 script = ExtResource( 4 )
 
 [node name="AmericanAutoduelAssociation" type="Sprite" parent="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]
