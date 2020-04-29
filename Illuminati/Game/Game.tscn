@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Game/POL-foggy-forest-short.wav" type="AudioStream" id=1]
 [ext_resource path="res://Game/iCard0Button.gd" type="Script" id=2]
 [ext_resource path="res://Card Assets Folder/illuminati1.JPG" type="Texture" id=3]
+[ext_resource path="res://Game/Area2D.gd" type="Script" id=4]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
@@ -1069,6 +1070,7 @@ __meta__ = {
 }
 
 [node name="Area2D" type="Area2D" parent="."]
+script = ExtResource( 4 )
 
 [node name="AmericanAutoduelAssociation" type="Sprite" parent="Area2D"]
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
@@ -1091,3 +1093,4 @@ __meta__ = {
 [connection signal="pressed" from="HBoxContainer/icard7" to="." method="_on_icard7_pressed"]
 [connection signal="pressed" from="illuminaticardgiver" to="." method="_on_illuminaticardgiver_pressed"]
 [connection signal="pressed" from="DeckDraw" to="." method="_on_DeckDraw_pressed"]
+[connection signal="input_event" from="Area2D" to="Area2D" method="_on_Area2D_input_event"]
