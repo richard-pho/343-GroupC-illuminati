@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Game/POL-foggy-forest-short.wav" type="AudioStream" id=1]
 [ext_resource path="res://Game/iCard0Button.gd" type="Script" id=2]
@@ -796,13 +796,16 @@ func _on_DeckDraw_pressed():
 			deck.removeCard(topCard)
 "
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 91.8243, 74.9599 )
+
 [node name="Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 9.18713
-margin_top = 3.26315
-margin_right = 9.18726
-margin_bottom = 3.26318
+margin_left = 5.81811
+margin_top = 4.763
+margin_right = 5.81824
+margin_bottom = 4.76306
 script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1071,12 +1074,16 @@ __meta__ = {
 }
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2( 143.197, 95.9421 )
+position = Vector2( 142.551, 100.677 )
 script = ExtResource( 4 )
 
 [node name="AmericanAutoduelAssociation" type="Sprite" parent="Area2D"]
+position = Vector2( -3.94952, -15.5685 )
+scale = Vector2( 0.522676, 0.621297 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 7.5526, 2.51756 )
+shape = SubResource( 2 )
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]
