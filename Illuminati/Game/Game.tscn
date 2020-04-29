@@ -1106,4 +1106,4 @@ shape = SubResource( 2 )
 [connection signal="pressed" from="HBoxContainer/icard7" to="." method="_on_icard7_pressed"]
 [connection signal="pressed" from="illuminaticardgiver" to="." method="_on_illuminaticardgiver_pressed"]
 [connection signal="pressed" from="DeckDraw" to="." method="_on_DeckDraw_pressed"]
-[connection signal="input_event" from="Area2D" to="Area2D" method="_on_Area2D_input_event"]
+[connection signal="input_event" from="Area2D" to="Area2D" method="_on_Draggable_input_event"]
