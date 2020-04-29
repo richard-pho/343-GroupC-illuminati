@@ -4,7 +4,7 @@ extends Area2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-
+var previous_mouse_position = Vector2()
 var dragging = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,18 +17,17 @@ func _process(delta):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-func _on_Area2D_input_event(viewport, event, shape_idx):
-	if event is InputEventMouseMotion and event.is_pressed():
-		print("here")
+func _on_draggable_input_event(viewport, event, shape_idx):
+	if event.is_action_pressed("drag"):
+		print(event)
+		get_tree().set_input_as_handled()
+		previous_mouse_position = event.position
 		dragging = true
-	else:
-		dragging = false
-	pass
 func _input(event):
 	if event.is_action_released("drag"):
 		previous_mouse_position = Vector2()
 		dragging = false
 	if dragging and event is InputEventMouseMotion:
-		position += event.position - previous.mouse_position
+		position += event.position - previous_mouse_position
 		previous_mouse_position = event.position
 	
