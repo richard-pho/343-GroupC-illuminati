@@ -782,7 +782,7 @@ func _on_DeckDraw_pressed():
 			beginning = false
 		var path = \"res://Card Assets Folder/\" + topCard.getName() + \".JPG\"
 		var image = load(path)
-		AAA.set_texture(path)
+		AAA.texture = image
 		var scriptpath = \"res://Card Assets Folder/\" + topCard.getName() + \".gd\"
 		var script = load(scriptpath)
 		AAA.set_script(script)
