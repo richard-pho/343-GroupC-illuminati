@@ -798,7 +798,7 @@ func _on_DeckDraw_pressed():
 "
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 59.4916, 37.2747 )
+extents = Vector2( 73.0435, 61.9917 )
 
 [node name="Game" type="Control"]
 anchor_right = 1.0
@@ -1018,9 +1018,6 @@ text = "Illuminati Card 6"
 visible = false
 margin_right = 40.0
 margin_bottom = 14.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="icard6" type="Button" parent="HBoxContainer"]
 visible = false
@@ -1029,6 +1026,14 @@ margin_bottom = 71.0
 text = "Illuminati Card 7"
 
 [node name="iLabel6" type="Label" parent="HBoxContainer/icard6"]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="iLabel5" type="Label" parent="HBoxContainer/icard6"]
 visible = false
 margin_right = 40.0
 margin_bottom = 14.0
@@ -1084,7 +1089,7 @@ scale = Vector2( 0.4, 0.5 )
 texture = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 7.5526, 2.51756 )
+position = Vector2( -5.33512, -14.6661 )
 shape = SubResource( 2 )
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]

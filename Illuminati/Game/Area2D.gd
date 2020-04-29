@@ -17,7 +17,7 @@ func _process(delta):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-func _on_Draggable_input_event(viewport, event, shape_idx):
+func _on_Area2D_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("drag"):
 		print(event)
 		get_tree().set_input_as_handled()
