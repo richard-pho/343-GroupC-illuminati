@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Game/POL-foggy-forest-short.wav" type="AudioStream" id=1]
 [ext_resource path="res://Game/iCard0Button.gd" type="Script" id=2]
 [ext_resource path="res://Card Assets Folder/illuminati1.JPG" type="Texture" id=3]
-[ext_resource path="res://AmericanAutoduelAssociation.gd" type="Script" id=4]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
@@ -149,6 +148,7 @@ onready var icard6 : Button = $HBoxContainer/icard6
 onready var iLabel6 : Label = $HBoxContainer/icard6/iLabel6
 onready var icard7 : Button = $HBoxContainer/icard7
 onready var iLabel7 : Label = $HBoxContainer/icard7/iLabel7
+onready var AAA : Sprite = $Area2D/AmericanAutoduelAssociation
 onready var global = get_node(\"/root/globals\")
 func _ready():
 	#regular deck
@@ -233,9 +233,9 @@ func _ready():
 	trekkies = Trekkies.Trekkies.new()
 	triliberalcommission = TriliberalCommission.TriliberalCommission.new()
 	tVPreachers = TVPreachers.TVPreachers.new()
-	undergroundnewspaper = UndergroundNewspaper.UndergroundNewspaper.new()
+	undergroundnewspaper = UndergroundNewspapers.UndergroundNewspaper.new()
 	videogames = VideoGames.VideoGames.new()
-	#special cards
+	#illuminati cards
 	assasinationS = assasination.assasination.new()
 	briberyS = bribery.bribery.new()
 	computerEspionageS = computerEspionage.computerEspionage.new()
@@ -252,6 +252,7 @@ func _ready():
 	whisperingCampaignS = whisperingCampaign.whisperingCampaign.new()
 	whiteCollarCrimeS = whiteCollarCrime.whiteCollarCrime.new()
 	#adding the group and special cards to the deck
+	#adding special cards
 	deck.addCard(assasinationS)
 	deck.addCard(briberyS)
 	deck.addCard(computerEspionageS)
@@ -266,7 +267,7 @@ func _ready():
 	deck.addCard(swissBankAccountS)
 	deck.addCard(whisperingCampaignS)
 	deck.addCard(whiteCollarCrimeS)
-	
+	#adding group cards
 	deck.addCard(americanAutoDuelAssociation)
 	deck.addCard(antiNuclearActivists)
 	deck.addCard(bigMedia)
@@ -780,9 +781,10 @@ func _on_DeckDraw_pressed():
 			beginning = false
 		var path = \"res://Card Assets Folder/\" + topCard.getName() + \".JPG\"
 		var image = load(path)
-		var tr = TextureRect.new()
-		tr.set_texture(image)
-		add_child(tr)
+		AAA.texture = image
+		var scriptpath = \"res://Card Assets Folder/\" + topCard.getName() + \".gd\"
+		var script = load(scriptpath)
+		AAA.set_script(script)
 		deck.deck.erase(topCard)
 	else: # then the card drawn was a special card
 		if beginning: # if we are still trying to get 4 uncontrolled groups, move special card to bottom
@@ -795,9 +797,9 @@ func _on_DeckDraw_pressed():
 [node name="Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 6.32318
+margin_left = 9.18713
 margin_top = 3.26315
-margin_right = 6.32324
+margin_right = 9.18726
 margin_bottom = 3.26318
 script = SubResource( 1 )
 __meta__ = {
@@ -1069,7 +1071,6 @@ __meta__ = {
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="AmericanAutoduelAssociation" type="Sprite" parent="Area2D"]
-script = ExtResource( 4 )
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]

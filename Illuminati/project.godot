@@ -132,6 +132,7 @@ slushFund="*res://Card Assets Folder/SpecialCards/slushFund.gd"
 swissBankAccount="*res://Card Assets Folder/SpecialCards/swissBankAccount.gd"
 whisperingCampaign="*res://Card Assets Folder/SpecialCards/whisperingCampaign.gd"
 whiteCollarCrime="*res://Card Assets Folder/SpecialCards/whiteCollarCrime.gd"
+UndergroundNewspapers="*res://UndergroundNewspapers.gd"
 
 [display]
 
