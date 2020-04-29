@@ -9,9 +9,11 @@ extends Node
 # this card counts as an action.
 class bribery:
 	var type = "special"
+	var name = "bribery"
 	func ability():
 		pass
-
+	func getname():
+		return name
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

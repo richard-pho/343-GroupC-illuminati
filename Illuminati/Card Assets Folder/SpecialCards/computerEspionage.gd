@@ -10,6 +10,11 @@ extends Node
 # special cards.
 class computerEspionage:
 	var type = "special"
+	var name = "computer Espionage"
+	func ability():
+		pass
+	func getname():
+		return name
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

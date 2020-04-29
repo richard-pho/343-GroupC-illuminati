@@ -9,8 +9,11 @@ extends Node
 # Exchange this card, at any time, for 25 MB to be placed in your Illuminati treasury.
 class swissBankAccount:
 	var type = "special"
-	func ability():
-		pass
+	var name = "swiss bank account"
+	func ability(var player):
+		player.IlluminatiCard.money = player.IlluminatiCard.money + 25
+	func getname():
+		return name
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

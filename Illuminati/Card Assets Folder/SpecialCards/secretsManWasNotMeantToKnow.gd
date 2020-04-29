@@ -10,8 +10,11 @@ extends Node
 # has no effect. Both cards are discarded.
 class secretsManWasNotMeantToKnow:
 	var type = "special"
+	var name = "secrets man was not meant to know"
 	func ability():
 		pass
+	func getname():
+		return name
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

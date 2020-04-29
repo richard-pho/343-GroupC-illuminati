@@ -9,9 +9,11 @@ extends Node
 # or neutralize. That roll is immediately changed, retroactivvely, to a 2.
 class assasination:
 	var type = "special"
+	var name = "assasination"
 	func ability():
 		pass
-
+	func getname():
+		return name
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
