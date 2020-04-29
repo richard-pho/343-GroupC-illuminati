@@ -11,8 +11,11 @@ extends Node
 # it again, it counts again!)
 class mediaCampaign:
 	var type = "special"
+	var name = "media Campaign"
 	func ability():
 		pass
+	func getname():
+		return names
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

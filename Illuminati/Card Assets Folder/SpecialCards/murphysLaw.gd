@@ -10,8 +10,11 @@ extends Node
 # neutralize. That roll is immediately changed, retroactively, to a 12.
 class murphysLaw:
 	var type = "special"
-	func ability():
+	var name = "murphysLaw"
+	func ability(var player,var target):
 		pass
+	func getname():
+		return name
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

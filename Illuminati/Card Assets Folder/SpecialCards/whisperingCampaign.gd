@@ -10,8 +10,11 @@ extends Node
 # successful attack destroys the target. Playing this card is not an action, but the attack itself is an action.
 class whisperingCampaign:
 	var type = "special"
+	var name = "whispering Campaign"
 	func ability():
 		pass
+	func getname():
+		return name
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

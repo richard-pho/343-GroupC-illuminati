@@ -10,9 +10,11 @@ extends Node
 # cannot be privileged.
 class deepAgent:
 	var type = "special"
+	var name = "deep Agent"
 	func ability():
 		pass
-
+	func getname():
+		return name
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
