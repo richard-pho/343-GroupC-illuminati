@@ -775,6 +775,7 @@ func _on_illuminaticardgiver_pressed():
 
 func _on_DeckDraw_pressed():
 	var topCard = deck.deck[0]
+	print(topCard.type)
 	if(topCard.type == \"group\"): # checking if the card drawn was a group card
 		global.uncontrolledGroups.append(topCard)
 		# check if all 4 uncontrolled groups in the beginning of game are there
@@ -786,13 +787,13 @@ func _on_DeckDraw_pressed():
 		var scriptpath = \"res://Card Assets Folder/\" + topCard.getName() + \".gd\"
 		var script = load(scriptpath)
 		AAA.set_script(script)
-		deck.deck.erase(topCard)
+		deck.removeCard(topCard)
 	else: # then the card drawn was a special card
 		if beginning: # if we are still trying to get 4 uncontrolled groups, move special card to bottom
-			deck.deck.erase(topCard)
-			deck.deck.append(topCard)
+			deck.removeCard(topCard)
+			deck.addCard(topCard)
 		else: # player draws the special card
-			pass
+			deck.removeCard(topCard)
 "
 
 [node name="Game" type="Control"]
