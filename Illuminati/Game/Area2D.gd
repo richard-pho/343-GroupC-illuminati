@@ -18,10 +18,17 @@ func _process(delta):
 #func _process(delta):
 #	pass
 func _on_Area2D_input_event(viewport, event, shape_idx):
-	if event is InputEventMouseButton:
-		if event.is_pressed():
-			dragging = true
-		else:
-			dragging = false
+	if event is InputEventMouseMotion and event.is_pressed():
+		print("here")
+		dragging = true
+	else:
+		dragging = false
 	pass
-		
+func _input(event):
+	if event.is_action_released("drag"):
+		previous_mouse_position = Vector2()
+		dragging = false
+	if dragging and event is InputEventMouseMotion:
+		position += event.position - previous.mouse_position
+		previous_mouse_position = event.position
+	
