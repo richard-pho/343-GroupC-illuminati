@@ -1,0 +1,26 @@
+extends Panel
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
+
+var drag = false
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+func _process(delta):
+	if drag && Input.is_action_pressed("drag"):
+		rect_position = get_global_mouse_position()
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+
+func _on_Panel_mouse_entered():
+	drag = true
+
+
+func _on_Panel_mouse_exited():
+	drag = false
