@@ -1,7 +1,6 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Game/POL-foggy-forest-short.wav" type="AudioStream" id=1]
-[ext_resource path="res://Game/iCard0Button.gd" type="Script" id=2]
 [ext_resource path="res://Card Assets Folder/illuminati1.JPG" type="Texture" id=3]
 [ext_resource path="res://Game/Area2D.gd" type="Script" id=4]
 [ext_resource path="res://Card Assets Folder/americanAutoduelAssociation.JPG" type="Texture" id=5]
@@ -945,7 +944,6 @@ margin_right = 118.0
 margin_bottom = 71.0
 rect_min_size = Vector2( 100, 50 )
 text = "Illuminati Card 1"
-script = ExtResource( 2 )
 
 [node name="iLabel0" type="Label" parent="HBoxContainer/icard0"]
 visible = false
