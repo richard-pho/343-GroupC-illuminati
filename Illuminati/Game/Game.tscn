@@ -800,10 +800,14 @@ func _on_DeckDraw_pressed():
 
 
 func _on_TextureButton_pressed():
+	var defender = americanAutoDuelAssociation
+	global.set_defender(defender)
+	print(global.defender)
 	rollA = randi()%6+1
 	rollB = randi()%6+1
 	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	global.roll = sum
+	global.attacker.attackToControl()
 	print(sum)
 "
 

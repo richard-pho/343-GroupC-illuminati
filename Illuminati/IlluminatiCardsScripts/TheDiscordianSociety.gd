@@ -17,6 +17,7 @@ class TheDiscordianSociety extends Node:
 		pass # Replace with function body.
 	func attackToControl():
 		var global = get_node("/root/globals")
+		print(global.defender)
 		var defender = global.defender
 		for a in defender.alignment:
 			if a == "weird":

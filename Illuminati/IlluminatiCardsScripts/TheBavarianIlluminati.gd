@@ -17,6 +17,7 @@ class TheBavarianIlluminati extends Node:
 		pass # Replace with function body.
 	func attackToControl():
 		var global = get_node("/root/globals")
+		print(global.defender)
 		var defender = global.defender
 		if global.attackerRoll == 11 or global.attackerRoll == 12:
 			print("Attack failed.")

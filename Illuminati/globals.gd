@@ -22,3 +22,5 @@ func set_players(new_players):
 	players = new_players
 func get_players():
 	return players
+func set_defender(d):
+	defender = d
