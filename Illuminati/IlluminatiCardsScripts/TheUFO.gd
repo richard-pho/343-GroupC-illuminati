@@ -1,5 +1,5 @@
 extends Node
-class TheUFO:
+class TheUFO extends Node:
 	var power = 6;
 	var transPower = 6;
 	var income = 8;
@@ -8,7 +8,7 @@ class TheUFO:
 	var right = "out";
 	var down = "out";
 	var left = "out";
-	var name = "TheUFO"
+	var cardName = "TheUFO"
 	#ability:
 	#can participate in two attacks per turn
 	
@@ -16,7 +16,14 @@ class TheUFO:
 	func _ready():
 		pass # Replace with function body.
 	func attackToControl():
-		pass
+		var global = get_node("/root/globals")
+		var defender = global.defender
+		if global.attackerRoll == 11 or global.attackerRoll == 12:
+			print("Attack failed.")
+		elif (global.roll <= (power - defender.resistance)):
+			print("Attack is successful.")
+		else:
+			print("Attack failed.")
 	func attackToDestroy():
 		pass
 	func attackToNeutralize():
@@ -24,7 +31,7 @@ class TheUFO:
 	func printname():
 		print("TheUFO")
 	func getname():
-		return name
+		return cardName
 	func updateMoney():
 		money = money + income
 	func getincome():

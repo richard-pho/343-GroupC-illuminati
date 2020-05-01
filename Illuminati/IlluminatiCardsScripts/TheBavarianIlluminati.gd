@@ -1,5 +1,5 @@
 extends Node
-class TheBavarianIlluminati:
+class TheBavarianIlluminati extends Node:
 	var power = 10;
 	var transPower = 10;
 	var income = 9;
@@ -8,7 +8,7 @@ class TheBavarianIlluminati:
 	var right = "out";
 	var down = "out";
 	var left = "out";
-	var name = "TheBavarianIlluminati"
+	var cardName = "TheBavarianIlluminati"
 	#ability:
 	#may make one privileged attack each turn at a cost of 5MB
 	
@@ -31,7 +31,7 @@ class TheBavarianIlluminati:
 	func printname():
 		print("TheBavarianIlluminati")
 	func getname():
-		return name
+		return cardName
 	func updateMoney():
 		money = money + income
 	func getincome():
