@@ -807,7 +807,7 @@ func _on_TextureButton_pressed():
 	rollB = randi()%6+1
 	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	global.roll = sum
-	global.attacker.attackToControl()
+	global.attackToControl()
 	print(sum)
 "
 

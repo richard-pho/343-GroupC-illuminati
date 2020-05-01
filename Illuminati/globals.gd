@@ -24,3 +24,10 @@ func get_players():
 	return players
 func set_defender(d):
 	defender = d
+func attackToControl():
+	if roll == 11 or roll == 12:
+		print("Attack failed.")
+	elif (roll <= (attacker.power - defender.resistance)):
+		print("Attack is successful.")
+	else:
+		print("Attack failed.")
