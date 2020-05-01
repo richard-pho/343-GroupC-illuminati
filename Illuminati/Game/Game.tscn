@@ -1104,10 +1104,10 @@ anchor_left = 0.344
 anchor_top = 0.354
 anchor_right = 0.344
 anchor_bottom = 0.354
-margin_left = -126.791
-margin_top = -68.3926
-margin_right = 166.209
-margin_bottom = 122.607
+margin_left = -419.92
+margin_top = -220.075
+margin_right = -253.92
+margin_bottom = -124.075
 texture_normal = ExtResource( 5 )
 expand = true
 __meta__ = {
@@ -1116,10 +1116,10 @@ __meta__ = {
 
 [node name="TextureButton2" type="TextureButton" parent="."]
 anchor_right = 0.219
-margin_left = 657.0
-margin_top = 183.0
-margin_right = 671.68
-margin_bottom = 378.0
+margin_left = 196.599
+margin_top = 37.2743
+margin_right = 88.2788
+margin_bottom = 135.274
 texture_normal = ExtResource( 6 )
 expand = true
 __meta__ = {
@@ -1128,10 +1128,10 @@ __meta__ = {
 
 [node name="TextureButton3" type="TextureButton" parent="."]
 anchor_bottom = 0.114
-margin_left = 316.0
-margin_top = 387.0
-margin_right = 608.0
-margin_bottom = 463.92
+margin_left = 16.7581
+margin_top = 141.485
+margin_right = 187.758
+margin_bottom = 153.405
 texture_normal = ExtResource( 7 )
 expand = true
 __meta__ = {
@@ -1139,10 +1139,10 @@ __meta__ = {
 }
 
 [node name="TextureButton4" type="TextureButton" parent="."]
-margin_left = 653.0
-margin_top = 389.08
-margin_right = 957.0
-margin_bottom = 542.08
+margin_left = 199.05
+margin_top = 144.596
+margin_right = 369.05
+margin_bottom = 242.596
 texture_normal = ExtResource( 8 )
 expand = true
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]

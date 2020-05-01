@@ -97,10 +97,10 @@ margin_bottom = 42.0
 text = "AttackToNeutralize"
 
 [node name="Player0illuminati" type="TextureButton" parent="."]
-margin_left = 400.0
-margin_top = 576.0
-margin_right = 512.0
-margin_bottom = 706.0
+margin_left = 582.0
+margin_top = 592.0
+margin_right = 757.0
+margin_bottom = 691.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
