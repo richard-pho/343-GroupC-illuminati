@@ -4,6 +4,9 @@ var players = []  # This array holds the player objects
 var uncontrolledGroups = [] # This array holds the uncontrolled groups
 var turn = []
 var deadPile = [] # This array holds the dead group cards
+var attacker; # the attacking group
+var defender; # the defending group
+var roll; # the sum of the two dice when they are rolled
 
 # fills the uncontrolled groups array with the inital 4 groups
 func fillUG():
