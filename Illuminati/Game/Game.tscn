@@ -1,10 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Game/POL-foggy-forest-short.wav" type="AudioStream" id=1]
 [ext_resource path="res://Game/iCard0Button.gd" type="Script" id=2]
 [ext_resource path="res://Card Assets Folder/illuminati1.JPG" type="Texture" id=3]
 [ext_resource path="res://Game/Area2D.gd" type="Script" id=4]
 [ext_resource path="res://Card Assets Folder/americanAutoduelAssociation.JPG" type="Texture" id=5]
+[ext_resource path="res://Card Assets Folder/antiNuclearActivists.JPG" type="Texture" id=6]
+[ext_resource path="res://Card Assets Folder/antiwarActivists.JPG" type="Texture" id=7]
+[ext_resource path="res://Card Assets Folder/bigMedia.JPG" type="Texture" id=8]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Control
@@ -1095,6 +1098,50 @@ texture = ExtResource( 5 )
 visible = false
 position = Vector2( -6.13168, -5.50772 )
 shape = SubResource( 2 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchor_left = 0.344
+anchor_top = 0.354
+anchor_right = 0.344
+anchor_bottom = 0.354
+margin_left = -126.791
+margin_top = -68.3926
+margin_right = 166.209
+margin_bottom = 122.607
+texture_normal = ExtResource( 5 )
+expand = true
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+anchor_right = 0.219
+margin_left = 657.0
+margin_top = 183.0
+margin_right = 671.68
+margin_bottom = 378.0
+texture_normal = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+anchor_bottom = 0.114
+margin_left = 316.0
+margin_top = 387.0
+margin_right = 608.0
+margin_bottom = 463.92
+texture_normal = ExtResource( 7 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton4" type="TextureButton" parent="."]
+margin_left = 653.0
+margin_top = 389.08
+margin_right = 957.0
+margin_bottom = 542.08
+texture_normal = ExtResource( 8 )
+expand = true
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]
