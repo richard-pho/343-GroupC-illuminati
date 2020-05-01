@@ -17,6 +17,8 @@ onready var SpecialCards : Button = $VBoxContainer/SpecialCards
 onready var Controlbutton : Button = $HBoxContainer/Controlbutton
 onready var Destroy : Button = $HBoxContainer/Destroy
 onready var Neutralize : Button = $HBoxContainer/Neutralize
+onready var Player0illuminati : TextureButton = $Player0illuminati
+var attackControl= false
 func _ready():
 	testarray = global.players
 	# should work but illuminati cards are stored as strings
@@ -30,6 +32,11 @@ func _ready():
 			i.money += i.income
 			
 	print(player0.IlluminatiCard.money)
+	var global = get_node("/root/globals")
+	var players = global.players # gets the array of players from global
+	var path = "res://Card Assets Folder/" + players[0].IlluminatiCard.getname() + ".JPG" # path of their Illuminati Card
+	var image = load(path)
+	Player0illuminati.set_normal_texture(image)
 
 
 func _on_endturn_pressed():
@@ -57,5 +64,11 @@ func _on_Controlbutton_pressed():
 	Controlbutton.hide()
 	Destroy.hide()
 	Neutralize.hide()
-	get_tree().change_scene("res://Game/Game.tscn")
+	attackControl = true
+
 	
+func _on_Player0illuminati_pressed():
+	if(attackControl):
+		get_tree().change_scene("res://Game/Game.tscn")
+	else:
+		return

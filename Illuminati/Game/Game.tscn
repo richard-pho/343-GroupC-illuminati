@@ -1110,6 +1110,9 @@ margin_right = 166.209
 margin_bottom = 122.607
 texture_normal = ExtResource( 5 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="TextureButton2" type="TextureButton" parent="."]
 anchor_right = 0.219
