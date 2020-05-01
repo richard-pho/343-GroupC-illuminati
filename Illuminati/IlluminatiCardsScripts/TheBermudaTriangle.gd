@@ -1,5 +1,5 @@
 extends Node
-class TheBermundaTriangle:
+class TheBermundaTriangle extends Node:
 	var power = 8;
 	var transPower = 8;
 	var income = 9;
@@ -8,7 +8,7 @@ class TheBermundaTriangle:
 	var right = "out";
 	var down = "out";
 	var left = "out";
-	var name = "TheBermudaTriangle"
+	var cardName = "TheBermudaTriangle"
 	#ability:
 	#May reorganize groups freely at end of turn
 	
@@ -16,7 +16,14 @@ class TheBermundaTriangle:
 	func _ready():
 		pass # Replace with function body.
 	func attackToControl():
-		pass
+		var global = get_node("/root/globals")
+		var defender = global.defender
+		if global.attackerRoll == 11 or global.attackerRoll == 12:
+			print("Attack failed.")
+		elif (global.roll <= (power - defender.resistance)):
+			print("Attack is successful.")
+		else:
+			print("Attack failed.")
 	func attackToDestroy():
 		pass
 	func attackToNeutralize():
@@ -24,7 +31,7 @@ class TheBermundaTriangle:
 	func printname():
 		print("TheBermundaTriangle")
 	func getname():
-		return name
+		return cardName
 	func updateMoney():
 		money = money + income
 	func getincome():

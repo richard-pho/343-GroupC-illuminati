@@ -1,5 +1,5 @@
 extends Node
-class TheDiscordianSociety:
+class TheDiscordianSociety extends Node:
 	var power = 8;
 	var transPower = 8;
 	var income = 8;
@@ -8,7 +8,7 @@ class TheDiscordianSociety:
 	var right = "out";
 	var down = "out";
 	var left = "out";
-	var name = "TheDiscordianSociety"
+	var cardName = "TheDiscordianSociety"
 	#ability:
 	#+4 on nay attempt to control weird groups
 	#immune to any attacks from government or straight groups
@@ -16,7 +16,17 @@ class TheDiscordianSociety:
 	func _ready():
 		pass # Replace with function body.
 	func attackToControl():
-		power+=4
+		var global = get_node("/root/globals")
+		var defender = global.defender
+		for a in defender.alignment:
+			if a == "weird":
+				power += 4
+		if global.attackerRoll == 11 or global.attackerRoll == 12:
+			print("Attack failed.")
+		elif (global.roll <= (power - defender.resistance)):
+			print("Attack is successful.")
+		else:
+			print("Attack failed.")
 	func attackToDestroy():
 		pass
 	func attackToNeutralize():
@@ -24,7 +34,7 @@ class TheDiscordianSociety:
 	func printname():
 		print("TheDiscordianSociety")
 	func getname():
-		return name
+		return cardName
 	func updateMoney():
 		money = money + income
 	func getincome():

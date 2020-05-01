@@ -1,5 +1,5 @@
 extends Node
-class TheNetwork:
+class TheNetwork extends Node:
 	var power = 7;
 	var transPower = 7;
 	var income = 9;
@@ -8,14 +8,21 @@ class TheNetwork:
 	var right = "out";
 	var down = "out";
 	var left = "out";
-	var name = "TheNetwork"
+	var cardName = "TheNetwork"
 	#ability:
 	#Turns over two cards at beginning of turn
 	# Called when the node enters the scene tree for the first time.
 	func _ready():
 		pass # Replace with function body.
 	func attackToControl():
-		pass
+		var global = get_node("/root/globals")
+		var defender = global.defender
+		if global.attackerRoll == 11 or global.attackerRoll == 12:
+			print("Attack failed.")
+		elif (global.roll <= (power - defender.resistance)):
+			print("Attack is successful.")
+		else:
+			print("Attack failed.")
 	func attackToDestroy():
 		pass
 	func attackToNeutralize():
@@ -23,7 +30,7 @@ class TheNetwork:
 	func printname():
 		print("TheNetwork")
 	func getname():
-		return name
+		return cardName
 	func updateMoney():
 		money = money + income
 	func getincome():

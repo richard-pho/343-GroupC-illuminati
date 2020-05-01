@@ -1,5 +1,5 @@
 extends Node
-class TheServantsOfCthulhu:
+class TheServantsOfCthulhu extends Node:
 	var power = 9;
 	var transPower = 9;
 	var income = 7;
@@ -8,13 +8,20 @@ class TheServantsOfCthulhu:
 	var right = "out";
 	var down = "out";
 	var left = "out";
-	var name = "TheServantsOfCthulhu"
+	var cardName = "TheServantsOfCthulhu"
 	
 	# Called when the node enters the scene tree for the first time.
 	func _ready():
 		pass # Replace with function body.
 	func attackToControl():
-		pass
+		var global = get_node("/root/globals")
+		var defender = global.defender
+		if global.attackerRoll == 11 or global.attackerRoll == 12:
+			print("Attack failed.")
+		elif (global.roll <= (power - defender.resistance)):
+			print("Attack is successful.")
+		else:
+			print("Attack failed.")
 	func attackToDestroy():
 		#ability:
 		#+2 on nay attempt to destroy any group
@@ -24,7 +31,7 @@ class TheServantsOfCthulhu:
 	func printname():
 		print("TheServantsOfCthulhu")
 	func getname():
-		return name
+		return cardName
 	func updateMoney():
 		money = money + income
 	func getincome():
