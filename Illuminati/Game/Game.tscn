@@ -13,6 +13,7 @@ script/source = "extends Control
 var deck
 var americanAutoDuelAssociation
 var antiNuclearActivists
+var antiwarActivists
 var bigMedia
 var boySprouts
 var cIA
@@ -153,6 +154,7 @@ onready var iLabel6 : Label = $HBoxContainer/icard6/iLabel6
 onready var icard7 : Button = $HBoxContainer/icard7
 onready var iLabel7 : Label = $HBoxContainer/icard7/iLabel7
 onready var AAA : Sprite = $Area2D/AmericanAutoduelAssociation
+
 onready var global = get_node(\"/root/globals\")
 func _ready():
 	#regular deck
@@ -160,6 +162,7 @@ func _ready():
 	yuppies = Yuppies.Yuppies.new()
 	americanAutoDuelAssociation = AmerianAutoduelAssociation.AmericanAutoduelAssociation.new()
 	antiNuclearActivists = AntiNuclearActivists.AntiNuclearActivists.new()
+	antiwarActivists = AntiwarActivists.AntiwarActivists.new()
 	bigMedia = BigMedia.BigMedia.new()
 	boySprouts = BoySprouts.BoySprouts.new()
 	cIA = CIA.CIA.new()
@@ -809,7 +812,42 @@ func _on_TextureButton_pressed():
 	global.roll = sum
 	global.attackToControl()
 	print(sum)
-"
+
+
+func _on_TextureButton2_pressed():
+	var defender = antiNuclearActivists
+	global.set_defender(defender)
+	print(global.defender)
+	rollA = randi()%6+1
+	rollB = randi()%6+1
+	var sum = rollA + rollB 	# calculate sum of the dice rolls
+	global.roll = sum
+	global.attackToControl()
+	print(sum)
+
+
+func _on_TextureButton3_pressed():
+	var defender = antiwarActivists
+	global.set_defender(defender)
+	print(global.defender)
+	rollA = randi()%6+1
+	rollB = randi()%6+1
+	var sum = rollA + rollB 	# calculate sum of the dice rolls
+	global.roll = sum
+	global.attackToControl()
+	print(sum)
+
+
+func _on_TextureButton4_pressed():
+	var defender = bigMedia
+	global.set_defender(defender)
+	print(global.defender)
+	rollA = randi()%6+1
+	rollB = randi()%6+1
+	var sum = rollA + rollB 	# calculate sum of the dice rolls
+	global.roll = sum
+	global.attackToControl()
+	print(sum)"
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 73.0435, 61.9917 )
@@ -1179,6 +1217,6 @@ expand = true
 [connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_Area2D_mouse_entered"]
 [connection signal="mouse_exited" from="Area2D" to="Area2D" method="_on_Area2D_mouse_exited"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
-[connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton_pressed"]
-[connection signal="pressed" from="TextureButton3" to="." method="_on_TextureButton_pressed"]
-[connection signal="pressed" from="TextureButton4" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]
+[connection signal="pressed" from="TextureButton3" to="." method="_on_TextureButton3_pressed"]
+[connection signal="pressed" from="TextureButton4" to="." method="_on_TextureButton4_pressed"]
