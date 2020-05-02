@@ -37,6 +37,7 @@ func _ready():
 
 
 func _on_endturn_pressed():#goes back to homescreen
+	global.currentTurn = (global.currentTurn + 1) % global.turn.size() 
 	get_tree().change_scene("res://Game/Game.tscn")
 
 
