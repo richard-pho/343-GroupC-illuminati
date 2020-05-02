@@ -1,11 +1,24 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Game/Player_7.gd" type="Script" id=1]
+[ext_resource path="res://Game/7username.gd" type="Script" id=2]
 
 [node name="Player_7" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -2.05054
+margin_right = -2.05054
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="7username" type="RichTextLabel" parent="."]
+margin_left = 4.0
+margin_top = 20.0
+margin_right = 102.0
+margin_bottom = 47.0
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -14,4 +27,87 @@ __meta__ = {
 margin_right = 12.0
 margin_bottom = 20.0
 text = "End Turn"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="my turn" type="Button" parent="."]
+margin_left = 1179.28
+margin_top = 4.84485
+margin_right = 1270.28
+margin_bottom = 42.8448
+text = "My Turn"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 1179.0
+margin_top = 49.0
+margin_right = 1277.0
+margin_bottom = 520.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Attack" type="Button" parent="VBoxContainer"]
+visible = false
+margin_right = 98.0
+margin_bottom = 20.0
+text = "Attack"
+
+[node name="Trade" type="Button" parent="VBoxContainer"]
+visible = false
+margin_right = 98.0
+margin_bottom = 20.0
+text = "Trade"
+
+[node name="Gift" type="Button" parent="VBoxContainer"]
+visible = false
+margin_right = 98.0
+margin_bottom = 20.0
+text = "Gift"
+
+[node name="SpecialCards" type="Button" parent="VBoxContainer"]
+visible = false
+margin_right = 98.0
+margin_bottom = 20.0
+text = "Special Card"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 446.0
+margin_top = 7.0
+margin_right = 817.0
+margin_bottom = 49.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Controlbutton" type="Button" parent="HBoxContainer"]
+visible = false
+margin_right = 113.0
+margin_bottom = 42.0
+text = "AttackToControl"
+
+[node name="Destroy" type="Button" parent="HBoxContainer"]
+visible = false
+margin_right = 117.0
+margin_bottom = 42.0
+text = "AttackToDestroy"
+
+[node name="Neutralize" type="Button" parent="HBoxContainer"]
+visible = false
+margin_right = 133.0
+margin_bottom = 42.0
+text = "AttackToNeutralize"
+
+[node name="Player7illuminati" type="TextureButton" parent="."]
+margin_left = 582.0
+margin_top = 592.0
+margin_right = 757.0
+margin_bottom = 691.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="endturn" to="." method="_on_endturn_pressed"]
+[connection signal="pressed" from="my turn" to="." method="_on_my_turn_pressed"]
+[connection signal="pressed" from="VBoxContainer/Attack" to="." method="_on_Attack_pressed"]
+[connection signal="pressed" from="HBoxContainer/Controlbutton" to="." method="_on_Controlbutton_pressed"]
+[connection signal="pressed" from="Player7illuminati" to="." method="_on_Player7illuminati_pressed"]

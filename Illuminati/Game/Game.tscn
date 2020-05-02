@@ -504,11 +504,6 @@ func _on_icard0_pressed():
 	playersarray[0].setIlluminati(illuminaticard0)
 	global.players = playersarray
 	print(playersarray[0].IlluminatiCard.getname())
-	#var player0 = playersarray[0] # gets the first player
-	#player0.IlluminatiCard = playersarray[0].IlluminatiCard.getname()
-	#var path = \"res://Card Assets Folder/\" + player0.IlluminatiCard + \".JPG\" # path of their Illuminati Card
-	#var image = load(path) 
-	#icard0.display(image)
 
 
 func _on_icard1_pressed():
