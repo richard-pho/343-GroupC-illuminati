@@ -25,9 +25,17 @@ func get_players():
 func set_defender(d):
 	defender = d
 func attackToControl():
+	if attacker.getname() == "TheDiscordianSociety":
+		for a in defender.alignments:
+			if a == "weird":
+				attacker.power += 4
 	if roll == 11 or roll == 12:
 		print("Attack failed.")
 	elif (roll <= (attacker.power - defender.resistance)):
 		print("Attack is successful.")
 	else:
 		print("Attack failed.")
+	if attacker.getname() == "TheDiscordianSociety":
+		for a in defender.alignments:
+			if a == "weird":
+				attacker.power -= 4
