@@ -3,6 +3,7 @@ extends Node
 var players = []  # This array holds the player objects
 var uncontrolledGroups = [] # This array holds the uncontrolled groups
 var turn = []
+var currentTurn # the index of the player whose turn it is
 var deadPile = [] # This array holds the dead group cards
 var attacker; # the attacking group
 var defender; # the defending group
@@ -33,6 +34,16 @@ func attackToControl():
 		print("Attack failed.")
 	elif (roll <= (attacker.power - defender.resistance)):
 		print("Attack is successful.")
+		for c in uncontrolledGroups:
+			if c.getname() == defender.getname():
+				uncontrolledGroups.remove(c)
+		var path = "res://Card Assets Folder/" + defender.getName() + ".JPG"
+		var image = load(path)
+		var tr = TextureRect.new()
+		tr.set_texture(image)
+		var playerScene = "res://Player_" + str(currentTurn) + ".tscn"
+		get_tree().change_scene(playerScene)
+		add_child(tr)
 	else:
 		print("Attack failed.")
 	if attacker.getname() == "TheDiscordianSociety":
