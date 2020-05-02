@@ -25,49 +25,30 @@ rect_pivot_offset = Vector2( 538.008, -21.8044 )
 texture = ExtResource( 1 )
 stretch_mode = 4
 
-[node name="Center" type="HBoxContainer" parent="Menu"]
+[node name="startandranked" type="VBoxContainer" parent="Menu"]
 margin_top = 174.0
 margin_right = 100.0
 margin_bottom = 278.0
+rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
 
-[node name="Options" type="VBoxContainer" parent="Menu/Center"]
-margin_right = 100.0
-margin_bottom = 104.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="StartGame" type="Button" parent="Menu/Center/Options"]
+[node name="StartGame" type="Button" parent="Menu/startandranked"]
 margin_right = 100.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 100, 50 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
-
-[node name="Label" type="Label" parent="Menu/Center/Options/StartGame"]
-margin_right = 40.0
-margin_bottom = 14.0
 text = "Start Game"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="Rank" type="Button" parent="Menu/Center/Options"]
+[node name="Rank" type="Button" parent="Menu/startandranked"]
 margin_top = 54.0
 margin_right = 100.0
 margin_bottom = 104.0
 rect_min_size = Vector2( 100, 50 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
-
-[node name="Label" type="Label" parent="Menu/Center/Options/Rank"]
-margin_right = 40.0
-margin_bottom = 14.0
 text = "Rank"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="LoginInfo" type="HBoxContainer" parent="Menu"]
 margin_top = 282.0
@@ -77,14 +58,7 @@ rect_min_size = Vector2( 300, 24 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Menu/LoginInfo"]
-margin_right = 200.0
-margin_bottom = 24.0
-rect_min_size = Vector2( 200, 24 )
-size_flags_horizontal = 0
-size_flags_vertical = 0
-
-[node name="LineEdit" type="LineEdit" parent="Menu/LoginInfo/VBoxContainer"]
+[node name="LineEdit" type="LineEdit" parent="Menu/LoginInfo"]
 margin_right = 200.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 200, 24 )
@@ -96,14 +70,7 @@ margin_left = 204.0
 margin_right = 304.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 100, 20 )
-
-[node name="Label" type="Label" parent="Menu/LoginInfo/Login"]
-margin_right = 40.0
-margin_bottom = 14.0
 text = "Login"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="LobbyList" type="ItemList" parent="Menu/LoginInfo/Login"]
 anchor_left = 1.357
@@ -135,6 +102,6 @@ margin_top = 338.0
 margin_bottom = 352.0
 size_flags_horizontal = 0
 size_flags_vertical = 0
-[connection signal="pressed" from="Menu/Center/Options/StartGame" to="." method="_on_StartGame_pressed"]
-[connection signal="pressed" from="Menu/Center/Options/Rank" to="." method="_on_Rank_pressed"]
+[connection signal="pressed" from="Menu/startandranked/StartGame" to="." method="_on_StartGame_pressed"]
+[connection signal="pressed" from="Menu/startandranked/Rank" to="." method="_on_Rank_pressed"]
 [connection signal="pressed" from="Menu/LoginInfo/Login" to="." method="_on_Login_pressed"]

@@ -3,7 +3,7 @@ extends Control
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-onready var username : LineEdit = $Menu/LoginInfo/VBoxContainer/LineEdit
+onready var username : LineEdit = $Menu/LoginInfo/LineEdit
 onready var notification : Label = $Menu/notification/Label
 onready var Lobby : Label = $Menu/Lobby/Popup/Label
 onready var LobbyList : ItemList = $Menu/LoginInfo/Login/LobbyList
@@ -38,7 +38,7 @@ func _on_StartGame_pressed():#when the start button is pressed
 		Startnotallowed.text = "You need at least two players to play"
 
 func _on_Rank_pressed():#goes to the rankings page
-	get_tree().change_scene("res://Game/Rank.tscn")
+	get_tree().change_scene("res://Rank.tscn")
 
 func _ready():
 	pass

@@ -842,7 +842,8 @@ func _on_TextureButton4_pressed():
 	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	global.roll = sum
 	global.attackToControl()
-	print(sum)"
+	print(sum)
+"
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 73.0435, 61.9917 )
@@ -859,28 +860,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchor_top = -0.4
-anchor_bottom = -0.4
-margin_left = 617.493
-margin_top = 332.015
-margin_right = 659.493
-margin_bottom = 394.015
-size_flags_horizontal = 0
-size_flags_vertical = 0
+[node name="Label" type="Label" parent="."]
+margin_left = 617.0
+margin_top = 25.0
+margin_right = 660.0
+margin_bottom = 43.0
+text = "Game"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="VBoxContainer"]
-margin_right = 42.0
-margin_bottom = 14.0
-text = "Game"
-
-[node name="Button" type="Button" parent="VBoxContainer"]
-margin_top = 18.0
-margin_right = 42.0
-margin_bottom = 38.0
+[node name="Button" type="Button" parent="."]
+margin_left = 617.493
+margin_top = 44.015
+margin_right = 659.493
+margin_bottom = 64.015
 text = "Back"
 
 [node name="Output" type="Label" parent="."]
@@ -1188,7 +1182,7 @@ margin_right = 369.05
 margin_bottom = 242.596
 texture_normal = ExtResource( 8 )
 expand = true
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Output/Dice" to="." method="_on_Dice_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_0" to="." method="_on_player_0_pressed"]
 [connection signal="pressed" from="VBoxContainer2/player_1" to="." method="_on_player_1_pressed"]
