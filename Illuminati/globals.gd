@@ -44,8 +44,10 @@ func attackToControl():
 		var playerScene = "res://Game/Player_" + str(currentTurn) + ".tscn"
 		get_tree().change_scene(playerScene)
 		add_child(tr)
+		return true
 	else:
 		print("Attack failed.")
+		return false
 	if attacker.getname() == "TheDiscordianSociety":
 		for a in defender.alignments:
 			if a == "weird":

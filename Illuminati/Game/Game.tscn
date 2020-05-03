@@ -154,6 +154,10 @@ onready var iLabel6 : Label = $HBoxContainer/icard6/iLabel6
 onready var icard7 : Button = $HBoxContainer/icard7
 onready var iLabel7 : Label = $HBoxContainer/icard7/iLabel7
 onready var AAA : Sprite = $Area2D/AmericanAutoduelAssociation
+onready var ucgroup1 : TextureButton = $TextureButton
+onready var ucgroup2 : TextureButton = $TextureButton2
+onready var ucgroup3 : TextureButton = $TextureButton3
+onready var ucgroup4 : TextureButton = $TextureButton4
 
 onready var global = get_node(\"/root/globals\")
 func _ready():
@@ -806,7 +810,8 @@ func _on_TextureButton_pressed():
 	rollB = randi()%6+1
 	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	global.roll = sum
-	global.attackToControl()
+	if(global.attackToControl()):
+		ucgroup1.hide()
 	print(sum)
 
 
@@ -818,7 +823,8 @@ func _on_TextureButton2_pressed():
 	rollB = randi()%6+1
 	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	global.roll = sum
-	global.attackToControl()
+	if(global.attackToControl()):
+		ucgroup2.hide()
 	print(sum)
 
 
@@ -830,7 +836,8 @@ func _on_TextureButton3_pressed():
 	rollB = randi()%6+1
 	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	global.roll = sum
-	global.attackToControl()
+	if(global.attackToControl()):
+		ucgroup3.hide()
 	print(sum)
 
 
@@ -842,7 +849,8 @@ func _on_TextureButton4_pressed():
 	rollB = randi()%6+1
 	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	global.roll = sum
-	global.attackToControl()
+	if(global.attackToControl()):
+		ucgroup4.hide()
 	print(sum)
 "
 
