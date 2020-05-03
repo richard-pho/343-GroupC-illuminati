@@ -158,7 +158,6 @@ onready var ucgroup1 : TextureButton = $TextureButton
 onready var ucgroup2 : TextureButton = $TextureButton2
 onready var ucgroup3 : TextureButton = $TextureButton3
 onready var ucgroup4 : TextureButton = $TextureButton4
-
 onready var global = get_node(\"/root/globals\")
 func _ready():
 	#regular deck
@@ -409,7 +408,22 @@ func _ready():
 			player_6.show()
 		else:
 			player_7.show()
-	
+	#hard coding the uncontrolled group to show the uncontrolled attack works
+	global.fillUG()
+	var ucsize = global.uncontrolledGroups.size()
+	var uc = global.uncontrolledGroups
+	print(ucsize)
+	print(uc)
+	for i in range(0,ucsize):
+		var ucard = uc[i]
+		if(ucard.getName()==\"AmericanAutoduelAssociation\"):
+			ucgroup1.show()
+		if(ucard.getName()==\"AntiNuclearActivists\"):
+			ucgroup2.show()
+		if(ucard.getName()==\"AntiwarActivists\"):
+			ucgroup3.show()
+		if(ucard.getName()==\"BigMedia\"):
+			ucgroup4.show()
 
 func _on_Button_pressed():
 	get_tree().change_scene(\"res://HomeScreen.tscn\")
@@ -810,8 +824,7 @@ func _on_TextureButton_pressed():
 	rollB = randi()%6+1
 	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	global.roll = sum
-	if(global.attackToControl()):
-		ucgroup1.hide()
+	global.attackToControl()
 	print(sum)
 
 
@@ -823,8 +836,7 @@ func _on_TextureButton2_pressed():
 	rollB = randi()%6+1
 	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	global.roll = sum
-	if(global.attackToControl()):
-		ucgroup2.hide()
+	global.attackToControl()
 	print(sum)
 
 
@@ -836,8 +848,7 @@ func _on_TextureButton3_pressed():
 	rollB = randi()%6+1
 	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	global.roll = sum
-	if(global.attackToControl()):
-		ucgroup3.hide()
+	global.attackToControl()
 	print(sum)
 
 
@@ -849,8 +860,7 @@ func _on_TextureButton4_pressed():
 	rollB = randi()%6+1
 	var sum = rollA + rollB 	# calculate sum of the dice rolls
 	global.roll = sum
-	if(global.attackToControl()):
-		ucgroup4.hide()
+	global.attackToControl()
 	print(sum)
 "
 
@@ -1146,6 +1156,7 @@ position = Vector2( -6.13168, -5.50772 )
 shape = SubResource( 2 )
 
 [node name="TextureButton" type="TextureButton" parent="."]
+visible = false
 anchor_left = 0.344
 anchor_top = 0.354
 anchor_right = 0.344
@@ -1161,6 +1172,7 @@ __meta__ = {
 }
 
 [node name="TextureButton2" type="TextureButton" parent="."]
+visible = false
 anchor_right = 0.219
 margin_left = 196.599
 margin_top = 37.2743
@@ -1173,6 +1185,7 @@ __meta__ = {
 }
 
 [node name="TextureButton3" type="TextureButton" parent="."]
+visible = false
 anchor_bottom = 0.114
 margin_left = 16.7581
 margin_top = 141.485
@@ -1185,6 +1198,7 @@ __meta__ = {
 }
 
 [node name="TextureButton4" type="TextureButton" parent="."]
+visible = false
 margin_left = 199.05
 margin_top = 144.596
 margin_right = 369.05

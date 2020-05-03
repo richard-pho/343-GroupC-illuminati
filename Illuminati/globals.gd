@@ -35,8 +35,8 @@ func attackToControl():
 	elif (roll <= (attacker.power - defender.resistance)):
 		print("Attack is successful.")
 		for c in uncontrolledGroups:
-			if c.getname() == defender.getname():
-				uncontrolledGroups.remove(c)
+			if c.getName() == defender.getName():
+				uncontrolledGroups.remove(uncontrolledGroups.find(c))
 		var path = "res://Card Assets Folder/" + defender.getName() + ".JPG"
 		var image = load(path)
 		var tr = TextureRect.new()
@@ -44,10 +44,8 @@ func attackToControl():
 		var playerScene = "res://Game/Player_" + str(currentTurn) + ".tscn"
 		get_tree().change_scene(playerScene)
 		add_child(tr)
-		return true
 	else:
 		print("Attack failed.")
-		return false
 	if attacker.getname() == "TheDiscordianSociety":
 		for a in defender.alignments:
 			if a == "weird":
