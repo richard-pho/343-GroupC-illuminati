@@ -43,7 +43,9 @@ func attackToControl():
 		tr.set_texture(image)
 		var playerScene = "res://Game/Player_" + str(currentTurn) + ".tscn"
 		get_tree().change_scene(playerScene)
-		add_child(tr)
+		var playerPath = "/root/Player_" + str(currentTurn)
+		var scene = get_node(playerPath)
+		scene.add_child(tr)
 		return true
 	else:
 		print("Attack failed.")
