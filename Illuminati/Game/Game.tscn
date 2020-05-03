@@ -432,6 +432,7 @@ func _on_Dice_pressed():
 		h_val = max_arr(order)
 		# Find index of highest value
 		index = order.find(h_val, 0)
+		global.currentTurn = index
 		var length = order.size()
 		var i = 0
 		# Run through the array until it prints all the names in the turn order

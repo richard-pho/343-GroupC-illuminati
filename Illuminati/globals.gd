@@ -41,7 +41,7 @@ func attackToControl():
 		var image = load(path)
 		var tr = TextureRect.new()
 		tr.set_texture(image)
-		var playerScene = "res://Player_" + str(currentTurn) + ".tscn"
+		var playerScene = "res://Game/Player_" + str(currentTurn) + ".tscn"
 		get_tree().change_scene(playerScene)
 		add_child(tr)
 	else:
