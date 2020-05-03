@@ -28,6 +28,8 @@ class AntiwarActivists:
 		pass
 	func printname():
 		print("AntiwarActivists")
+	func getName():
+		return "AntiwarActivists"
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
