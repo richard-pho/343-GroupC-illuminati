@@ -30,6 +30,7 @@ func attackToControl():
 		for a in defender.alignments:
 			if a == "weird":
 				attacker.power += 4
+	print("For attack to be successful, player needs to roll ", attacker.power - defender.resistance, " or lower")
 	if roll == 11 or roll == 12:
 		print("Attack failed.")
 	elif (roll <= (attacker.power - defender.resistance)):
