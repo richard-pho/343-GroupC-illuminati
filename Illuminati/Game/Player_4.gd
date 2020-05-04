@@ -25,7 +25,7 @@ func _ready():
 		for i in testarray[4].groupCards:
 			i.money += i.income
 			
-	print("Bank: " + player4.IlluminatiCard.money)
+	print("Bank: " + str(player4.IlluminatiCard.money))
 	var global = get_node("/root/globals")
 	var players = global.players # gets the array of players from global
 	var path = "res://Card Assets Folder/" + players[4].IlluminatiCard.getname() + ".JPG" # path of their Illuminati Card
