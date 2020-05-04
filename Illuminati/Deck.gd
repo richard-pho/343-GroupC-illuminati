@@ -7,8 +7,7 @@ class Deck:
 		deck.append(card)
 		
 	func removeCard(var card):
-		var position = deck.find(card)
-		deck.remove(position)
+		deck.remove(deck.find(card))
 	
 	func shuffleDeck():
 		deck.shuffle()
