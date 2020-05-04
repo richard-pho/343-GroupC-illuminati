@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class PostOffice:
+	#attributs of the cards
 	var power = 4;
 	var transPower = 3;
 	var resistance = 3;
@@ -28,7 +29,7 @@ class PostOffice:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("PostOffice")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

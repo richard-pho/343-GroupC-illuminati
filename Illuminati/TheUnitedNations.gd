@@ -1,5 +1,6 @@
 extends Sprite
 class TheUnitedNations:
+	#attributs of the cards
 	var power = 1;
 	var transPower = 0;
 	var resistance = 3;
@@ -23,6 +24,6 @@ class TheUnitedNations:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("TheUnitedNations")
 

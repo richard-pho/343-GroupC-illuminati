@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class EcoGuerrillas:
+	#attributs of the cards
 	var power = 0;
 	var transPower = 0;
 	var resistance = 6;
@@ -27,7 +28,7 @@ class EcoGuerrillas:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("EcoGuerrillas")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

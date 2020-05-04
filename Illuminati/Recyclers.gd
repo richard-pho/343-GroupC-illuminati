@@ -1,5 +1,6 @@
 extends Sprite
 class Recyclers:
+	#attributs of the cards
 	var power = 2;
 	var transPower = 0;
 	var resistance = 2;
@@ -25,5 +26,5 @@ class Recyclers:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("Recyclers")

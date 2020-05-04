@@ -1,5 +1,6 @@
 extends Sprite
 class Trekkies:
+	#attributs of the cards
 	var power = 0;
 	var transPower = 0;
 	var resistance = 4;
@@ -23,6 +24,6 @@ class Trekkies:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("Trekkies")
 

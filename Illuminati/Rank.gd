@@ -15,6 +15,6 @@ func _ready():
 #func _process(delta):
 #	pass
 
-
+#goes back to home screen
 func _on_Button_pressed():
 	get_tree().change_scene("res://HomeScreen.tscn")

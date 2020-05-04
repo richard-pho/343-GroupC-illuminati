@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class EmptyVee:
+	#attributs of the cards
 	var power = 3;
 	var transPower = 0;
 	var resistance = 3;
@@ -27,7 +28,7 @@ class EmptyVee:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("EmptyVee")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

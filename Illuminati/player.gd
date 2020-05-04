@@ -4,6 +4,7 @@ extends Node
 # var a = 2
 # var b = "text"
 class player:
+	#attributs of the players
 	var userName;
 	var IlluminatiCard;
 	var groupCards = [];
@@ -14,10 +15,13 @@ class player:
 #setting the illuminati card
 	func setIlluminati(var card):
 		IlluminatiCard = card
+	#adds a group card to the players group card array
 	func addgroupCard(var card):
 		groupCards.append(card)
+	#adds special card to the players special card array
 	func addspecialCard(var card):
 		specialCards.append(card)
+	#returns illuminaticard
 	func getIlluminati():
 		return IlluminatiCard
 

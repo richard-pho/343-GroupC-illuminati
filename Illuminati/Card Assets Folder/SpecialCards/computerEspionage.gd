@@ -9,11 +9,12 @@ extends Node
 # Play this card at any time to either count the money on any one group card or examine all of one player's 
 # special cards.
 class computerEspionage:
+	#attributes of the card
 	var type = "special"
 	var name = "computer Espionage"
 	func ability():
 		pass
-	func getname():
+	func getname():#return names
 		return name
 
 

@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class Hollywood:
+	#attributs of the cards
 	var power = 2;
 	var transPower = 0;
 	var resistance = 0;
@@ -27,7 +28,7 @@ class Hollywood:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("Hollywood")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

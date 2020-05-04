@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class KGB:
+	#attributs of the cards
 	var power = 2;
 	var transPower = 2;
 	var resistance = 6;
@@ -30,7 +31,7 @@ class KGB:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("KGB")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

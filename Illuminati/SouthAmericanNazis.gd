@@ -1,5 +1,6 @@
 extends Sprite
 class SouthAmericanNazis:
+	#attributs of the cards
 	var power = 4;
 	var transPower = 0;
 	var resistance = 6;
@@ -22,5 +23,5 @@ class SouthAmericanNazis:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("SouthAmericanNazis")

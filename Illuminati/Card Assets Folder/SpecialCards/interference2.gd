@@ -8,11 +8,12 @@ extends Node
 
 # You may interfere with one privileged attack. No other players may interfere.
 class interference2:
+	#attributes of the card
 	var type = "special"
 	var name = "interference2"
 	func ability():
 		pass
-	func getname():
+	func getname():#return names
 		return name
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

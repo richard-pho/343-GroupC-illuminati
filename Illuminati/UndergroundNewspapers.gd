@@ -1,5 +1,6 @@
 extends Sprite
 class UndergroundNewspaper:
+	#attributs of the cards
 	var power = 1;
 	var transPower = 1;
 	var resistance = 5;
@@ -23,5 +24,5 @@ class UndergroundNewspaper:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("UndergroundNewspapers")

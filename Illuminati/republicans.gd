@@ -1,5 +1,6 @@
 extends Sprite
 class republicans:
+	#attributs of the cards
 	var power = 4;
 	var transPower = 0;
 	var resistance = 4;
@@ -23,6 +24,6 @@ class republicans:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("republicans")
 	

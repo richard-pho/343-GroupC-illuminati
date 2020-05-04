@@ -1,5 +1,6 @@
 extends Node
-class TheSocietyOfAssassins extends Node:
+class TheSocietyOfAssassins:
+	#the card attributes
 	var power = 8;
 	var transPower = 8;
 	var income = 8;
@@ -20,9 +21,9 @@ class TheSocietyOfAssassins extends Node:
 		power+=4
 	func printname():
 		print("TheSocietyOfAssassins")
-	func getname():
+	func getname():#gets name
 		return cardName
-	func updateMoney():
+	func updateMoney():#updates money
 		money = money + income
-	func getincome():
+	func getincome():#gets income
 		return income

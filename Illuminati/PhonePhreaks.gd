@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class PhonePhreaks:
+	#attributs of the cards
 	var power = 0;
 	var transPower = 1;
 	var resistance = 1;
@@ -34,7 +35,7 @@ class PhonePhreaks:
 		power -= 3;
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("PhonePhreaks")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

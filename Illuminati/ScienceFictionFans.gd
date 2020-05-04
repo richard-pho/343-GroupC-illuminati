@@ -1,5 +1,6 @@
 extends Sprite
 class ScienceFictionFans:
+	#attributs of the cards
 	var power = 0;
 	var transPower = 0;
 	var resistance = 5;
@@ -22,5 +23,5 @@ class ScienceFictionFans:
 		pass
 	func attackToNeutralize():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("ScienceFictionFans")

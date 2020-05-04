@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class Militia:
+	#attributs of the cards
 	var power = 2;
 	var transPower = 0;
 	var resistance = 4;
@@ -29,7 +30,7 @@ class Militia:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("Militia")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

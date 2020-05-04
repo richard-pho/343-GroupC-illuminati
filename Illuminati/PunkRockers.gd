@@ -1,5 +1,6 @@
 extends Sprite
 class PunkRockers:
+	#attributs of the cards
 	var power = 0;
 	var transPower = 0;
 	var resistance = 4;
@@ -23,5 +24,5 @@ class PunkRockers:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("PunkRockers")

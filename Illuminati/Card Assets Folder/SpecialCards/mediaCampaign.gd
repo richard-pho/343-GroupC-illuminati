@@ -10,11 +10,12 @@ extends Node
 # Servants of Cthulhu destroyed the group, it still counts as a destroyed group for victory. If they destroy
 # it again, it counts again!)
 class mediaCampaign:
+	#attributes of the card
 	var type = "special"
 	var name = "media Campaign"
 	func ability():
 		pass
-	func getname():
+	func getname():#return names
 		return name
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

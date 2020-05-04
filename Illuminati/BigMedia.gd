@@ -4,6 +4,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class BigMedia:
+	#attributs of the cards
 	var power = 4;
 	var transPower = 3;
 	var resistance = 6;
@@ -26,7 +27,7 @@ class BigMedia:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("BigMedia")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

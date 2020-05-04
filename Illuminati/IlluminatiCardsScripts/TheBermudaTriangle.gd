@@ -1,5 +1,6 @@
 extends Node
-class TheBermundaTriangle extends Node:
+class TheBermundaTriangle:
+	#the card attributes
 	var power = 8;
 	var transPower = 8;
 	var income = 9;
@@ -21,9 +22,9 @@ class TheBermundaTriangle extends Node:
 		pass
 	func printname():
 		print("TheBermundaTriangle")
-	func getname():
+	func getname():#return name
 		return cardName
-	func updateMoney():
+	func updateMoney():#updates money
 		money = money + income
-	func getincome():
+	func getincome():#returns income
 		return income

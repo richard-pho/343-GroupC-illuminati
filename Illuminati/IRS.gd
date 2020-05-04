@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class IRS:
+	#attributs of the cards
 	var power = 5;
 	var transPower = 3;
 	var resistance = 5;
@@ -31,7 +32,7 @@ class IRS:
 		# Owning player may tax each opponent 2MB on his own income phase. Tax may come from any group. 
 		# If a player has no money, he owes no tax.
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("IRS")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

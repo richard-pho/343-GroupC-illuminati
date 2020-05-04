@@ -4,6 +4,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class CIA:
+	#attributs of the cards
 	var power = 6;
 	var transPower = 4;
 	var resistance = 5;
@@ -26,7 +27,7 @@ class CIA:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("CIA")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

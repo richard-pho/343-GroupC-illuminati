@@ -1,5 +1,6 @@
 extends Sprite
 class RobotSeaMonsters:
+	#attributs of the cards
 	var power = 0;
 	var transPower = 0;
 	var resistance = 6;
@@ -21,5 +22,5 @@ class RobotSeaMonsters:
 		pass
 	func attackToNeutralize():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("RobotSeaMonsters")

@@ -1,5 +1,6 @@
 extends Node
-class TheNetwork extends Node:
+class TheNetwork:
+	#the card attributes
 	var power = 7;
 	var transPower = 7;
 	var income = 9;
@@ -20,9 +21,9 @@ class TheNetwork extends Node:
 		pass
 	func printname():
 		print("TheNetwork")
-	func getname():
+	func getname():#gets name
 		return cardName
-	func updateMoney():
+	func updateMoney():#updates name
 		money = money + income
-	func getincome():
+	func getincome():#gets income
 		return income

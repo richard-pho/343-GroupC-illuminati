@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class FiendishFluoridators:
+	#attributs of the cards
 	var power = 3;
 	var transPower = 0;
 	var resistance = 5;
@@ -25,7 +26,7 @@ class FiendishFluoridators:
 		pass
 	func attackToNeutralize():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("FiendishFluoridators")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

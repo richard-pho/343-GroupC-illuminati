@@ -6,6 +6,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class OrbitalMindControlLasers:
+	#attributs of the cards
 	var power = 4;
 	var transPower = 2;
 	var resistance = 5;
@@ -29,7 +30,7 @@ class OrbitalMindControlLasers:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("OrbitalMindControlLasers")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

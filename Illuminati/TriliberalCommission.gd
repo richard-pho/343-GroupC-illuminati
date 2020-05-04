@@ -1,5 +1,6 @@
 extends Sprite
 class TriliberalCommission:
+	#attributs of the cards
 	var power = 5;
 	var transPower = 0;
 	var resistance = 6;
@@ -23,5 +24,5 @@ class TriliberalCommission:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("TriliberalCommission")

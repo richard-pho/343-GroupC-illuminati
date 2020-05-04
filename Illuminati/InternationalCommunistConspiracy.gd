@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class InternationalCommunistConspiracy:
+	#attributs of the cards
 	var power = 7;
 	var transPower = 0;
 	var resistance = 8;
@@ -30,7 +31,7 @@ class InternationalCommunistConspiracy:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("InternationalCommunistConspiracy")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

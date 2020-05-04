@@ -1,5 +1,6 @@
 extends Sprite
 class ThePhoneCompany:
+	#attributs of the cards
 	var power = 5;
 	var transPower = 2;
 	var resistance = 6;
@@ -23,6 +24,6 @@ class ThePhoneCompany:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("ThePhoneCompany")
 

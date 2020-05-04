@@ -8,11 +8,12 @@ extends Node
 # Play this card during your turn to automatically take control of any one uncontrolled group. Playing
 # this card counts as an action.
 class bribery:
+	#attributes of the card
 	var type = "special"
 	var name = "bribery"
 	func ability():
 		pass
-	func getname():
+	func getname():#return names
 		return name
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

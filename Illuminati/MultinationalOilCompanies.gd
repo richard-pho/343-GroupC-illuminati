@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class MultinationalOilCompanies:
+	#attributs of the cards
 	var power = 6;
 	var transPower = 0;
 	var resistance = 4;
@@ -27,7 +28,7 @@ class MultinationalOilCompanies:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("MultinationalOilCompanies")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

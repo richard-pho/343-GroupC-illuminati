@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class CycleGangs:
+	#attributs of the cards
 	var power = 0;
 	var transPower = 0;
 	var resistance = 4;
@@ -30,7 +31,7 @@ class CycleGangs:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("CycleGangs")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

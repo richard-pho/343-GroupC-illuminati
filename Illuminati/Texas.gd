@@ -1,5 +1,6 @@
 extends Sprite
 class Texas:
+	#attributs of the cards
 	var power = 6;
 	var transPower = 0;
 	var resistance = 6;
@@ -23,5 +24,5 @@ class Texas:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("Texas")

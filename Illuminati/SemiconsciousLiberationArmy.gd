@@ -1,5 +1,6 @@
 extends Sprite
 class SemiconsciousLiberationArmy:
+	#attributs of the cards
 	var power = 0;
 	var transPower = 0;
 	var resistance = 8;
@@ -24,5 +25,5 @@ class SemiconsciousLiberationArmy:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("SemiconsciousLiberationArmy")

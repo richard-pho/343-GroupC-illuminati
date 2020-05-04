@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class GunLobby:
+	#attributs of the cards
 	var power = 1;
 	var transPower = 0;
 	var resistance = 0;
@@ -32,7 +33,7 @@ class GunLobby:
 		resistance = 3;
 		#against any liberal, communist, or weird group, resistance 10
 		resistance = 10;
-	func getName():
+	func getName():#gets the card name
 		return("GunLobby")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

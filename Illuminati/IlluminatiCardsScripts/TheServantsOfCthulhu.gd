@@ -1,5 +1,6 @@
 extends Node
-class TheServantsOfCthulhu extends Node:
+class TheServantsOfCthulhu:
+	#the card attributes
 	var power = 9;
 	var transPower = 9;
 	var income = 7;
@@ -21,9 +22,9 @@ class TheServantsOfCthulhu extends Node:
 		pass
 	func printname():
 		print("TheServantsOfCthulhu")
-	func getname():
+	func getname():#gets name
 		return cardName
-	func updateMoney():
+	func updateMoney():#updates money
 		money = money + income
-	func getincome():
+	func getincome():#gets income
 		return income

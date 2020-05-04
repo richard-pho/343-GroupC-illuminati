@@ -1,5 +1,6 @@
 extends Node
-class TheUFO extends Node:
+class TheUFO:
+	#the card attributes
 	var power = 6;
 	var transPower = 6;
 	var income = 8;
@@ -21,11 +22,11 @@ class TheUFO extends Node:
 		pass
 	func printname():
 		print("TheUFO")
-	func getname():
+	func getname():#gets the name
 		return cardName
-	func updateMoney():
+	func updateMoney():#updates the money
 		money = money + income
-	func getincome():
+	func getincome():#return income
 		return income
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

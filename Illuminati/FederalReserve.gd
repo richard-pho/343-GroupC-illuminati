@@ -5,6 +5,7 @@ extends Sprite
 # var a = 2
 # var b = "text"
 class FederalReserve:
+	#attributs of the cards
 	var power = 5;
 	var transPower = 3;
 	var resistance = 7;
@@ -28,7 +29,7 @@ class FederalReserve:
 	func transferMoney():
 		# when it transfers money, that money can go to any group in the same power structure
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("FederalReserve")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

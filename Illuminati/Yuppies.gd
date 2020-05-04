@@ -1,5 +1,6 @@
 extends Sprite
 class Yuppies:
+	#attributs of the cards
 	var power = 2;
 	var transPower = 0;
 	var resistance = 3;
@@ -24,7 +25,7 @@ class Yuppies:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("Yuppies")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

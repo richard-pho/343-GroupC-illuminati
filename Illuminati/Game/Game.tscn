@@ -129,6 +129,7 @@ var theSocietyofAssassins
 var theufo
 var playersarray
 var beginning = true
+#variables for buttons and labels
 onready var player_0 : Button = $VBoxContainer2/player_0
 onready var player_1 : Button = $VBoxContainer2/player_1
 onready var player_2 : Button = $VBoxContainer2/player_2
@@ -162,6 +163,7 @@ onready var global = get_node(\"/root/globals\")
 func _ready():
 	#regular deck
 	deck = Deck.Deck.new()
+	#initalizing group cards
 	yuppies = Yuppies.Yuppies.new()
 	americanAutoDuelAssociation = AmerianAutoduelAssociation.AmericanAutoduelAssociation.new()
 	antiNuclearActivists = AntiNuclearActivists.AntiNuclearActivists.new()
@@ -245,7 +247,7 @@ func _ready():
 	tVPreachers = TVPreachers.TVPreachers.new()
 	undergroundnewspaper = UndergroundNewspapers.UndergroundNewspaper.new()
 	videogames = VideoGames.VideoGames.new()
-	#illuminati cards
+	#special cards
 	assasinationS = assasination.assasination.new()
 	briberyS = bribery.bribery.new()
 	computerEspionageS = computerEspionage.computerEspionage.new()
@@ -361,8 +363,9 @@ func _ready():
 	deck.addCard(videogames)
 	deck.addCard(yuppies)
 	randomize()
-	deck.deck.shuffle()
+	deck.deck.shuffle()#shuffling the deck of group and special cards
 	#adding the illuminati cards into illuminatiDeck
+	#initializing illuminati cards
 	illuminatiDeck = Deck.Deck.new()
 	theBavarianIlluminati = TheBavarianIlluminati.TheBavarianIlluminati.new()
 	theBermudaTriangle = TheBermudaTriangle.TheBermundaTriangle.new()
@@ -381,7 +384,7 @@ func _ready():
 	illuminatiDeck.addCard(theSocietyofAssassins)
 	illuminatiDeck.addCard(theufo)
 	randomize()
-	illuminatiDeck.deck.shuffle()
+	illuminatiDeck.deck.shuffle()#shuffling illuminati deck
 	iLabel0.text = illuminatiDeck.deck[0].getname()
 	iLabel1.text = illuminatiDeck.deck[1].getname()
 	iLabel2.text = illuminatiDeck.deck[2].getname()
@@ -391,6 +394,7 @@ func _ready():
 	iLabel6.text = illuminatiDeck.deck[6].getname()
 	iLabel7.text = illuminatiDeck.deck[7].getname()
 	var size = global.players.size()
+	#shows the player button for the amount of player in the lobby Example: if there are 2 players 2 buttons will show
 	for i in range(0,size):
 		if(i==0):
 			player_0.show()
@@ -424,7 +428,7 @@ func _ready():
 		if(ucard.getName()==\"BigMedia\"):
 			ucgroup4.show()
 
-func _on_Button_pressed():
+func _on_Button_pressed():#goes back to homescreen
 	get_tree().change_scene(\"res://HomeScreen.tscn\")
 
 func max_arr(arr):
@@ -459,45 +463,46 @@ func _on_Dice_pressed():
 			i+=1
 
 
-func _on_player_0_pressed():
+func _on_player_0_pressed():#goes to player 0 scene
 	get_tree().change_scene(\"res://Game/Player_0.tscn\")
 
 
-func _on_player_1_pressed():
+func _on_player_1_pressed():#goes to player 1 scene
 	get_tree().change_scene(\"res://Game/Player_1.tscn\")
 
 
-func _on_player_2_pressed():
+func _on_player_2_pressed():#goes to player 2 scene
 	get_tree().change_scene(\"res://Game/Player_2.tscn\")
 
 
-func _on_player_3_pressed():
+func _on_player_3_pressed():#goes to player 3 scene
 	get_tree().change_scene(\"res://Game/Player_3.tscn\")
 
 
-func _on_player_4_pressed():
+func _on_player_4_pressed():#goes to player 4 scene
 	get_tree().change_scene(\"res://Game/Player_4.tscn\")
 
 
-func _on_player_5_pressed():
+func _on_player_5_pressed():#goes to player 5 scene
 	get_tree().change_scene(\"res://Game/Player_5.tscn\")
 
 
-func _on_player_6_pressed():
+func _on_player_6_pressed():#goes to player 6 scene
 	get_tree().change_scene(\"res://Game/Player_6.tscn\")
 
 
-func _on_player_7_pressed():
+func _on_player_7_pressed():#goes to player 7 scene
 	get_tree().change_scene(\"res://Game/Player_7.tscn\")
 
 
 
 func _on_icard0_pressed():
-	icard0.hide()
+	icard0.hide()#hides the button
 	playersarray = global.players
 	print(illuminatiDeck.deck)
 	var index
 	var illuminaticard0
+	#if the card is equal to a specific illuminati card then set the variable to the illuminaticard
 	if(iLabel0.text==\"TheBavarianIlluminati\"):
 		index = illuminatiDeck.deck.find(theBavarianIlluminati)
 		illuminaticard0 = illuminatiDeck.deck[index]
@@ -522,7 +527,7 @@ func _on_icard0_pressed():
 	if(iLabel0.text==\"TheUFO\"):
 		index = illuminatiDeck.deck.find(theufo)
 		illuminaticard0 = illuminatiDeck.deck[index]
-	playersarray[0].setIlluminati(illuminaticard0)
+	playersarray[0].setIlluminati(illuminaticard0)#set the players illuminati card
 	global.players = playersarray
 	print(playersarray[0].IlluminatiCard.getname())
 
@@ -533,6 +538,7 @@ func _on_icard1_pressed():
 	print(illuminatiDeck.deck)
 	var index
 	var illuminaticard1
+	#if the card is equal to a specific illuminati card then set the variable to the illuminaticard
 	if(iLabel1.text==\"TheBavarianIlluminati\"):
 		index = illuminatiDeck.deck.find(theBavarianIlluminati)
 		illuminaticard1 = illuminatiDeck.deck[index]
@@ -557,7 +563,7 @@ func _on_icard1_pressed():
 	if(iLabel1.text==\"TheUFO\"):
 		index = illuminatiDeck.deck.find(theufo)
 		illuminaticard1 = illuminatiDeck.deck[index]
-	playersarray[1].setIlluminati(illuminaticard1)
+	playersarray[1].setIlluminati(illuminaticard1)#set the players illuminati card
 	global.players = playersarray
 	print(playersarray[1].IlluminatiCard.getname())
 
@@ -568,6 +574,7 @@ func _on_icard2_pressed():
 	print(illuminatiDeck.deck)
 	var index
 	var illuminaticard2
+	#if the card is equal to a specific illuminati card then set the variable to the illuminaticard
 	if(iLabel2.text==\"TheBavarianIlluminati\"):
 		index = illuminatiDeck.deck.find(theBavarianIlluminati)
 		illuminaticard2 = illuminatiDeck.deck[index]
@@ -592,7 +599,7 @@ func _on_icard2_pressed():
 	if(iLabel2.text==\"TheUFO\"):
 		index = illuminatiDeck.deck.find(theufo)
 		illuminaticard2 = illuminatiDeck.deck[index]
-	playersarray[2].setIlluminati(illuminaticard2)
+	playersarray[2].setIlluminati(illuminaticard2)#set the players illuminati card
 	global.players = playersarray
 	print(playersarray[2].IlluminatiCard.getname())
 
@@ -603,6 +610,7 @@ func _on_icard3_pressed():
 	print(illuminatiDeck.deck)
 	var index
 	var illuminaticard3
+	#if the card is equal to a specific illuminati card then set the variable to the illuminaticard
 	if(iLabel3.text==\"TheBavarianIlluminati\"):
 		index = illuminatiDeck.deck.find(theBavarianIlluminati)
 		illuminaticard3 = illuminatiDeck.deck[index]
@@ -627,7 +635,7 @@ func _on_icard3_pressed():
 	if(iLabel0.text==\"TheUFO\"):
 		index = illuminatiDeck.deck.find(theufo)
 		illuminaticard3 = illuminatiDeck.deck[index]
-	playersarray[3].setIlluminati(illuminaticard3)
+	playersarray[3].setIlluminati(illuminaticard3)#set the players illuminati card
 	global.players = playersarray
 	print(playersarray[3].IlluminatiCard.getname())
 
@@ -638,6 +646,7 @@ func _on_icard4_pressed():
 	print(illuminatiDeck.deck)
 	var index
 	var illuminaticard4
+	#if the card is equal to a specific illuminati card then set the variable to the illuminaticard
 	if(iLabel0.text==\"TheBavarianIlluminati\"):
 		index = illuminatiDeck.deck.find(theBavarianIlluminati)
 		illuminaticard4 = illuminatiDeck.deck[index]
@@ -662,7 +671,7 @@ func _on_icard4_pressed():
 	if(iLabel4.text==\"TheUFO\"):
 		index = illuminatiDeck.deck.find(theufo)
 		illuminaticard4 = illuminatiDeck.deck[index]
-	playersarray[4].setIlluminati(illuminaticard4)
+	playersarray[4].setIlluminati(illuminaticard4)#set the players illuminati card
 	global.players = playersarray
 	print(playersarray[4].IlluminatiCard.getname())
 
@@ -673,6 +682,7 @@ func _on_icard5_pressed():
 	print(illuminatiDeck.deck)
 	var index
 	var illuminaticard5
+	#if the card is equal to a specific illuminati card then set the variable to the illuminaticard
 	if(iLabel5.text==\"TheBavarianIlluminati\"):
 		index = illuminatiDeck.deck.find(theBavarianIlluminati)
 		illuminaticard5 = illuminatiDeck.deck[index]
@@ -697,7 +707,7 @@ func _on_icard5_pressed():
 	if(iLabel5.text==\"TheUFO\"):
 		index = illuminatiDeck.deck.find(theufo)
 		illuminaticard5 = illuminatiDeck.deck[index]
-	playersarray[5].setIlluminati(illuminaticard5)
+	playersarray[5].setIlluminati(illuminaticard5)#set the players illuminati card
 	global.players = playersarray
 	print(playersarray[5].IlluminatiCard.getname())
 
@@ -708,6 +718,7 @@ func _on_icard6_pressed():
 	print(illuminatiDeck.deck)
 	var index
 	var illuminaticard6
+	#if the card is equal to a specific illuminati card then set the variable to the illuminaticard
 	if(iLabel6.text==\"TheBavarianIlluminati\"):
 		index = illuminatiDeck.deck.find(theBavarianIlluminati)
 		illuminaticard6 = illuminatiDeck.deck[index]
@@ -732,7 +743,7 @@ func _on_icard6_pressed():
 	if(iLabel6.text==\"TheUFO\"):
 		index = illuminatiDeck.deck.find(theufo)
 		illuminaticard6 = illuminatiDeck.deck[index]
-	playersarray[6].setIlluminati(illuminaticard6)
+	playersarray[6].setIlluminati(illuminaticard6)#set the players illuminati card
 	global.players = playersarray
 	print(playersarray[6].IlluminatiCard.getname())
 
@@ -743,6 +754,7 @@ func _on_icard7_pressed():
 	print(illuminatiDeck.deck)
 	var index
 	var illuminaticard7
+	#if the card is equal to a specific illuminati card then set the variable to the illuminaticard
 	if(iLabel7.text==\"TheBavarianIlluminati\"):
 		index = illuminatiDeck.deck.find(theBavarianIlluminati)
 		illuminaticard7 = illuminatiDeck.deck[index]
@@ -767,12 +779,13 @@ func _on_icard7_pressed():
 	if(iLabel7.text==\"TheUFO\"):
 		index = illuminatiDeck.deck.find(theufo)
 		illuminaticard7= illuminatiDeck.deck[index]
-	playersarray[7].setIlluminati(illuminaticard7)
+	playersarray[7].setIlluminati(illuminaticard7)#set the players illuminati card
 	global.players = playersarray
 	print(playersarray[7].IlluminatiCard.getname())
 
 
 func _on_illuminaticardgiver_pressed():
+	#show illuminati card for how many player there are in the lobby
 	var temp = global.players.size()
 	for i in range(0,temp):
 		if(i==0):
@@ -817,7 +830,7 @@ func _on_DeckDraw_pressed():
 
 func _on_TextureButton_pressed():
 	var defender = americanAutoDuelAssociation
-	global.set_defender(defender)
+	global.set_defender(defender)#sets defender to the card on the button
 	print(global.defender)
 	rollA = randi()%6+1
 	rollB = randi()%6+1
@@ -829,7 +842,7 @@ func _on_TextureButton_pressed():
 
 func _on_TextureButton2_pressed():
 	var defender = antiNuclearActivists
-	global.set_defender(defender)
+	global.set_defender(defender)#sets defender to the card on the button
 	print(global.defender)
 	rollA = randi()%6+1
 	rollB = randi()%6+1
@@ -841,7 +854,7 @@ func _on_TextureButton2_pressed():
 
 func _on_TextureButton3_pressed():
 	var defender = antiwarActivists
-	global.set_defender(defender)
+	global.set_defender(defender)#sets defender to the card on the button
 	print(global.defender)
 	rollA = randi()%6+1
 	rollB = randi()%6+1
@@ -853,7 +866,7 @@ func _on_TextureButton3_pressed():
 
 func _on_TextureButton4_pressed():
 	var defender = bigMedia
-	global.set_defender(defender)
+	global.set_defender(defender)#sets defender to the card on the button
 	print(global.defender)
 	rollA = randi()%6+1
 	rollB = randi()%6+1

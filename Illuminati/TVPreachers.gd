@@ -1,5 +1,6 @@
 extends Sprite
 class TVPreachers:
+	#attributs of the cards
 	var power = 3;
 	var transPower = 0;
 	var resistance = 6;
@@ -24,7 +25,7 @@ class TVPreachers:
 		pass
 	func transferMoney():
 		pass
-	func getName():
+	func getName():#gets the card name
 		return("TVPreachers")
 
 
