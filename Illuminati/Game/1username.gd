@@ -11,7 +11,7 @@ func _ready():
 	var global = get_node("/root/globals")
 	var players = global.players
 	var player = players[1]
-	add_text(player.userName)
+	add_text(player.userName) # Displays the player's username on their scene
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

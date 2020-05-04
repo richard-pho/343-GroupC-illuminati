@@ -26,12 +26,16 @@ func get_players():
 func set_defender(d):
 	defender = d
 func attackToControl():
+	# The Discordian Society gets +4 attack if the group it is attacking has weird in its alignments
 	if attacker.getname() == "TheDiscordianSociety":
 		for a in defender.alignments:
 			if a == "weird":
 				attacker.power += 4
+	print("For attack to be successful, player needs to roll ", attacker.power - defender.resistance, " or lower")
+	# A roll of 11 or 12 results in automatic failure
 	if roll == 11 or roll == 12:
 		print("Attack failed.")
+	# The roll must be less than the attacker's power subtracted by the defender's resistance
 	elif (roll <= (attacker.power - defender.resistance)):
 		print("Attack is successful.")
 		for c in uncontrolledGroups:
@@ -47,6 +51,7 @@ func attackToControl():
 		add_child(tr)
 	else:
 		print("Attack failed.")
+	# The Discordian Society's power returns to normal once the attack on a weird group is over
 	if attacker.getname() == "TheDiscordianSociety":
 		for a in defender.alignments:
 			if a == "weird":
