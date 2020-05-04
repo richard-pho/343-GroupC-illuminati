@@ -37,12 +37,13 @@ func attackToControl():
 		for c in uncontrolledGroups:
 			if c.getName() == defender.getName():
 				uncontrolledGroups.remove(uncontrolledGroups.find(c))
-		var path = "res://Card Assets Folder/" + defender.getName() + ".JPG"
-		var image = load(path)
-		var tr = TextureRect.new()
-		tr.set_texture(image)
+				players[currentTurn].addgroupCard(c)
 		var playerScene = "res://Game/Player_" + str(currentTurn) + ".tscn"
 		get_tree().change_scene(playerScene)
+		var cardPath = "res://Card Assets Folder/" + defender.getName() + ".JPG"
+		var image = load(cardPath)
+		var tr = TextureRect.new()
+		tr.set_texture(image)
 		add_child(tr)
 	else:
 		print("Attack failed.")
